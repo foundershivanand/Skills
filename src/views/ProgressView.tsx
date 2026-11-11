@@ -17,6 +17,7 @@ export const ProgressView: React.FC<ProgressViewProps> = ({
   allSkills,
   onSelectSkill
 }) => {
+  const [selectedSkillId, setSelectedSkillId] = useState<string>(activeSkills[0]?.id || allSkills[0]?.id || 'skill-01');
   const [proofLink, setProofLink] = useState('');
   const [proofNote, setProofNote] = useState('');
   const [submittedProofs, setSubmittedProofs] = useState<SubmittedProof[]>(() => loadSkillProofs());
@@ -32,9 +33,12 @@ export const ProgressView: React.FC<ProgressViewProps> = ({
       validUrl = `https://${validUrl}`;
     }
 
+    const targetSkill = allSkills.find(s => s.id === selectedSkillId) || activeSkills[0];
+
     const newProof: SubmittedProof = {
       id: Date.now().toString(),
-      skillTitle: activeSkills[0]?.title || 'Active Track',
+      skillId: targetSkill?.id,
+      skillTitle: targetSkill?.title || 'Active Track',
       link: validUrl,
       notes: proofNote.trim(),
       date: new Date().toLocaleDateString()
@@ -163,13 +167,24 @@ export const ProgressView: React.FC<ProgressViewProps> = ({
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <select
+              value={selectedSkillId}
+              onChange={e => setSelectedSkillId(e.target.value)}
+              className="bg-steel-900 border border-steel-700 p-2 text-xs text-steel-100 focus:border-forge-amber outline-none font-mono"
+            >
+              {allSkills.map(s => (
+                <option key={s.id} value={s.id}>
+                  #{s.number.toString().padStart(2, '0')} {s.title}
+                </option>
+              ))}
+            </select>
             <input
               type="url"
               required
-              placeholder="e.g. https://github.com/my-agent or https://strava.com/activities/..."
+              placeholder="e.g. https://github.com/my-agent or https://strava.com/..."
               value={proofLink}
               onChange={e => setProofLink(e.target.value)}
-              className="sm:col-span-2 bg-steel-900 border border-steel-700 p-2 text-xs text-steel-100 focus:border-forge-amber outline-none"
+              className="bg-steel-900 border border-steel-700 p-2 text-xs text-steel-100 focus:border-forge-amber outline-none"
             />
             <input
               type="text"

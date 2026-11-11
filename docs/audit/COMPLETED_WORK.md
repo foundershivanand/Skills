@@ -7,19 +7,41 @@ The following systems and modules have been thoroughly inspected, built, and ver
 
 ---
 
-## 1. Complete 75-Track Deliberate Practice Curriculum
-- **File:** `src/data/skillsData.ts` (13,456 lines), `src/data/domains.ts`
-- **Verification:** All 75 tracks across 8 domains (A through H) are defined with strict typed schemas conforming to `interface Skill`:
+## 1. Complete 75-Track Deliberate Practice Curriculum with 100% Contiguous Levels
+- **File:** `src/data/skillsData.ts`, `build_full_skills_db.py`, `src/data/domains.ts`
+- **Verification:** All 75 tracks across 8 domains (A through H) are defined with contiguous, complete level hierarchies from Level 1 to `totalLevels` (zero missing intermediate levels):
   - `id`, `number` (1 to 75), `title`, `domainId`, `domainCode`, `skillType`, `timeCategory`
   - Uncompromising `masteryDefinition` (Mastery Contract with objective criteria)
   - Concrete `prerequisites` and `equipmentNeeded`
-  - Explicit multi-level hierarchy (`levels` array with `levelNumber`, `title`, `targetBenchmark`, `unlockCondition`, `testProtocol`)
+  - Explicit multi-level hierarchy (`levels` array where `length === totalLevels`, strictly ordered 1 through $N$ with `levelNumber`, `title`, `targetBenchmark`, `unlockCondition`, `testProtocol`)
   - Measurable drills (`drills` array with `objective`, `whyExists`, `equipment`, `setup`, `actions`, `repetitions`, `timeLimitSeconds`, `successCriteria`, `failureCriteria`, `difficultyAdjustment`, `interactiveTool`, and `visualSteps`)
   - `proofRequirements` specifying evidence format (GPS Strava links, GitHub repository, WCA stopwatch logs, etc.)
 
 ---
 
-## 2. Interactive Training Simulators (Apparatus Tools)
+## 2. Dynamic Metric Scoring & Bottleneck Analysis Engine
+- **File:** `src/views/TrainView.tsx`, `src/services/aiEngine.ts`
+- **Verification:**
+  - Added primary root-cause / focus selector (`Balanced`, `Recognition`, `Execution`, `Accuracy`, `Speed`) in `TrainView.tsx` manual logging form.
+  - Eliminated mathematical bias where `speedScore` was strictly lowest in both pass and fail scenarios.
+  - Normalized default fallbacks in `aiEngine.ts` to balanced scores (85/85/85/85 for pass, 60/60/60/60 for fail).
+  - Verified empirical isolation of Recognition, Execution, Accuracy, and Speed bottlenecks in test suite.
+
+---
+
+## 3. Data Integrity & Persistence Layer
+- **File:** `src/services/storage.ts`, `src/views/ProgressView.tsx`, `src/views/TodayView.tsx`, `src/App.tsx`
+- **Verification:**
+  - Implemented streak expiration check in `loadStreakData()`: if `diffDays > 1`, `currentStreak` resets to 0 while lifetime session counter is preserved.
+  - Added curriculum skill selector dropdown in `ProgressView.tsx`, allowing learners to file verifiable proofs for any skill.
+  - Updated `TodayView.tsx` to dynamically query and display drills from the user's `currentLevel`.
+  - Upgraded custom skill generator in `App.tsx` to generate full 5-level hierarchies.
+  - Added timer cleanup hooks on unmount in `RubikTimerTool.tsx` and `CardMemoryTool.tsx`.
+  - Added dynamic time limit scaling in `CardMemoryTool.tsx` across 5, 10, 20, and 52 cards.
+
+---
+
+## 4. Interactive Training Simulators (Apparatus Tools)
 All five dedicated interactive drill apparatuses render properly and execute interactive workflows:
 
 ### A. WCA Speedcube Timer (`src/components/tools/RubikTimerTool.tsx`)

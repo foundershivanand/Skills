@@ -23,6 +23,14 @@ This document catalogs every confirmed defect, vulnerability, logical error, and
 | **BUG-10** | **LOW** | Dependency | `package.json#L12` | **RESOLVED** | Pruned unused `canvas-confetti` and `@types/canvas-confetti` packages. |
 | **BUG-11** | **MEDIUM** | Performance | `vite.config.ts`, `src/data/skillsData.ts` | **RESOLVED** | Configured manual Rollup chunks for icons, react vendor, and skills database. |
 | **BUG-12** | **LOW** | UI Text | `src/components/SettingsModal.tsx#L109` | **RESOLVED** | Corrected copy to disclose origin-local unencrypted browser storage. |
+| **BUG-13** | **CRITICAL** | Curriculum Data | `build_full_skills_db.py`, `src/data/skillsData.ts` | **RESOLVED** | Fixed generator to output contiguous levels 1 through `totalLevels`; eliminated missing intermediate levels. |
+| **BUG-14** | **HIGH** | Scoring Algorithm | `src/views/TrainView.tsx`, `src/services/aiEngine.ts` | **RESOLVED** | Added breakdown factor selector in TrainView; balanced score defaults to eliminate 100% Speed bias. |
+| **BUG-15** | **HIGH** | Data Integrity | `src/services/storage.ts#L163-L175` | **RESOLVED** | Added streak expiration check (`diffDays > 1`) in `loadStreakData()`; prevents stale streaks from displaying. |
+| **BUG-16** | **MEDIUM** | Resource Leak | `src/components/tools/RubikTimerTool.tsx`, `CardMemoryTool.tsx` | **RESOLVED** | Added `useEffect` unmount cleanup for animation frame and interval timers. |
+| **BUG-17** | **MEDIUM** | Data Fidelity | `src/views/ProgressView.tsx` | **RESOLVED** | Added curriculum skill selector dropdown in Skill Proof Ledger so proofs attach to correct skills. |
+| **BUG-18** | **MEDIUM** | Dashboard UI | `src/views/TodayView.tsx#L77` | **RESOLVED** | Dynamically resolves drill corresponding to user's `currentLevel` instead of hardcoding Level 1. |
+| **BUG-19** | **LOW** | Data Model | `src/App.tsx#L138-L180` | **RESOLVED** | Custom skill creator generates full 5-level hierarchy instead of single isolated level. |
+| **BUG-20** | **LOW** | Benchmark Scaling | `src/components/tools/CardMemoryTool.tsx` | **RESOLVED** | Rescaled time limit benchmarks based on selected deck size (5 cards -> 60s, 10 -> 120s, 20 -> 180s, 52 -> 300s). |
 
 ---
 
@@ -91,3 +99,67 @@ This document catalogs every confirmed defect, vulnerability, logical error, and
 - **Description:** When holding down the Spacebar, the browser emits continuous `keydown` events. When idle, the first event sets `inspecting`, and the second event (arriving ~200ms later) sets `ready`. Upon releasing the Spacebar, the timer immediately starts, denying the user their 15-second inspection window.
 - **Root Cause:** Keyboard repeat events (`e.repeat`) were not filtered out.
 - **Remediation:** Add `if (e.repeat) return;` at the beginning of `handleKeyDown`.
+
+---
+
+### BUG-13: Missing Intermediate Levels in 75-Skill Curriculum
+- **Location:** `build_full_skills_db.py`, `src/data/skillsData.ts`
+- **Description:** The generator script constructed only Level 1, Level 2, and Level `totalLevels`. For skills with 5 to 12 levels, all intermediate levels (Level 3 to $N-1$) were absent. When a user passed Level 2, their `currentLevel` incremented to 3, but Level 3 did not exist in the array, breaking progression.
+- **Root Cause:** Incomplete level generator loop in `build_full_skills_db.py`.
+- **Remediation:** Implemented `generate_levels_for_skill` generating contiguous levels 1 through `levelsCount` with tailored benchmarks, drills, and visual cues. Regenerated `skillsData.ts`.
+
+---
+
+### BUG-14: Manual Logging Form Bias Towards Speed Bottleneck
+- **Location:** `src/views/TrainView.tsx`, `src/services/aiEngine.ts`
+- **Description:** Manual attempts without tool scores defaulted to scores where `speedScore` was strictly lower than all other factors (85 vs 88, 86, 92 on pass, and 50 vs 55, 58, 62 on fail). The manual logging UI had no selector for failure cause, locking 100% of diagnoses to Speed.
+- **Root Cause:** Missing root-cause focus selector and asymmetric default fallbacks.
+- **Remediation:** Added breakdown factor selector (`Balanced`, `Recognition`, `Execution`, `Accuracy`, `Speed`) in `TrainView.tsx` and normalized fallbacks in `aiEngine.ts` (85/85/85/85 and 60/60/60/60).
+
+---
+
+### BUG-15: Stale Discipline Streak Displayed on Return Visits
+- **Location:** `src/services/storage.ts#L163-L175`
+- **Description:** `loadStreakData()` parsed stored streak records without checking if more than 1 day had elapsed since `lastTrainedDate`. A user returning after 2 weeks would see an active streak until logging a new drill.
+- **Root Cause:** Missing date expiration delta calculation on initial load.
+- **Remediation:** Added `diffDays > 1` expiration guard in `loadStreakData()` resetting `currentStreak: 0` while preserving `totalSessionsCompleted`.
+
+---
+
+### BUG-16: Unmounted Component Timer Resource Leaks
+- **Location:** `src/components/tools/RubikTimerTool.tsx`, `CardMemoryTool.tsx`
+- **Description:** `requestAnimationFrame` in `RubikTimerTool` and `setInterval` in `CardMemoryTool` were not cleaned up if the user navigated away while the timers were active.
+- **Root Cause:** Missing cleanup return functions in component lifecycle hooks.
+- **Remediation:** Added `useEffect(() => () => { cancelAnimationFrame(...); clearInterval(...); }, [])` hooks.
+
+---
+
+### BUG-17: Skill Proof Ledger Attributing All Proofs to First Active Skill
+- **Location:** `src/views/ProgressView.tsx`
+- **Description:** `handleProofSubmit` hardcoded `activeSkills[0].title` as the proof target, preventing learners from filing verified proofs for other tracks in the catalog.
+- **Root Cause:** Missing curriculum selector in the proof submission form.
+- **Remediation:** Added a full-curriculum `<select>` dropdown populated from `allSkills`.
+
+---
+
+### BUG-18: Today Dashboard Hardcoded to Level 1 Drill
+- **Location:** `src/views/TodayView.tsx#L77`
+- **Description:** The Today screen displayed `skill.levels[0]?.drills[0]` regardless of the user's unlocked level.
+- **Root Cause:** Hardcoded index 0 access instead of looking up `skill.currentLevel`.
+- **Remediation:** Dynamically resolve drill from `skill.levels.find(l => l.levelNumber === skill.currentLevel)`.
+
+---
+
+### BUG-19: Custom Skill Creator Incomplete Level Tree
+- **Location:** `src/App.tsx#L138-L180`
+- **Description:** `handleAddNewCustomSkill` set `totalLevels: 5` but only generated Level 1.
+- **Root Cause:** Truncated object literal.
+- **Remediation:** Generated all 5 structured deliberate practice levels for custom pursuits.
+
+---
+
+### BUG-20: Unscaled Time Benchmarks in Card Memory Tool
+- **Location:** `src/components/tools/CardMemoryTool.tsx`
+- **Description:** Benchmark time limit remained fixed at 300s even when users switched deck sizes to 5, 10, or 20 cards.
+- **Root Cause:** Hardcoded static prop default.
+- **Remediation:** Added `getTimeLimitForSize` dynamically scaling limit to 60s (5 cards), 120s (10 cards), 180s (20 cards), and 300s (52 cards).

@@ -61,6 +61,21 @@ export const CardMemoryTool: React.FC<CardMemoryToolProps> = ({
   const memoTimerRef = useRef<number | null>(null);
   const startTimeRef = useRef<number>(0);
 
+  const getTimeLimitForSize = (size: number): number => {
+    if (size <= 5) return 60;
+    if (size <= 10) return 120;
+    if (size <= 20) return 180;
+    return timeLimitSeconds;
+  };
+  const activeTimeLimit = getTimeLimitForSize(deckSize);
+
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (memoTimerRef.current) clearInterval(memoTimerRef.current);
+    };
+  }, []);
+
   const startMemorization = () => {
     const newDeck = generateShuffledDeck(deckSize);
     setDeck(newDeck);
@@ -109,8 +124,8 @@ export const CardMemoryTool: React.FC<CardMemoryToolProps> = ({
       return acc + (userRecall[idx] === card.id ? 1 : 0);
     }, 0);
     const accuracy = Math.round((correctCount / deck.length) * 100);
-    const passed = accuracy >= 95 && memoElapsed <= timeLimitSeconds;
-    const speedScore = Math.min(100, Math.round((timeLimitSeconds / Math.max(1, memoElapsed)) * 85));
+    const passed = accuracy >= 95 && memoElapsed <= activeTimeLimit;
+    const speedScore = Math.min(100, Math.round((activeTimeLimit / Math.max(1, memoElapsed)) * 85));
 
     if (onRecordResult) {
       onRecordResult(accuracy, memoElapsed, passed, {
@@ -132,7 +147,7 @@ export const CardMemoryTool: React.FC<CardMemoryToolProps> = ({
     return acc + (userRecall[idx] === card.id ? 1 : 0);
   }, 0) : 0;
   const accuracyPercent = deck.length ? Math.round((correctCount / deck.length) * 100) : 0;
-  const passedContract = accuracyPercent >= 95 && memoElapsed <= timeLimitSeconds;
+  const passedContract = accuracyPercent >= 95 && memoElapsed <= activeTimeLimit;
 
   return (
     <div className="bg-steel-900 border border-steel-700 p-6 flex flex-col space-y-6">
@@ -141,7 +156,7 @@ export const CardMemoryTool: React.FC<CardMemoryToolProps> = ({
           <span className="text-xs font-mono text-steel-400 uppercase tracking-widest">Deck of Cards Memory Trainer</span>
           <h3 className="text-lg font-bold text-steel-100 flex items-center space-x-2">
             <span>TARGET BENCHMARK:</span>
-            <span className="text-forge-amber font-mono font-bold">{deckSize} CARDS ≤ {Math.round(timeLimitSeconds / 60)} MIN (≥95% ACCURACY)</span>
+            <span className="text-forge-amber font-mono font-bold">{deckSize} CARDS ≤ {Math.round(activeTimeLimit / 60)} MIN (≥95% ACCURACY)</span>
           </h3>
         </div>
         {phase === 'idle' && (
@@ -185,7 +200,7 @@ export const CardMemoryTool: React.FC<CardMemoryToolProps> = ({
         <div className="flex flex-col items-center space-y-6 py-4">
           <div className="flex items-center justify-between w-full max-w-sm px-2 text-xs font-mono text-steel-400">
             <span>CARD {currentIndex + 1} / {deck.length}</span>
-            <span className="text-forge-amber font-bold">{formatSec(memoElapsed)} / {formatSec(timeLimitSeconds)}</span>
+            <span className="text-forge-amber font-bold">{formatSec(memoElapsed)} / {formatSec(activeTimeLimit)}</span>
           </div>
 
           {/* Playing card visual */}

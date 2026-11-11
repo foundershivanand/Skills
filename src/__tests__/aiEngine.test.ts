@@ -101,6 +101,30 @@ describe('AI Engine & Bottleneck Analysis Test Suite', () => {
     expect(metrics.recommendedAction).toContain('Mechanics breakdown detected');
   });
 
+  it('correctly isolates Speed when speedScore is the primary bottleneck', () => {
+    const attempts: DrillAttempt[] = [
+      {
+        id: '1',
+        skillId: 'skill-15',
+        drillId: 'drill-15-01',
+        drillTitle: 'Cascade Juggling',
+        timestamp: Date.now(),
+        passed: false,
+        score: 'Fail',
+        durationSeconds: 30,
+        notes: '',
+        recognitionScore: 90,
+        executionScore: 85,
+        accuracyScore: 88,
+        speedScore: 40
+      }
+    ];
+
+    const metrics = analyzeBottlenecks(attempts);
+    expect(metrics.primaryBottleneck).toBe('Speed');
+    expect(metrics.recommendedAction).toContain('turnover is sluggish');
+  });
+
   it('generates structured session plans for 30m, 60m, and Surprise Me', () => {
     const plan30 = generateSessionPlan(30, ALL_SKILLS.slice(0, 3), ALL_SKILLS);
     expect(plan30.totalMinutes).toBe(30);

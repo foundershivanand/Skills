@@ -22,6 +22,15 @@ This backlog outlines all necessary remediation and enhancement tasks organized 
 - [x] **TASK-11 (P3): Prune Dead Dependency (`canvas-confetti`)** (RESOLVED)
 - [x] **TASK-12 (P3): Correct Misleading "Encrypted LocalStorage" Copy** (RESOLVED)
 - [x] **TASK-13 (P1): Add Comprehensive Automated Unit & Integration Test Suite** (RESOLVED)
+- [x] **TASK-14 (P0): Complete Intermediate Levels Generator Across 75 Skills** (RESOLVED)
+- [x] **TASK-15 (P0): Add Root-Cause Focus Selector and Balanced Defaults to TrainView** (RESOLVED)
+- [x] **TASK-16 (P1): Implement Streak Expiration Check for Skipped Days** (RESOLVED)
+- [x] **TASK-17 (P1): Add Timer Unmount Cleanups in Rubik and Card Apparatuses** (RESOLVED)
+- [x] **TASK-18 (P1): Add Full Curriculum Selector Dropdown in Skill Proof Ledger** (RESOLVED)
+- [x] **TASK-19 (P2): Dynamically Resolve Current Level Drill in TodayView Dashboard** (RESOLVED)
+- [x] **TASK-20 (P2): Generate Full 5-Level Trees in Custom Skill Creator** (RESOLVED)
+- [x] **TASK-21 (P2): Dynamic Time Limit Scaling in Card Memory Tool** (RESOLVED)
+- [x] **TASK-22 (P1): Expand Vitest Test Suite to 29 Passing Unit & Integration Tests** (RESOLVED)
 
 ---
 

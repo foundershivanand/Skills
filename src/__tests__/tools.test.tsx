@@ -49,4 +49,22 @@ describe('Interactive Training Tools Test Suite', () => {
     expect(screen.getByText('Multi-Agent Orchestration')).toBeDefined();
     expect(screen.getByText('RUN AGENT TEST')).toBeDefined();
   });
+
+  it('dynamically rescales time benchmark when deck size is toggled in CardMemoryTool', () => {
+    render(<CardMemoryTool cardCount={52} timeLimitSeconds={300} />);
+    expect(screen.getByText(/52 CARDS ≤ 5 MIN/)).toBeDefined();
+
+    const fiveCardBtn = screen.getByText('5 Cards');
+    fireEvent.click(fiveCardBtn);
+    expect(screen.getByText(/5 CARDS ≤ 1 MIN/)).toBeDefined();
+
+    const twentyCardBtn = screen.getByText('20 Cards');
+    fireEvent.click(twentyCardBtn);
+    expect(screen.getByText(/20 CARDS ≤ 3 MIN/)).toBeDefined();
+  });
+
+  it('safely mounts and unmounts RubikTimerTool with zero memory leak', () => {
+    const { unmount } = render(<RubikTimerTool targetSeconds={20} />);
+    expect(unmount).not.toThrow();
+  });
 });

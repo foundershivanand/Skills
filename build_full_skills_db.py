@@ -702,6 +702,233 @@ ts_output = """import { Skill } from '../types';
 export const ALL_SKILLS: Skill[] = [
 """
 
+def generate_levels_for_skill(num, title, keyFocus, primaryDrillTitle, primaryDrillWhy, actions, success, failure, equip, timeCat, levelsCount, masteryDef, tool, visualSteps):
+    levels = []
+    
+    # Level 1: Baseline & Fundamental Mechanics
+    levels.append({
+        "levelNumber": 1,
+        "title": "Level 01 — Fundamental Mechanics & Baseline",
+        "targetBenchmark": f"Pass Drill 01 with {success}",
+        "unlockCondition": f"Achieve {success} in consecutive verified attempts",
+        "testProtocol": "Strict 5-attempt evaluation. Must achieve pass criteria without assistance.",
+        "drills": [
+            {
+                "id": f"drill-{num:02d}-01",
+                "number": 1,
+                "title": primaryDrillTitle,
+                "objective": f"Isolate and master {keyFocus}.",
+                "whyExists": primaryDrillWhy,
+                "equipment": equip[0] if equip else "None",
+                "setup": f"Ensure {equip[0] if equip else 'workspace'} is calibrated and ready. Eliminate all distractions.",
+                "actions": actions,
+                "repetitions": "15-20 focused attempts",
+                "timeLimitSeconds": 900 if "1-day" in timeCat or "1-hour" in timeCat else 1200,
+                "successCriteria": success,
+                "failureCriteria": failure,
+                "difficultyAdjustment": "If pass rate >= 90%, decrease time limit by 15% or increase reps. If fail, regress to single movement isolation.",
+                "interactiveTool": tool,
+                "visualSteps": visualSteps
+            },
+            {
+                "id": f"drill-{num:02d}-02",
+                "number": 2,
+                "title": "Drill 02 — High-Pressure Benchmark Stress Test",
+                "objective": f"Execute under simulated test conditions targeting {keyFocus} consistency.",
+                "whyExists": "Tests whether motor/cognitive mechanics hold up when fatigued or pressured.",
+                "equipment": equip[0] if equip else "None",
+                "setup": "Start official timer. No warm-ups allowed.",
+                "actions": [
+                    "Initiate attempt immediately upon timer signal.",
+                    "Focus strictly on primary movement vector or key retrieval step.",
+                    "Record exact split time and errors on every attempt.",
+                    "Calculate consistency variance across 5 trials."
+                ],
+                "repetitions": "5 official benchmark trials",
+                "timeLimitSeconds": 600,
+                "successCriteria": f"Average score meets benchmark: {success}",
+                "failureCriteria": "Variance > 20% across attempts. Fails pressure criteria.",
+                "difficultyAdjustment": "Maintain pace until 5 consecutive trials pass.",
+                "interactiveTool": tool,
+                "visualSteps": visualSteps
+            }
+        ]
+    })
+    
+    # If 2 or more levels
+    if levelsCount >= 2:
+        levels.append({
+            "levelNumber": 2,
+            "title": "Level 02 — Speed & Fatigue Threshold",
+            "targetBenchmark": "Increase cadence by 20% while maintaining form.",
+            "unlockCondition": "Level 1 test protocol passed with evidence.",
+            "testProtocol": "Continuous high-density test protocol.",
+            "drills": [
+                {
+                    "id": f"drill-{num:02d}-03",
+                    "number": 3,
+                    "title": "Drill 03 — Cadence & Velocity Overload",
+                    "objective": "Push execution speed beyond comfortable baseline.",
+                    "whyExists": "Disrupts complacency and exposes hidden bottlenecks.",
+                    "equipment": equip[0] if equip else "None",
+                    "setup": "Set timer 10% faster than standard pace.",
+                    "actions": [
+                        "Execute movement with explosive turnover.",
+                        "Do not pause between repetitions.",
+                        "Maintain technical discipline under oxygen/cognitive debt."
+                    ],
+                    "repetitions": "10 rounds",
+                    "timeLimitSeconds": 900,
+                    "successCriteria": "Pass rate >= 80% at accelerated cadence.",
+                    "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
+                    "difficultyAdjustment": "Adjust speed based on error rate.",
+                    "interactiveTool": tool,
+                    "visualSteps": visualSteps
+                }
+            ]
+        })
+    
+    # Intermediate levels from 3 to levelsCount - 1
+    for lvl in range(3, levelsCount):
+        if lvl == 3:
+            lvl_title = "Level 03 — Consistency & Error Elimination"
+            target_bm = f"Achieve >=90% accuracy across 10 consecutive trials under fatigue for {keyFocus}."
+            unlock_cond = "Level 2 cadence benchmark verified."
+            drill_title = f"Drill {lvl:02d} — High-Density Consistency Reps"
+            drill_obj = f"Eliminate mechanical variance and micro-hesitations during {keyFocus}."
+            drill_why = "Automates neuromuscular and cognitive firing patterns under accumulated fatigue."
+            actions_list = [
+                "Execute 10 consecutive repetitions with zero pause between reps.",
+                "Log every micro-deviation and friction point immediately.",
+                "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ]
+            reps = "10 continuous reps"
+            succ = "Zero unforced errors across >=8/10 attempts."
+            fail = "More than 1 error across set. Reset and repeat."
+        elif lvl == 4:
+            lvl_title = "Level 04 — Pressure Simulation & Dynamic Variability"
+            target_bm = f"Execute unassisted trials with zero external hints under simulated pressure."
+            unlock_cond = "Level 3 consistency verification confirmed."
+            drill_title = f"Drill {lvl:02d} — Randomized Pressure & Disruption Drill"
+            drill_obj = f"Preserve core technique for {keyFocus} when start signals and conditions are randomized."
+            drill_why = "Breaks dependence on predictable conditions and builds resilient unassisted automaticity."
+            actions_list = [
+                "Wait for random start signal (2-8s delay window).",
+                "Explode into immediate execution with zero cognitive hesitation.",
+                "Log split time and record composure."
+            ]
+            reps = "8 random start trials"
+            succ = "Reaction time < 350ms with 100% adherence to technical form."
+            fail = "False start or form deviation. Result: FAIL."
+        elif lvl == 5:
+            lvl_title = "Level 05 — Sub-Max Capacity & Overload Threshold"
+            target_bm = f"Sustain target execution velocity for 1.5x standard drill duration."
+            unlock_cond = "Level 4 pressure protocol passed."
+            drill_title = f"Drill {lvl:02d} — Capacity Extension Overload"
+            drill_obj = f"Expand reserve capacity so official benchmark requires only 80% maximum effort."
+            drill_why = "Prevents catastrophic failure at the tail end of official test attempts."
+            actions_list = [
+                "Execute 6 overload rounds with 20% shorter rest intervals.",
+                "Monitor pacing splits on every single rep.",
+                "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ]
+            reps = "6 overload rounds"
+            succ = "All 6 rounds completed within target split window."
+            fail = "Cadence drops >15% on final 2 rounds. Regress to Level 4."
+        elif lvl == 6:
+            lvl_title = "Level 06 — Pre-Mastery Gauntlet & Component Assembly"
+            target_bm = "Pass 4 of 5 full-scale simulation runs meeting Mastery standard."
+            unlock_cond = "Level 5 capacity test logged."
+            drill_title = f"Drill {lvl:02d} — Full Gauntlet Assembly Rehearsal"
+            drill_obj = f"Integrate all subskills into a unified, flawless performance for {title}."
+            drill_why = "The penultimate verification before official mastery proof submission."
+            actions_list = [
+                "Rehearse complete sequence from initial setup to final finish.",
+                "Grade every phase independently against official criteria.",
+                "Confirm zero reliance on external coaching hints."
+            ]
+            reps = "5 full simulation runs"
+            succ = "4 of 5 runs satisfy official mastery conditions."
+            fail = "Failure on 2 or more runs. Return to Level 5."
+        else:
+            lvl_title = f"Level {lvl:02d} — Advanced Optimization Phase {lvl - 6}"
+            target_bm = f"Flawless execution within top 5% performance tolerance for {keyFocus}."
+            unlock_cond = f"Level {lvl-1:02d} passed with verified benchmark."
+            drill_title = f"Drill {lvl:02d} — High-Precision Stress Gauntlet"
+            drill_obj = f"Refine sub-second mechanics and eliminate residual cognitive overhead."
+            drill_why = "Polishes execution to championship standard."
+            actions_list = [
+                "Execute 5 hyper-focused trials against official standards.",
+                "Inspect video or telemetry splits for micro-inefficiencies.",
+                "Correct vector angles and cadence."
+            ]
+            reps = "5 precision trials"
+            succ = "Zero errors and split time within 5% of target benchmark."
+            fail = "Any technical flaw detected."
+
+        levels.append({
+            "levelNumber": lvl,
+            "title": lvl_title,
+            "targetBenchmark": target_bm,
+            "unlockCondition": unlock_cond,
+            "testProtocol": f"Strict Level {lvl:02d} evaluation protocol.",
+            "drills": [
+                {
+                    "id": f"drill-{num:02d}-{lvl:02d}",
+                    "number": lvl,
+                    "title": drill_title,
+                    "objective": drill_obj,
+                    "whyExists": drill_why,
+                    "equipment": equip[0] if equip else "None",
+                    "setup": "Station calibrated and ready. Eliminate all distractions.",
+                    "actions": actions_list,
+                    "repetitions": reps,
+                    "timeLimitSeconds": 900 if "1-day" in timeCat or "1-hour" in timeCat else 1200,
+                    "successCriteria": succ,
+                    "failureCriteria": fail,
+                    "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+                    "interactiveTool": tool,
+                    "visualSteps": visualSteps
+                }
+            ]
+        })
+    
+    # Final Mastery Level (always levelNumber == levelsCount)
+    if levelsCount >= 3:
+        levels.append({
+            "levelNumber": levelsCount,
+            "title": f"Level {levelsCount:02d} — Mastery Execution & Final Proof",
+            "targetBenchmark": masteryDef,
+            "unlockCondition": "Pass all prerequisite levels and submit official verification.",
+            "testProtocol": f"Strict official examination meeting Mastery Contract: {masteryDef}",
+            "drills": [
+                {
+                    "id": f"drill-{num:02d}-mastery",
+                    "number": levelsCount,
+                    "title": f"Drill {levelsCount:02d} — The Mastery Contract Proof",
+                    "objective": f"Achieve official mastery: {masteryDef}",
+                    "whyExists": "The definitive verification of competency. No hints, no coaching.",
+                    "equipment": ", ".join(equip),
+                    "setup": "Official test setup. Recording or logging tool active.",
+                    "actions": [
+                        f"Review the Mastery Contract: {masteryDef}",
+                        "Execute unassisted trial under official conditions.",
+                        "Record output, timer, video, or repository evidence.",
+                        "Submit evidence to Proof Verification Engine."
+                    ],
+                    "repetitions": "Official test session",
+                    "timeLimitSeconds": 1800,
+                    "successCriteria": masteryDef,
+                    "failureCriteria": "Any deviation from mastery contract conditions. Result: FAIL.",
+                    "difficultyAdjustment": "Full mastery standard.",
+                    "interactiveTool": tool,
+                    "visualSteps": visualSteps
+                }
+            ]
+        })
+    
+    return levels
+
 for item in SKILLS_RAW:
     num, title, domainId, domainCode, skillType, timeCat, masteryDef, prereqs, equip, levelsCount, tool, proofType, keyFocus, primaryDrillTitle, primaryDrillWhy, actions, success, failure, visualSteps = item
     
@@ -718,117 +945,7 @@ for item in SKILLS_RAW:
         "equipmentNeeded": equip,
         "currentLevel": 1,
         "totalLevels": levelsCount,
-        "levels": [
-            {
-                "levelNumber": 1,
-                "title": f"Level 01 — Fundamental Mechanics & Baseline",
-                "targetBenchmark": f"Pass Drill 01 with {success}",
-                "unlockCondition": f"Achieve {success} in consecutive verified attempts",
-                "testProtocol": f"Strict 5-attempt evaluation. Must achieve pass criteria without assistance.",
-                "drills": [
-                    {
-                        "id": f"drill-{num:02d}-01",
-                        "number": 1,
-                        "title": primaryDrillTitle,
-                        "objective": f"Isolate and master {keyFocus}.",
-                        "whyExists": primaryDrillWhy,
-                        "equipment": equip[0] if equip else "None",
-                        "setup": f"Ensure {equip[0] if equip else 'workspace'} is calibrated and ready. Eliminate all distractions.",
-                        "actions": actions,
-                        "repetitions": "15-20 focused attempts",
-                        "timeLimitSeconds": 900 if "1-day" in timeCat or "1-hour" in timeCat else 1200,
-                        "successCriteria": success,
-                        "failureCriteria": failure,
-                        "difficultyAdjustment": "If pass rate >= 90%, decrease time limit by 15% or increase reps. If fail, regress to single movement isolation.",
-                        "interactiveTool": tool,
-                        "visualSteps": visualSteps
-                    },
-                    {
-                        "id": f"drill-{num:02d}-02",
-                        "number": 2,
-                        "title": f"Drill 02 — High-Pressure Benchmark Stress Test",
-                        "objective": f"Execute under simulated test conditions targeting {keyFocus} consistency.",
-                        "whyExists": "Tests whether motor/cognitive mechanics hold up when fatigued or pressured.",
-                        "equipment": equip[0] if equip else "None",
-                        "setup": "Start official timer. No warm-ups allowed.",
-                        "actions": [
-                            "Initiate attempt immediately upon timer signal.",
-                            "Focus strictly on primary movement vector or key retrieval step.",
-                            "Record exact split time and errors on every attempt.",
-                            "Calculate consistency variance across 5 trials."
-                        ],
-                        "repetitions": "5 official benchmark trials",
-                        "timeLimitSeconds": 600,
-                        "successCriteria": f"Average score meets benchmark: {success}",
-                        "failureCriteria": f"Variance > 20% across attempts. Fails pressure criteria.",
-                        "difficultyAdjustment": "Maintain pace until 5 consecutive trials pass.",
-                        "interactiveTool": tool,
-                        "visualSteps": visualSteps
-                    }
-                ]
-            },
-            {
-                "levelNumber": 2,
-                "title": f"Level 02 — Speed & Fatigue Threshold",
-                "targetBenchmark": "Increase cadence by 20% while maintaining form.",
-                "unlockCondition": "Level 1 test protocol passed with evidence.",
-                "testProtocol": "Continuous high-density test protocol.",
-                "drills": [
-                    {
-                        "id": f"drill-{num:02d}-03",
-                        "number": 3,
-                        "title": f"Drill 03 — Cadence & Velocity Overload",
-                        "objective": "Push execution speed beyond comfortable baseline.",
-                        "whyExists": "Disrupts complacency and exposes hidden bottlenecks.",
-                        "equipment": equip[0] if equip else "None",
-                        "setup": "Set timer 10% faster than standard pace.",
-                        "actions": [
-                            "Execute movement with explosive turnover.",
-                            "Do not pause between repetitions.",
-                            "Maintain technical discipline under oxygen/cognitive debt."
-                        ],
-                        "repetitions": "10 rounds",
-                        "timeLimitSeconds": 900,
-                        "successCriteria": "Pass rate >= 80% at accelerated cadence.",
-                        "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
-                        "difficultyAdjustment": "Adjust speed based on error rate.",
-                        "interactiveTool": tool,
-                        "visualSteps": visualSteps
-                    }
-                ]
-            },
-            {
-                "levelNumber": levelsCount,
-                "title": f"Level {levelsCount:02d} — Mastery Execution & Final Proof",
-                "targetBenchmark": masteryDef,
-                "unlockCondition": f"Pass all prerequisite levels and submit official verification.",
-                "testProtocol": f"Strict official examination meeting Mastery Contract: {masteryDef}",
-                "drills": [
-                    {
-                        "id": f"drill-{num:02d}-mastery",
-                        "number": levelsCount,
-                        "title": f"Drill {levelsCount:02d} — The Mastery Contract Proof",
-                        "objective": f"Achieve official mastery: {masteryDef}",
-                        "whyExists": "The definitive verification of competency. No hints, no coaching.",
-                        "equipment": ", ".join(equip),
-                        "setup": "Official test setup. Recording or logging tool active.",
-                        "actions": [
-                            f"Review the Mastery Contract: {masteryDef}",
-                            "Execute unassisted trial under official conditions.",
-                            "Record output, timer, video, or repository evidence.",
-                            "Submit evidence to Proof Verification Engine."
-                        ],
-                        "repetitions": "Official test session",
-                        "timeLimitSeconds": 1800,
-                        "successCriteria": masteryDef,
-                        "failureCriteria": "Any deviation from mastery contract conditions. Result: FAIL.",
-                        "difficultyAdjustment": "Full mastery standard.",
-                        "interactiveTool": tool,
-                        "visualSteps": visualSteps
-                    }
-                ]
-            }
-        ],
+        "levels": generate_levels_for_skill(num, title, keyFocus, primaryDrillTitle, primaryDrillWhy, actions, success, failure, equip, timeCat, levelsCount, masteryDef, tool, visualSteps),
         "proofRequirements": {
             "type": proofType,
             "requiredFormat": "Video link / Timer CSV log / GitHub repo / Audio file",

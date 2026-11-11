@@ -71,4 +71,43 @@ describe('App Top-Level Integration Test Suite', () => {
 
     expect(screen.queryByText('AI ENGINE CONFIGURATION')).toBeNull();
   });
+
+  it('allows recording a drill attempt and advances skill level upon passing benchmark', () => {
+    render(<App />);
+
+    // Go to TRAIN tab
+    const trainTab = screen.getByText('TRAIN');
+    fireEvent.click(trainTab);
+
+    expect(screen.getByText(/LV 01 \/ 05/)).toBeDefined();
+
+    // Click RECORD AS PASSED
+    const passBtn = screen.getByText('RECORD AS PASSED');
+    fireEvent.click(passBtn);
+
+    // Level should advance to Level 2
+    expect(screen.getByText(/LV 02 \/ 05/)).toBeDefined();
+    expect(screen.getByText(/LV 2 of 5 UNLOCKED/)).toBeDefined();
+  });
+
+  it('submits a verified proof link in ProgressView and updates the ledger', () => {
+    render(<App />);
+
+    // Go to PROGRESS tab
+    const progressTab = screen.getByText('PROGRESS');
+    fireEvent.click(progressTab);
+
+    const urlInput = screen.getByPlaceholderText(/https:\/\/github.com\/my-agent or https:\/\/strava.com/);
+    fireEvent.change(urlInput, { target: { value: 'https://github.com/my-test-agent' } });
+
+    const notesInput = screen.getByPlaceholderText(/Verification notes/);
+    fireEvent.change(notesInput, { target: { value: 'Passed 10 autonomous loops' } });
+
+    const submitBtn = screen.getByText('SUBMIT EVIDENCE PROOF');
+    fireEvent.click(submitBtn);
+
+    expect(screen.getByText('https://github.com/my-test-agent')).toBeDefined();
+    expect(screen.getByText('"Passed 10 autonomous loops"')).toBeDefined();
+    expect(screen.getByText('VERIFIED')).toBeDefined();
+  });
 });

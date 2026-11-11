@@ -174,6 +174,159 @@ export const App: React.FC = () => {
               ]
             }
           ]
+        },
+        {
+          levelNumber: 2,
+          title: "Level 02 — Speed & Fatigue Threshold",
+          targetBenchmark: "Increase tempo by 20% with zero breakdown in mechanics.",
+          unlockCondition: "Level 1 benchmark passed unassisted.",
+          testProtocol: "10 high-density trials under accelerated cadence.",
+          drills: [
+            {
+              id: `drill-custom-${Date.now()}-02`,
+              number: 2,
+              title: "Drill 02 — Cadence & Turnover Acceleration",
+              objective: `Drive higher repetition velocity for ${skillData.title}.`,
+              whyExists: "Exposes hidden friction points by forcing execution under fatigue.",
+              equipment: "Apparatus",
+              setup: "Start official timer calibrated 20% faster than baseline.",
+              actions: [
+                "Initiate attempt immediately upon timer signal.",
+                "Maintain crisp mechanical boundaries.",
+                "Log observable split times."
+              ],
+              repetitions: "10 cadence intervals",
+              timeLimitSeconds: 600,
+              successCriteria: "Pass rate ≥ 80% at accelerated cadence.",
+              failureCriteria: "Form breakdown or hesitation. Result: FAIL.",
+              difficultyAdjustment: "Adjust cadence based on error rate.",
+              visualSteps: [
+                {
+                  stepNumber: 1,
+                  title: "Turnover Acceleration",
+                  instruction: "Transition immediately from recovery to next rep.",
+                  diagramType: "flow",
+                  keyTip: "Eliminate idle pause between repetitions.",
+                  commonMistake: "Allowing fatigue to degrade form."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          levelNumber: 3,
+          title: "Level 03 — Consistency & Error Elimination",
+          targetBenchmark: `Achieve ≥90% accuracy across 10 consecutive trials: ${skillData.targetOutcome}`,
+          unlockCondition: "Level 2 cadence benchmark verified.",
+          testProtocol: "10 consecutive trials evaluated with strict error tolerance.",
+          drills: [
+            {
+              id: `drill-custom-${Date.now()}-03`,
+              number: 3,
+              title: "Drill 03 — High-Density Consistency Battery",
+              objective: `Eliminate mechanical variance during ${skillData.title}.`,
+              whyExists: "Automates cognitive and motor firing patterns into long-term memory.",
+              equipment: "Apparatus",
+              setup: "Station calibrated. Zero distractions.",
+              actions: [
+                "Execute 10 back-to-back repetitions.",
+                "Note friction points immediately.",
+                "Log consistency variance across all 10 trials."
+              ],
+              repetitions: "10 continuous reps",
+              timeLimitSeconds: 600,
+              successCriteria: "≥9 out of 10 flawless executions.",
+              failureCriteria: "More than 1 error across set. Reset and repeat.",
+              difficultyAdjustment: "Increase reps upon pass.",
+              visualSteps: [
+                {
+                  stepNumber: 1,
+                  title: "Consistency Lock",
+                  instruction: "Maintain exact identical trajectory across all reps.",
+                  diagramType: "flow",
+                  keyTip: "Treat repetition 10 with the exact same focus as repetition 1.",
+                  commonMistake: "Losing focus as reps accumulate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          levelNumber: 4,
+          title: "Level 04 — Simulated Pressure Gauntlet",
+          targetBenchmark: "Pass unassisted benchmark trials under randomized start cues.",
+          unlockCondition: "Level 3 consistency battery passed.",
+          testProtocol: "5 randomized trials with zero hints or preparation time.",
+          drills: [
+            {
+              id: `drill-custom-${Date.now()}-04`,
+              number: 4,
+              title: "Drill 04 — Pressure & Disruption Drill",
+              objective: `Execute ${skillData.title} under simulated competitive stress.`,
+              whyExists: "Tests whether skill survives when environment is unpredictable.",
+              equipment: "Apparatus",
+              setup: "Random delay timer active.",
+              actions: [
+                "Wait for random start tone (2-8s window).",
+                "Execute full movement sequence immediately.",
+                "Record split time and composure score."
+              ],
+              repetitions: "5 pressure trials",
+              timeLimitSeconds: 600,
+              successCriteria: "Pass 4 of 5 trials meeting target criteria.",
+              failureCriteria: "Hesitation > 1.5s on start tone.",
+              difficultyAdjustment: "Add external distraction.",
+              visualSteps: [
+                {
+                  stepNumber: 1,
+                  title: "Pressure Composure",
+                  instruction: "Zero cognitive hesitation upon start signal.",
+                  diagramType: "flow",
+                  keyTip: "Trust automated motor patterns.",
+                  commonMistake: "Over-analyzing before movement initiates."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          levelNumber: 5,
+          title: "Level 05 — Mastery Verification & Proof Submission",
+          targetBenchmark: skillData.targetOutcome,
+          unlockCondition: "All prerequisite levels passed. Verified evidence required.",
+          testProtocol: `Official mastery examination meeting: ${skillData.targetOutcome}`,
+          drills: [
+            {
+              id: `drill-custom-${Date.now()}-05`,
+              number: 5,
+              title: "Drill 05 — The Mastery Contract Proof",
+              objective: `Attain official mastery: ${skillData.targetOutcome}`,
+              whyExists: "The final unassisted evidence of mastery. 0% coaching, 100% execution.",
+              equipment: "Official apparatus & recording device",
+              setup: "Public verification logging active.",
+              actions: [
+                `Review Mastery Contract: ${skillData.targetOutcome}`,
+                "Execute unassisted trial under official conditions.",
+                "Capture verifiable timer or video recording.",
+                "Submit URL link to Skill Proof Ledger."
+              ],
+              repetitions: "Official test trial",
+              timeLimitSeconds: 1200,
+              successCriteria: skillData.targetOutcome,
+              failureCriteria: "Any deviation from mastery contract. Result: FAIL.",
+              difficultyAdjustment: "Mastery benchmark is fixed.",
+              visualSteps: [
+                {
+                  stepNumber: 1,
+                  title: "Mastery Verification",
+                  instruction: "Execute trial cleanly and record verifiable proof link.",
+                  diagramType: "flow",
+                  keyTip: "Maintain composure under test conditions.",
+                  commonMistake: "Failing to document proof meeting specification."
+                }
+              ]
+            }
+          ]
         }
       ],
       proofRequirements: {

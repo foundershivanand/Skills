@@ -17,21 +17,21 @@ Each feature is evaluated across:
 
 | Feature | Primary Files | Frontend | Backend / Storage | Status | Notes |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| **01. Daily Missions & Today Dashboard** | `src/views/TodayView.tsx`, `src/App.tsx` | Complete | Complete | **COMPLETE** | Renders dynamic greeting, active drill queue, streak counter, and direct train launch. |
-| **02. Discipline Streak Tracker** | `src/services/storage.ts`, `src/components/Navigation.tsx` | Complete | Complete | **COMPLETE** | Initializes to 0 days for fresh users; advances with daily practice; verified in unit tests. |
-| **03. 75 Master Tracks Curriculum Catalog** | `src/views/SkillsView.tsx`, `src/data/skillsData.ts` | Complete | Complete | **COMPLETE** | All 75 tracks present with levels, benchmarks, and domain taxonomy. |
+| **01. Daily Missions & Today Dashboard** | `src/views/TodayView.tsx`, `src/App.tsx` | Complete | Complete | **COMPLETE** | Renders dynamic greeting, active-level drill queue, streak counter with expiration, and direct train launch. |
+| **02. Discipline Streak Tracker** | `src/services/storage.ts`, `src/components/Navigation.tsx` | Complete | Complete | **COMPLETE** | Initializes to 0 days for fresh users; advances with daily practice; expires cleanly when >1 day skipped. |
+| **03. 75 Master Tracks Curriculum Catalog** | `src/views/SkillsView.tsx`, `src/data/skillsData.ts` | Complete | Complete | **COMPLETE** | All 75 tracks present with 100% contiguous levels (1 to N) and measurable benchmarks. |
 | **04. Curriculum Search & Filter Engine** | `src/views/SkillsView.tsx` | Complete | N/A | **COMPLETE** | Filter by Domain (A-H), Time Horizon, and full-text keyword/number search. |
-| **05. Custom Skill Architect Modal** | `src/views/SkillsView.tsx`, `src/App.tsx` | Complete | Complete | **COMPLETE** | Allows users to architect arbitrary hobbies/pursuits into structured skills saved to LocalStorage. |
-| **06. Active Training Console (Train Screen)** | `src/views/TrainView.tsx` | Complete | Complete | **COMPLETE** | Level and drill tabs mounted; allows free switching and visualizes benchmarks/unlock criteria. |
-| **07. Skill Level Progression & Advancement** | `src/views/TrainView.tsx`, `src/services/storage.ts` | Complete | Complete | **COMPLETE** | Passing benchmark attempts advances `currentLevel` and persists state across sessions. |
+| **05. Custom Skill Architect Modal** | `src/views/SkillsView.tsx`, `src/App.tsx` | Complete | Complete | **COMPLETE** | Architects arbitrary hobbies/pursuits into full 5-level structured trees saved to LocalStorage. |
+| **06. Active Training Console (Train Screen)** | `src/views/TrainView.tsx` | Complete | Complete | **COMPLETE** | Contiguous Level tabs and Drill selector; breakdown factor selector; unmount leak cleanup. |
+| **07. Skill Level Progression & Advancement** | `src/views/TrainView.tsx`, `src/services/storage.ts` | Complete | Complete | **COMPLETE** | Passing benchmark attempts advances `currentLevel` seamlessly across all contiguous levels. |
 | **08. Step-by-Step Visual How-To Modal** | `src/components/VisualHowToModal.tsx` | Complete | Complete | **COMPLETE** | SVG vector diagrams (cube rotation, biomechanics, memory loci, parabolic path, flowchart). |
-| **09. WCA Speedcube Timer Apparatus** | `src/components/tools/RubikTimerTool.tsx` | Complete | Complete | **COMPLETE** | 15s inspection countdown, Ao5 calc, Spacebar control with keyboard repeat guard. |
-| **10. 52-Card Deck Memory Palace Trainer** | `src/components/tools/CardMemoryTool.tsx` | Complete | Complete | **COMPLETE** | Fisher-Yates deck shuffler, card flip visualizer, rank/suit recall input, dynamic accuracy scoring. |
+| **09. WCA Speedcube Timer Apparatus** | `src/components/tools/RubikTimerTool.tsx` | Complete | Complete | **COMPLETE** | 15s inspection countdown, Ao5 calc, Spacebar control with repeat guard, unmount timer cleanup. |
+| **10. 52-Card Deck Memory Palace Trainer** | `src/components/tools/CardMemoryTool.tsx` | Complete | Complete | **COMPLETE** | Dynamic deck sizes (5, 10, 20, 52) with scaled benchmarks; recall visualizer & grading; unmount cleanup. |
 | **11. RSVP Speed Reader Engine** | `src/components/tools/SpeedReaderTool.tsx` | Complete | Complete | **COMPLETE** | Word-by-word visual flasher at configurable WPM, 3-question comprehension test, dynamic metrics. |
 | **12. Autonomous Agent Studio Simulator** | `src/components/tools/AgentStudioTool.tsx` | Complete | Complete | **COMPLETE** | Simulates ReAct loop and multi-agent coordination with runtime decision trace. |
 | **13. Deliberate Interval Timer Apparatus** | `src/components/tools/IntervalTimerTool.tsx` | Complete | Complete | **COMPLETE** | Configurable work/rest rounds with Web Audio API sound synthesizer beeps. |
-| **14. Four-Factor Bottleneck Matrix** | `src/services/aiEngine.ts`, `src/views/ProgressView.tsx` | Complete | Complete | **COMPLETE** | Evaluates Recognition, Execution, Accuracy, Speed dynamically based on real tool metrics. |
-| **15. Skill Proof Ledger (Section 28)** | `src/views/ProgressView.tsx` | Complete | Complete | **COMPLETE** | URL submissions with validation and notes persisted permanently in LocalStorage. |
+| **14. Four-Factor Bottleneck Matrix** | `src/services/aiEngine.ts`, `src/views/ProgressView.tsx` | Complete | Complete | **COMPLETE** | Evaluates Recognition, Execution, Accuracy, Speed dynamically with balanced fallbacks and focus selector. |
+| **15. Skill Proof Ledger (Section 28)** | `src/views/ProgressView.tsx` | Complete | Complete | **COMPLETE** | Multi-skill selector dropdown, URL scheme validation, and notes persisted permanently in LocalStorage. |
 | **16. Personal Skill Graph ASCII Preview** | `src/views/ProgressView.tsx` | Complete | N/A | **COMPLETE** | Visualizes symbiotic dependency connections between mental and technical tracks. |
 | **17. "I Have 30 Minutes" Tactical Dispatcher** | `src/components/QuickLaunchModal.tsx` | Complete | Complete | **COMPLETE** | Time-boxed presets (15m low energy, 30m surgical, 60m deep, 45m surprise) allocating drill time. |
 | **18. "Surprise Me" Skill Lab Mode** | `src/components/QuickLaunchModal.tsx` | Complete | Complete | **COMPLETE** | Randomly selects an unassigned track from 75 skills and builds a 45m micro-curriculum. |

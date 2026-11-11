@@ -38,6 +38,7 @@ export const TrainView: React.FC<TrainViewProps> = ({
   const [scoreInput, setScoreInput] = useState('');
   const [durationInput, setDurationInput] = useState('180');
   const [notesInput, setNotesInput] = useState('');
+  const [focusFactor, setFocusFactor] = useState<'balanced' | 'recognition' | 'execution' | 'accuracy' | 'speed'>('balanced');
   const [lastVerdict, setLastVerdict] = useState<{ passed: boolean; message: string } | null>(null);
 
   const currentLevel = skill.levels[selectedLevelIdx] || skill.levels[0];
@@ -67,11 +68,31 @@ export const TrainView: React.FC<TrainViewProps> = ({
     const finalScore = overrideScore || scoreInput || (passed ? 'Pass benchmark' : 'Fail benchmark');
     const finalDuration = overrideDuration || parseInt(durationInput) || 60;
 
-    // Use dynamic metrics if provided, or calculate balanced factors
-    const recognitionScore = customMetrics?.recognition ?? (passed ? 88 : 55);
-    const executionScore = customMetrics?.execution ?? (passed ? 86 : 58);
-    const accuracyScore = customMetrics?.accuracy ?? (passed ? 92 : 62);
-    const speedScore = customMetrics?.speed ?? (passed ? 85 : 50);
+    // Use dynamic metrics if provided, or evaluate based on selected focus factor
+    let recognitionScore: number;
+    let executionScore: number;
+    let accuracyScore: number;
+    let speedScore: number;
+
+    if (customMetrics) {
+      recognitionScore = customMetrics.recognition ?? (passed ? 88 : 60);
+      executionScore = customMetrics.execution ?? (passed ? 88 : 60);
+      accuracyScore = customMetrics.accuracy ?? (passed ? 88 : 60);
+      speedScore = customMetrics.speed ?? (passed ? 88 : 60);
+    } else {
+      if (passed) {
+        recognitionScore = focusFactor === 'recognition' ? 95 : 88;
+        executionScore = focusFactor === 'execution' ? 95 : 88;
+        accuracyScore = focusFactor === 'accuracy' ? 95 : 88;
+        speedScore = focusFactor === 'speed' ? 95 : 88;
+      } else {
+        // Failed attempt: chosen factor is diagnosed as the primary bottleneck
+        recognitionScore = focusFactor === 'recognition' ? 42 : (focusFactor === 'balanced' ? 60 : 75);
+        executionScore = focusFactor === 'execution' ? 42 : (focusFactor === 'balanced' ? 60 : 75);
+        accuracyScore = focusFactor === 'accuracy' ? 42 : (focusFactor === 'balanced' ? 60 : 75);
+        speedScore = focusFactor === 'speed' ? 42 : (focusFactor === 'balanced' ? 60 : 75);
+      }
+    }
 
     onRecordAttempt({
       skillId: skill.id,
@@ -398,6 +419,32 @@ export const TrainView: React.FC<TrainViewProps> = ({
               onChange={e => setNotesInput(e.target.value)}
               className="w-full bg-steel-900 border border-steel-700 p-2 text-xs text-steel-100 focus:border-forge-amber outline-none"
             />
+          </div>
+        </div>
+
+        {/* Factor Breakdown Selector */}
+        <div className="space-y-1.5 pt-2 border-t border-steel-900">
+          <label className="text-[10px] text-steel-400 uppercase tracking-wider block font-bold">
+            PRIMARY FOCUS / BREAKDOWN FACTOR:
+          </label>
+          <div className="flex flex-wrap gap-1.5 text-xs">
+            {(['balanced', 'recognition', 'execution', 'accuracy', 'speed'] as const).map(factor => (
+              <button
+                key={factor}
+                type="button"
+                onClick={() => setFocusFactor(factor)}
+                className={`px-3 py-1 font-mono uppercase text-xs border transition-all ${
+                  focusFactor === factor
+                    ? 'bg-forge-amber text-black border-forge-amber font-bold'
+                    : 'bg-steel-900 text-steel-400 border-steel-800 hover:text-steel-200 hover:border-steel-700'
+                }`}
+              >
+                {factor === 'balanced' ? 'Balanced' :
+                 factor === 'recognition' ? 'Recognition (Visual)' :
+                 factor === 'execution' ? 'Execution (Mechanics)' :
+                 factor === 'accuracy' ? 'Accuracy (Zero-Error)' : 'Speed (Cadence)'}
+              </button>
+            ))}
           </div>
         </div>
 

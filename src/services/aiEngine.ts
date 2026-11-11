@@ -41,10 +41,10 @@ export function analyzeBottlenecks(attempts: DrillAttempt[]): BottleneckMetrics 
 
   // Calculate averages across attempts
   const recent = attempts.slice(-10);
-  const avgRecognition = Math.round(recent.reduce((acc, a) => acc + (a.recognitionScore ?? (a.passed ? 85 : 55)), 0) / recent.length);
-  const avgExecution = Math.round(recent.reduce((acc, a) => acc + (a.executionScore ?? (a.passed ? 90 : 60)), 0) / recent.length);
-  const avgAccuracy = Math.round(recent.reduce((acc, a) => acc + (a.accuracyScore ?? (a.passed ? 95 : 65)), 0) / recent.length);
-  const avgSpeed = Math.round(recent.reduce((acc, a) => acc + (a.speedScore ?? (a.passed ? 80 : 50)), 0) / recent.length);
+  const avgRecognition = Math.round(recent.reduce((acc, a) => acc + (a.recognitionScore ?? (a.passed ? 85 : 60)), 0) / recent.length);
+  const avgExecution = Math.round(recent.reduce((acc, a) => acc + (a.executionScore ?? (a.passed ? 85 : 60)), 0) / recent.length);
+  const avgAccuracy = Math.round(recent.reduce((acc, a) => acc + (a.accuracyScore ?? (a.passed ? 85 : 60)), 0) / recent.length);
+  const avgSpeed = Math.round(recent.reduce((acc, a) => acc + (a.speedScore ?? (a.passed ? 85 : 60)), 0) / recent.length);
 
   const scores = [
     { name: 'Recognition' as const, val: avgRecognition },
@@ -350,11 +350,24 @@ export function generateSessionPlan(
   allSkills: Skill[]
 ): SessionPlan {
   const pool = activeSkills.length > 0 ? activeSkills : allSkills.slice(0, 5);
+
+  const getFirstDrill = (s: Skill) => {
+    const drill = s.levels?.[0]?.drills?.[0];
+    return {
+      id: drill?.id || `drill-${s.id}-default`,
+      title: drill?.title || `Drill 01 — Baseline Focus`,
+      successCriteria: drill?.successCriteria || s.masteryDefinition
+    };
+  };
   
   if (minutesAvailable <= 30) {
     const s1 = pool[0];
     const s2 = pool[1 % pool.length];
     const s3 = pool[2 % pool.length];
+
+    const d1 = getFirstDrill(s1);
+    const d2 = getFirstDrill(s2);
+    const d3 = getFirstDrill(s3);
 
     return {
       id: `session-30m-${Date.now()}`,
@@ -365,29 +378,29 @@ export function generateSessionPlan(
         {
           skillId: s1.id,
           skillTitle: s1.title,
-          drillId: s1.levels[0].drills[0].id,
-          drillTitle: s1.levels[0].drills[0].title,
+          drillId: d1.id,
+          drillTitle: d1.title,
           durationMinutes: 12,
           targetedBottleneck: "Recognition & Cadence",
-          targetCriteria: s1.levels[0].drills[0].successCriteria
+          targetCriteria: d1.successCriteria
         },
         {
           skillId: s2.id,
           skillTitle: s2.title,
-          drillId: s2.levels[0].drills[0].id,
-          drillTitle: s2.levels[0].drills[0].title,
+          drillId: d2.id,
+          drillTitle: d2.title,
           durationMinutes: 10,
           targetedBottleneck: "Form & Mechanics",
-          targetCriteria: s2.levels[0].drills[0].successCriteria
+          targetCriteria: d2.successCriteria
         },
         {
           skillId: s3.id,
           skillTitle: s3.title,
-          drillId: s3.levels[0].drills[0].id,
-          drillTitle: s3.levels[0].drills[0].title,
+          drillId: d3.id,
+          drillTitle: d3.title,
           durationMinutes: 8,
           targetedBottleneck: "High-Pressure Benchmark Sprint",
-          targetCriteria: s3.levels[0].drills[0].successCriteria
+          targetCriteria: d3.successCriteria
         }
       ]
     };
@@ -400,20 +413,24 @@ export function generateSessionPlan(
       presetId: '60-min',
       totalMinutes: 60,
       headline: "60-MINUTE DEEP DELIBERATE PROGRESSION",
-      items: selected.map((s, idx) => ({
-        skillId: s.id,
-        skillTitle: s.title,
-        drillId: s.levels[0].drills[0].id,
-        drillTitle: s.levels[0].drills[0].title,
-        durationMinutes: idx === 0 ? 25 : idx === 1 ? 20 : 15,
-        targetedBottleneck: idx === 0 ? "Isolation Mechanics" : idx === 1 ? "Turnover Velocity" : "Pressure Benchmark",
-        targetCriteria: s.levels[0].drills[0].successCriteria
-      }))
+      items: selected.map((s, idx) => {
+        const d = getFirstDrill(s);
+        return {
+          skillId: s.id,
+          skillTitle: s.title,
+          drillId: d.id,
+          drillTitle: d.title,
+          durationMinutes: idx === 0 ? 25 : idx === 1 ? 20 : 15,
+          targetedBottleneck: idx === 0 ? "Isolation Mechanics" : idx === 1 ? "Turnover Velocity" : "Pressure Benchmark",
+          targetCriteria: d.successCriteria
+        };
+      })
     };
   }
 
   // Surprise Me / 120 min
   const randomSkill = allSkills[Math.floor(Math.random() * allSkills.length)];
+  const randomDrill = getFirstDrill(randomSkill);
   return {
     id: `session-surprise-${Date.now()}`,
     presetId: 'surprise',
@@ -423,11 +440,11 @@ export function generateSessionPlan(
       {
         skillId: randomSkill.id,
         skillTitle: randomSkill.title,
-        drillId: randomSkill.levels[0].drills[0].id,
-        drillTitle: randomSkill.levels[0].drills[0].title,
+        drillId: randomDrill.id,
+        drillTitle: randomDrill.title,
         durationMinutes: 45,
         targetedBottleneck: "Rapid Skill Acquisition Protocol",
-        targetCriteria: randomSkill.levels[0].drills[0].successCriteria
+        targetCriteria: randomDrill.successCriteria
       }
     ]
   };

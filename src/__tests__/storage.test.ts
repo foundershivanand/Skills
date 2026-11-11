@@ -124,6 +124,19 @@ describe('Storage Service Test Suite', () => {
     expect(sameDayUpdate.totalSessionsCompleted).toBe(2);
   });
 
+  it('correctly resets streak to 0 when lastTrainedDate is 2 or more days ago', () => {
+    const pastDate = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+    localStorage.setItem('skillforge_streak_data', JSON.stringify({
+      currentStreak: 12,
+      lastTrainedDate: pastDate,
+      totalSessionsCompleted: 24
+    }));
+
+    const loaded = loadStreakData();
+    expect(loaded.currentStreak).toBe(0); // Streak broken
+    expect(loaded.totalSessionsCompleted).toBe(24); // Lifetime sessions preserved
+  });
+
   it('persists and loads skill level progress per skill id', () => {
     expect(loadSkillProgress()).toEqual({});
     saveSkillProgress('skill-01', 3);

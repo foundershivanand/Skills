@@ -45,6 +45,14 @@ export const RubikTimerTool: React.FC<RubikTimerToolProps> = ({
   const startTimeRef = useRef<number>(0);
   const inspectionTimerRef = useRef<number | null>(null);
 
+  // Cleanup timer loops on unmount
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) cancelAnimationFrame(timerRef.current);
+      if (inspectionTimerRef.current) clearInterval(inspectionTimerRef.current);
+    };
+  }, []);
+
   // Keyboard spacebar listener
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

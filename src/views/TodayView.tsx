@@ -74,7 +74,8 @@ export const TodayView: React.FC<TodayViewProps> = ({
 
         <div className="divide-y divide-steel-800/80 border border-steel-800 bg-steel-950">
           {activeSkills.map((skill, idx) => {
-            const currentDrill = skill.levels[0]?.drills[0];
+            const currentLevelObj = skill.levels.find(l => l.levelNumber === skill.currentLevel) || skill.levels[0];
+            const currentDrill = currentLevelObj?.drills[0] || skill.levels[0]?.drills[0];
             const recentSolve = recentAttempts.find(a => a.skillId === skill.id);
 
             return (

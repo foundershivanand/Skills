@@ -180,6 +180,171 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Lactate threshold & cadence lock (180 SPM).",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-01-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Lactate threshold & cadence lock (180 SPM).",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Running shoes",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Cadence Lock (180 SPM)",
+                "instruction": "Land forefoot directly beneath hip center of mass. Do not overstride ahead of knees.",
+                "diagramType": "posture",
+                "keyTip": "Think of ground as hot coals: short ground contact time (<210ms).",
+                "commonMistake": "Heel striking ahead of knee axis creating braking force."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Chest & Torso Lean",
+                "instruction": "Maintain a slight 4-6 degree forward lean from the ankles, not bending from the waist.",
+                "diagramType": "posture",
+                "keyTip": "Gaze 15 meters forward, shoulders down and loose.",
+                "commonMistake": "Bending at hips which restricts hip flexor extension."
+              },
+              {
+                "stepNumber": 3,
+                "title": "Pacing Splits Check",
+                "instruction": "Lock splits at 3:58/km (95s per 400m). Never sprint the first 400m faster than 92s.",
+                "diagramType": "split",
+                "keyTip": "Conserve glycogen in lap 1-6; kick on lap 11-12.",
+                "commonMistake": "Starting at 3:30/km and blowing up at km 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-01-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Lactate threshold & cadence lock (180 SPM) when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Running shoes",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Cadence Lock (180 SPM)",
+                "instruction": "Land forefoot directly beneath hip center of mass. Do not overstride ahead of knees.",
+                "diagramType": "posture",
+                "keyTip": "Think of ground as hot coals: short ground contact time (<210ms).",
+                "commonMistake": "Heel striking ahead of knee axis creating braking force."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Chest & Torso Lean",
+                "instruction": "Maintain a slight 4-6 degree forward lean from the ankles, not bending from the waist.",
+                "diagramType": "posture",
+                "keyTip": "Gaze 15 meters forward, shoulders down and loose.",
+                "commonMistake": "Bending at hips which restricts hip flexor extension."
+              },
+              {
+                "stepNumber": 3,
+                "title": "Pacing Splits Check",
+                "instruction": "Lock splits at 3:58/km (95s per 400m). Never sprint the first 400m faster than 92s.",
+                "diagramType": "split",
+                "keyTip": "Conserve glycogen in lap 1-6; kick on lap 11-12.",
+                "commonMistake": "Starting at 3:30/km and blowing up at km 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-01-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Running shoes",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Cadence Lock (180 SPM)",
+                "instruction": "Land forefoot directly beneath hip center of mass. Do not overstride ahead of knees.",
+                "diagramType": "posture",
+                "keyTip": "Think of ground as hot coals: short ground contact time (<210ms).",
+                "commonMistake": "Heel striking ahead of knee axis creating braking force."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Chest & Torso Lean",
+                "instruction": "Maintain a slight 4-6 degree forward lean from the ankles, not bending from the waist.",
+                "diagramType": "posture",
+                "keyTip": "Gaze 15 meters forward, shoulders down and loose.",
+                "commonMistake": "Bending at hips which restricts hip flexor extension."
+              },
+              {
+                "stepNumber": 3,
+                "title": "Pacing Splits Check",
+                "instruction": "Lock splits at 3:58/km (95s per 400m). Never sprint the first 400m faster than 92s.",
+                "diagramType": "split",
+                "keyTip": "Conserve glycogen in lap 1-6; kick on lap 11-12.",
+                "commonMistake": "Starting at 3:30/km and blowing up at km 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Run 5,000 meters in <=19:59 on a flat track or verified outdoor course with recorded GPS split times under 4:00/km.",
@@ -373,6 +538,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Aerobic base building & mitochondrial density.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-02-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Aerobic base building & mitochondrial density.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Running shoes",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Zone 2 Breathing Check",
+                "instruction": "You must be able to speak 3 complete sentences without gasping for breath.",
+                "diagramType": "posture",
+                "keyTip": "Inhale for 3 strides, exhale for 3 strides.",
+                "commonMistake": "Running too fast on easy days, creating chronic fatigue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-02-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Aerobic base building & mitochondrial density when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Running shoes",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Zone 2 Breathing Check",
+                "instruction": "You must be able to speak 3 complete sentences without gasping for breath.",
+                "diagramType": "posture",
+                "keyTip": "Inhale for 3 strides, exhale for 3 strides.",
+                "commonMistake": "Running too fast on easy days, creating chronic fatigue."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Complete 10,000 meters continuously without walking breaks under 50:00 with heart rate in sustainable aerobic zone.",
@@ -536,6 +779,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Triple Extension Vector",
+                "instruction": "Ankle, knee, and hip form a straight 45-degree line from ground contact to shoulder.",
+                "diagramType": "posture",
+                "keyTip": "Drive down and back, not straight down.",
+                "commonMistake": "Standing upright immediately after step 1."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Ground reaction force & drive phase angle.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-03-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Ground reaction force & drive phase angle.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Sprint flats/spikes",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Triple Extension Vector",
+                "instruction": "Ankle, knee, and hip form a straight 45-degree line from ground contact to shoulder.",
+                "diagramType": "posture",
+                "keyTip": "Drive down and back, not straight down.",
+                "commonMistake": "Standing upright immediately after step 1."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-03-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Ground reaction force & drive phase angle when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Sprint flats/spikes",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -752,6 +1073,147 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Wrist camber fingertip micro-adjustments & shoulder elevation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-04-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Wrist camber fingertip micro-adjustments & shoulder elevation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Gym mat or firm flat ground",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Camber Grip",
+                "instruction": "Spread fingers wide. First knuckle joints bent like claws digging into the floor.",
+                "diagramType": "posture",
+                "keyTip": "Weight rests on the base of palm and first knuckles.",
+                "commonMistake": "Flat limp fingers with no active braking capacity."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Hollow Body Line",
+                "instruction": "Tuck tailbone, squeeze glutes, pull ribs in. Zero arch in lower back.",
+                "diagramType": "posture",
+                "keyTip": "Push the floor away: active elevated shoulders covering ears.",
+                "commonMistake": "Banana back arching to compensate for tight shoulders."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-04-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Wrist camber fingertip micro-adjustments & shoulder elevation when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Gym mat or firm flat ground",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Camber Grip",
+                "instruction": "Spread fingers wide. First knuckle joints bent like claws digging into the floor.",
+                "diagramType": "posture",
+                "keyTip": "Weight rests on the base of palm and first knuckles.",
+                "commonMistake": "Flat limp fingers with no active braking capacity."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Hollow Body Line",
+                "instruction": "Tuck tailbone, squeeze glutes, pull ribs in. Zero arch in lower back.",
+                "diagramType": "posture",
+                "keyTip": "Push the floor away: active elevated shoulders covering ears.",
+                "commonMistake": "Banana back arching to compensate for tight shoulders."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-04-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Gym mat or firm flat ground",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Camber Grip",
+                "instruction": "Spread fingers wide. First knuckle joints bent like claws digging into the floor.",
+                "diagramType": "posture",
+                "keyTip": "Weight rests on the base of palm and first knuckles.",
+                "commonMistake": "Flat limp fingers with no active braking capacity."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Hollow Body Line",
+                "instruction": "Tuck tailbone, squeeze glutes, pull ribs in. Zero arch in lower back.",
+                "diagramType": "posture",
+                "keyTip": "Push the floor away: active elevated shoulders covering ears.",
+                "commonMistake": "Banana back arching to compensate for tight shoulders."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Hold a motionless freestanding handstand for 60 consecutive seconds with full shoulder flexion, hollow body, and finger balance control.",
@@ -923,6 +1385,162 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Tripod Geometry",
+                "instruction": "Hands and head must form an equilateral triangle at bottom, never a straight line.",
+                "diagramType": "posture",
+                "keyTip": "Forearms stay vertical like pillars.",
+                "commonMistake": "Flaring elbows 90 degrees out which impinges shoulders."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Tripod head descent & pressing elbow tracking.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-05-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Tripod head descent & pressing elbow tracking.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Gym mat",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Tripod Geometry",
+                "instruction": "Hands and head must form an equilateral triangle at bottom, never a straight line.",
+                "diagramType": "posture",
+                "keyTip": "Forearms stay vertical like pillars.",
+                "commonMistake": "Flaring elbows 90 degrees out which impinges shoulders."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-05-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Tripod head descent & pressing elbow tracking when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Gym mat",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Tripod Geometry",
+                "instruction": "Hands and head must form an equilateral triangle at bottom, never a straight line.",
+                "diagramType": "posture",
+                "keyTip": "Forearms stay vertical like pillars.",
+                "commonMistake": "Flaring elbows 90 degrees out which impinges shoulders."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-05-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Gym mat",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Tripod Geometry",
+                "instruction": "Hands and head must form an equilateral triangle at bottom, never a straight line.",
+                "diagramType": "posture",
+                "keyTip": "Forearms stay vertical like pillars.",
+                "commonMistake": "Flaring elbows 90 degrees out which impinges shoulders."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-05-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Handstand push-up (strict freestanding).",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Gym mat",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -1115,6 +1733,123 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Scapular depression & hollow-body lat engagement.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-06-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Scapular depression & hollow-body lat engagement.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Sturdy pull-up bar",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Dead Hang to Active Hang",
+                "instruction": "Before bending elbows, pull shoulder blades down and back into your back pockets.",
+                "diagramType": "posture",
+                "keyTip": "Keep legs pinned together with toes pointed forward (hollow body).",
+                "commonMistake": "Bending knees backwards and kipping with hips."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-06-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Scapular depression & hollow-body lat engagement when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Sturdy pull-up bar",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Dead Hang to Active Hang",
+                "instruction": "Before bending elbows, pull shoulder blades down and back into your back pockets.",
+                "diagramType": "posture",
+                "keyTip": "Keep legs pinned together with toes pointed forward (hollow body).",
+                "commonMistake": "Bending knees backwards and kipping with hips."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-06-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Sturdy pull-up bar",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Dead Hang to Active Hang",
+                "instruction": "Before bending elbows, pull shoulder blades down and back into your back pockets.",
+                "diagramType": "posture",
+                "keyTip": "Keep legs pinned together with toes pointed forward (hollow body).",
+                "commonMistake": "Bending knees backwards and kipping with hips."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Perform 20 consecutive strict dead-hang pull-ups: chin fully over bar, zero kipping or swinging, elbows fully locked out at the bottom.",
@@ -1277,6 +2012,123 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Centering Hand Alignment",
+                "instruction": "Plant working hand directly under midline of chest, fingers turned slightly out.",
+                "diagramType": "posture",
+                "keyTip": "Squeeze glutes and press through toes of opposite foot to counteract torque.",
+                "commonMistake": "Flaring hand too high under neck."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Anti-rotational core torque & unilateral chest power.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-07-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Anti-rotational core torque & unilateral chest power.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Flat non-slip surface",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Centering Hand Alignment",
+                "instruction": "Plant working hand directly under midline of chest, fingers turned slightly out.",
+                "diagramType": "posture",
+                "keyTip": "Squeeze glutes and press through toes of opposite foot to counteract torque.",
+                "commonMistake": "Flaring hand too high under neck."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-07-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Anti-rotational core torque & unilateral chest power when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Flat non-slip surface",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Centering Hand Alignment",
+                "instruction": "Plant working hand directly under midline of chest, fingers turned slightly out.",
+                "diagramType": "posture",
+                "keyTip": "Squeeze glutes and press through toes of opposite foot to counteract torque.",
+                "commonMistake": "Flaring hand too high under neck."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-07-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Flat non-slip surface",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -1469,6 +2321,123 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Ankle dorsiflexion & hip flexor compression.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-08-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Ankle dorsiflexion & hip flexor compression.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Firm flat floor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Ankle Knee Alignment",
+                "instruction": "Knee tracks directly over second toe. Working heel stays glued to floor.",
+                "diagramType": "posture",
+                "keyTip": "Reach both arms straight ahead to counter-balance your torso.",
+                "commonMistake": "Heel lifting off ground due to restricted dorsiflexion."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-08-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Ankle dorsiflexion & hip flexor compression when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Firm flat floor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Ankle Knee Alignment",
+                "instruction": "Knee tracks directly over second toe. Working heel stays glued to floor.",
+                "diagramType": "posture",
+                "keyTip": "Reach both arms straight ahead to counter-balance your torso.",
+                "commonMistake": "Heel lifting off ground due to restricted dorsiflexion."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-08-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Firm flat floor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Ankle Knee Alignment",
+                "instruction": "Knee tracks directly over second toe. Working heel stays glued to floor.",
+                "diagramType": "posture",
+                "keyTip": "Reach both arms straight ahead to counter-balance your torso.",
+                "commonMistake": "Heel lifting off ground due to restricted dorsiflexion."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Perform 10 consecutive full-depth single-leg squats per side without heel rise, bounce, or non-working foot touching ground.",
@@ -1646,6 +2615,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Consistent eye-level apex & scooping hand motion.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-09-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Consistent eye-level apex & scooping hand motion.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "3 juggling beanbags or tennis balls",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Scooping Arc",
+                "instruction": "Hands scoop down from outside to inside, releasing at navel height towards opposite eye.",
+                "diagramType": "path",
+                "keyTip": "Peak of ball trajectory should match your forehead height.",
+                "commonMistake": "Throwing forward, forcing you to run across the room."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-09-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Consistent eye-level apex & scooping hand motion when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "3 juggling beanbags or tennis balls",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Scooping Arc",
+                "instruction": "Hands scoop down from outside to inside, releasing at navel height towards opposite eye.",
+                "diagramType": "path",
+                "keyTip": "Peak of ball trajectory should match your forehead height.",
+                "commonMistake": "Throwing forward, forcing you to run across the room."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Perform a clean 3-ball cascade pattern for >=100 catches continuously without drop, stepping forward, or collision.",
@@ -1807,6 +2854,123 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Independent Fountains",
+                "instruction": "Right hand throws outside-in on right side; left hand throws outside-in on left side.",
+                "diagramType": "path",
+                "keyTip": "Never cross center line: 4 balls never change hands in standard fountain.",
+                "commonMistake": "Attempting cascade cross throws with 4 balls."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Hand independence (2 balls in 1 hand without crossing).",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-10-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Hand independence (2 balls in 1 hand without crossing).",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "4 juggling beanbags",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Independent Fountains",
+                "instruction": "Right hand throws outside-in on right side; left hand throws outside-in on left side.",
+                "diagramType": "path",
+                "keyTip": "Never cross center line: 4 balls never change hands in standard fountain.",
+                "commonMistake": "Attempting cascade cross throws with 4 balls."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-10-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Hand independence (2 balls in 1 hand without crossing) when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "4 juggling beanbags",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Independent Fountains",
+                "instruction": "Right hand throws outside-in on right side; left hand throws outside-in on left side.",
+                "diagramType": "path",
+                "keyTip": "Never cross center line: 4 balls never change hands in standard fountain.",
+                "commonMistake": "Attempting cascade cross throws with 4 balls."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-10-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "4 juggling beanbags",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -1999,6 +3163,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for White cross on bottom & fingertrick execution.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-11-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during White cross on bottom & fingertrick execution.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "White Cross on Bottom",
+                "instruction": "White face must stay on bottom throughout the entire solve. Yellow stays top.",
+                "diagramType": "cube",
+                "keyTip": "Match edge to side center, then insert into bottom with F2 or R2.",
+                "commonMistake": "Building daisy on top and taking 25 seconds just for cross."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-11-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for White cross on bottom & fingertrick execution when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "White Cross on Bottom",
+                "instruction": "White face must stay on bottom throughout the entire solve. Yellow stays top.",
+                "diagramType": "cube",
+                "keyTip": "Match edge to side center, then insert into bottom with F2 or R2.",
+                "commonMistake": "Building daisy on top and taking 25 seconds just for cross."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Solve a scrambled 3x3 cube in <=60 seconds for 5 consecutive official-style solves using beginner CFOP.",
@@ -2161,6 +3403,162 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Look-Ahead Tracking",
+                "instruction": "Once fingers execute algorithm for current pair, eyes must leave that slot and scan top layer.",
+                "diagramType": "cube",
+                "keyTip": "Never look at what your hands are already solving.",
+                "commonMistake": "Staring at the slot being inserted while clock runs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Intuitive F2L pairing & 2-look last layer algorithms.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-12-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Intuitive F2L pairing & 2-look last layer algorithms.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Look-Ahead Tracking",
+                "instruction": "Once fingers execute algorithm for current pair, eyes must leave that slot and scan top layer.",
+                "diagramType": "cube",
+                "keyTip": "Never look at what your hands are already solving.",
+                "commonMistake": "Staring at the slot being inserted while clock runs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-12-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Intuitive F2L pairing & 2-look last layer algorithms when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Look-Ahead Tracking",
+                "instruction": "Once fingers execute algorithm for current pair, eyes must leave that slot and scan top layer.",
+                "diagramType": "cube",
+                "keyTip": "Never look at what your hands are already solving.",
+                "commonMistake": "Staring at the slot being inserted while clock runs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-12-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Look-Ahead Tracking",
+                "instruction": "Once fingers execute algorithm for current pair, eyes must leave that slot and scan top layer.",
+                "diagramType": "cube",
+                "keyTip": "Never look at what your hands are already solving.",
+                "commonMistake": "Staring at the slot being inserted while clock runs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-12-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Rubik's Cube \u2014 sub-30 seconds.",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "rubik-timer",
             "visualSteps": [
               {
@@ -2377,6 +3775,429 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for F2L recognition under 1.2s & full 21 PLL algorithms.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during F2L recognition under 1.2s & full 21 PLL algorithms.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for F2L recognition under 1.2s & full 21 PLL algorithms when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Rubik's Cube \u2014 sub-20 seconds.",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for F2L recognition under 1.2s & full 21 PLL algorithms.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 8,
+        "title": "Level 08 \u2014 Advanced Optimization Phase 2",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for F2L recognition under 1.2s & full 21 PLL algorithms.",
+        "unlockCondition": "Level 07 passed with verified benchmark.",
+        "testProtocol": "Strict Level 08 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-08",
+            "number": 8,
+            "title": "Drill 08 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 9,
+        "title": "Level 09 \u2014 Advanced Optimization Phase 3",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for F2L recognition under 1.2s & full 21 PLL algorithms.",
+        "unlockCondition": "Level 08 passed with verified benchmark.",
+        "testProtocol": "Strict Level 09 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-09",
+            "number": 9,
+            "title": "Drill 09 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 10,
+        "title": "Level 10 \u2014 Advanced Optimization Phase 4",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for F2L recognition under 1.2s & full 21 PLL algorithms.",
+        "unlockCondition": "Level 09 passed with verified benchmark.",
+        "testProtocol": "Strict Level 10 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-10",
+            "number": 10,
+            "title": "Drill 10 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 11,
+        "title": "Level 11 \u2014 Advanced Optimization Phase 5",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for F2L recognition under 1.2s & full 21 PLL algorithms.",
+        "unlockCondition": "Level 10 passed with verified benchmark.",
+        "testProtocol": "Strict Level 11 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-13-11",
+            "number": 11,
+            "title": "Drill 11 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Lubricated magnetic 3x3 speedcube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "F2L Case 1: Corner White on Top",
+                "instruction": "Align edge with side color. Rotate U to position away from corner, then execute R U2 R'.",
+                "diagramType": "cube",
+                "keyTip": "Notice sticker orientation before turning any face.",
+                "commonMistake": "Random rotations (cube y y') hunting for angles."
+              },
+              {
+                "stepNumber": 2,
+                "title": "T-Perm Alg Execution",
+                "instruction": "R U R' U' R' F R2 U' R' U' R U R' F' in < 1.3 seconds with index finger pinch.",
+                "diagramType": "cube",
+                "keyTip": "Flick F' with right thumb, not full wrist roll.",
+                "commonMistake": "Regripping cube between R2 and U'."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 12,
         "title": "Level 12 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Achieve an official Ao5 <=20.00 seconds using full CFOP (cross <=2.5s, F2L <=10s, OLL+PLL <=7.5s).",
@@ -2550,6 +4371,201 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Lettering Scheme Speffz",
+                "instruction": "Assign letters A through X to all 24 corner and edge stickers starting from top face clockwise.",
+                "diagramType": "cube",
+                "keyTip": "Build letter pairs into visual images (e.g. AB = Anchor Bolt).",
+                "commonMistake": "Forgetting parity algorithm when odd number of swaps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Cycle memo lettering & T-Perm/Y-Perm buffer swaps.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-14-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Cycle memo lettering & T-Perm/Y-Perm buffer swaps.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "3x3 cube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Lettering Scheme Speffz",
+                "instruction": "Assign letters A through X to all 24 corner and edge stickers starting from top face clockwise.",
+                "diagramType": "cube",
+                "keyTip": "Build letter pairs into visual images (e.g. AB = Anchor Bolt).",
+                "commonMistake": "Forgetting parity algorithm when odd number of swaps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-14-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Cycle memo lettering & T-Perm/Y-Perm buffer swaps when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "3x3 cube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Lettering Scheme Speffz",
+                "instruction": "Assign letters A through X to all 24 corner and edge stickers starting from top face clockwise.",
+                "diagramType": "cube",
+                "keyTip": "Build letter pairs into visual images (e.g. AB = Anchor Bolt).",
+                "commonMistake": "Forgetting parity algorithm when odd number of swaps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-14-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "3x3 cube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Lettering Scheme Speffz",
+                "instruction": "Assign letters A through X to all 24 corner and edge stickers starting from top face clockwise.",
+                "diagramType": "cube",
+                "keyTip": "Build letter pairs into visual images (e.g. AB = Anchor Bolt).",
+                "commonMistake": "Forgetting parity algorithm when odd number of swaps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-14-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Rubik's Cube Blindfolded (3BLD).",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "3x3 cube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "rubik-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Lettering Scheme Speffz",
+                "instruction": "Assign letters A through X to all 24 corner and edge stickers starting from top face clockwise.",
+                "diagramType": "cube",
+                "keyTip": "Build letter pairs into visual images (e.g. AB = Anchor Bolt).",
+                "commonMistake": "Forgetting parity algorithm when odd number of swaps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for Cycle memo lettering & T-Perm/Y-Perm buffer swaps.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-14-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "3x3 cube",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "rubik-timer",
             "visualSteps": [
               {
@@ -2741,6 +4757,123 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for N-gram chunking & rolling keystrokes.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-15-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during N-gram chunking & rolling keystrokes.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Mechanical or standard keyboard",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "speed-reader",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Home Row Anchor",
+                "instruction": "Index fingers stay anchored over F and J bumps. Wrists floating, not dragging on desk.",
+                "diagramType": "posture",
+                "keyTip": "Look 2 words ahead of your current keystroke.",
+                "commonMistake": "Looking down at keyboard or backspacing furiously."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-15-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for N-gram chunking & rolling keystrokes when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Mechanical or standard keyboard",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "speed-reader",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Home Row Anchor",
+                "instruction": "Index fingers stay anchored over F and J bumps. Wrists floating, not dragging on desk.",
+                "diagramType": "posture",
+                "keyTip": "Look 2 words ahead of your current keystroke.",
+                "commonMistake": "Looking down at keyboard or backspacing furiously."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-15-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Mechanical or standard keyboard",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "speed-reader",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Home Row Anchor",
+                "instruction": "Index fingers stay anchored over F and J bumps. Wrists floating, not dragging on desk.",
+                "diagramType": "posture",
+                "keyTip": "Look 2 words ahead of your current keystroke.",
+                "commonMistake": "Looking down at keyboard or backspacing furiously."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Type 100 WPM on standard English quotes for 3 consecutive 60-second tests with >=98% accuracy.",
@@ -2902,6 +5035,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Thumbaround Release",
+                "instruction": "Middle finger pushes pen base forward against stationary thumb. Do NOT move thumb.",
+                "diagramType": "path",
+                "keyTip": "Catch pen with index finger as it completes 360 rotation around thumb.",
+                "commonMistake": "Swinging entire arm or flicking wrist."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Finger independence & momentum conservation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-16-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Finger independence & momentum conservation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Balanced pen mod or heavy pencil",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Thumbaround Release",
+                "instruction": "Middle finger pushes pen base forward against stationary thumb. Do NOT move thumb.",
+                "diagramType": "path",
+                "keyTip": "Catch pen with index finger as it completes 360 rotation around thumb.",
+                "commonMistake": "Swinging entire arm or flicking wrist."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-16-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Finger independence & momentum conservation when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Balanced pen mod or heavy pencil",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -3094,6 +5305,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Thenar eminence grip & finger slope roll.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-17-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Thenar eminence grip & finger slope roll.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Two half-dollar coins or heavy 10-rupee coins",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Knuckle Tilt Angle",
+                "instruction": "Adjacent finger drops slightly lower to receive the falling coin by its milled edge.",
+                "diagramType": "path",
+                "keyTip": "Keep wrist relaxed; gravity does the work of the roll.",
+                "commonMistake": "Trying to grab the coin with fingertips instead of letting it roll over knuckles."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-17-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Thenar eminence grip & finger slope roll when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Two half-dollar coins or heavy 10-rupee coins",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Knuckle Tilt Angle",
+                "instruction": "Adjacent finger drops slightly lower to receive the falling coin by its milled edge.",
+                "diagramType": "path",
+                "keyTip": "Keep wrist relaxed; gravity does the work of the roll.",
+                "commonMistake": "Trying to grab the coin with fingertips instead of letting it roll over knuckles."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Perform 10 continuous knuckle rolls back-and-forth across 4 fingers and maintain undetectable classic palm.",
@@ -3256,6 +5545,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Charlier Packet Clearance",
+                "instruction": "Index finger pushes from bottom center until top edge of lower packet clears upper packet.",
+                "diagramType": "cards",
+                "keyTip": "Open your hand wide to give the packets room to pass.",
+                "commonMistake": "Holding hand cramped, blocking the packet from folding over."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Deck pressure control & bevel release.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-18-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Deck pressure control & bevel release.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Standard Bicycle Rider Back 52-card deck",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Charlier Packet Clearance",
+                "instruction": "Index finger pushes from bottom center until top edge of lower packet clears upper packet.",
+                "diagramType": "cards",
+                "keyTip": "Open your hand wide to give the packets room to pass.",
+                "commonMistake": "Holding hand cramped, blocking the packet from folding over."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-18-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Deck pressure control & bevel release when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Standard Bicycle Rider Back 52-card deck",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "card-memory",
             "visualSteps": [
               {
@@ -3448,6 +5815,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Pinky count & strike double lift naturalness.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-19-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Pinky count & strike double lift naturalness.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Deck of playing cards",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Strike Alignment",
+                "instruction": "Right thumb and middle finger grip right edge. The two cards must stay perfectly aligned like a single card.",
+                "diagramType": "cards",
+                "keyTip": "Do not squeeze tightly; tension makes cards buckle and flash.",
+                "commonMistake": "Looking guilty or staring intensely at your own fingers."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-19-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Pinky count & strike double lift naturalness when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Deck of playing cards",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Strike Alignment",
+                "instruction": "Right thumb and middle finger grip right edge. The two cards must stay perfectly aligned like a single card.",
+                "diagramType": "cards",
+                "keyTip": "Do not squeeze tightly; tension makes cards buckle and flash.",
+                "commonMistake": "Looking guilty or staring intensely at your own fingers."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Execute invisible strike double lift and perform 3 impromptu card miracles cleanly before live spectator with zero suspicion.",
@@ -3610,6 +6055,45 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Tendon Decoupling",
+                "instruction": "Keep MCP knuckles flush to the table while isolating distal phalange lift.",
+                "diagramType": "posture",
+                "keyTip": "Think of lifting from the knuckle, not the finger joint.",
+                "commonMistake": "Lifting wrist off table to cheat range of motion."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Extensor digitorum communis neurological separation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-20-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Extensor digitorum communis neurological separation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Flat desk",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -3826,6 +6310,241 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for PAO (Person-Action-Object) conversion & loci indexing.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-21-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during PAO (Person-Action-Object) conversion & loci indexing.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "52-card deck",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Card to PAO Conversion",
+                "instruction": "Every card has an immutable Person, Action, Object (e.g. Ace of Spades = Neil Armstrong walking on the Moon with an American Flag).",
+                "diagramType": "cards",
+                "keyTip": "Make the image absurd, sensory, and dynamic.",
+                "commonMistake": "Trying to memorize the card names rather than vivid visual scenes."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Deposit in Locus",
+                "instruction": "Place the 3-card combination (Person A doing Action B to Object C) interacting violently with the locus furniture.",
+                "diagramType": "flow",
+                "keyTip": "Walk through your locus route in exact fixed direction.",
+                "commonMistake": "Backtracking or skipping loci."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-21-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for PAO (Person-Action-Object) conversion & loci indexing when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "52-card deck",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Card to PAO Conversion",
+                "instruction": "Every card has an immutable Person, Action, Object (e.g. Ace of Spades = Neil Armstrong walking on the Moon with an American Flag).",
+                "diagramType": "cards",
+                "keyTip": "Make the image absurd, sensory, and dynamic.",
+                "commonMistake": "Trying to memorize the card names rather than vivid visual scenes."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Deposit in Locus",
+                "instruction": "Place the 3-card combination (Person A doing Action B to Object C) interacting violently with the locus furniture.",
+                "diagramType": "flow",
+                "keyTip": "Walk through your locus route in exact fixed direction.",
+                "commonMistake": "Backtracking or skipping loci."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-21-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "52-card deck",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Card to PAO Conversion",
+                "instruction": "Every card has an immutable Person, Action, Object (e.g. Ace of Spades = Neil Armstrong walking on the Moon with an American Flag).",
+                "diagramType": "cards",
+                "keyTip": "Make the image absurd, sensory, and dynamic.",
+                "commonMistake": "Trying to memorize the card names rather than vivid visual scenes."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Deposit in Locus",
+                "instruction": "Place the 3-card combination (Person A doing Action B to Object C) interacting violently with the locus furniture.",
+                "diagramType": "flow",
+                "keyTip": "Walk through your locus route in exact fixed direction.",
+                "commonMistake": "Backtracking or skipping loci."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-21-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Memorize a Deck of Cards (52 cards).",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "52-card deck",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Card to PAO Conversion",
+                "instruction": "Every card has an immutable Person, Action, Object (e.g. Ace of Spades = Neil Armstrong walking on the Moon with an American Flag).",
+                "diagramType": "cards",
+                "keyTip": "Make the image absurd, sensory, and dynamic.",
+                "commonMistake": "Trying to memorize the card names rather than vivid visual scenes."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Deposit in Locus",
+                "instruction": "Place the 3-card combination (Person A doing Action B to Object C) interacting violently with the locus furniture.",
+                "diagramType": "flow",
+                "keyTip": "Walk through your locus route in exact fixed direction.",
+                "commonMistake": "Backtracking or skipping loci."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for PAO (Person-Action-Object) conversion & loci indexing.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-21-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "52-card deck",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Card to PAO Conversion",
+                "instruction": "Every card has an immutable Person, Action, Object (e.g. Ace of Spades = Neil Armstrong walking on the Moon with an American Flag).",
+                "diagramType": "cards",
+                "keyTip": "Make the image absurd, sensory, and dynamic.",
+                "commonMistake": "Trying to memorize the card names rather than vivid visual scenes."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Deposit in Locus",
+                "instruction": "Place the 3-card combination (Person A doing Action B to Object C) interacting violently with the locus furniture.",
+                "diagramType": "flow",
+                "keyTip": "Walk through your locus route in exact fixed direction.",
+                "commonMistake": "Backtracking or skipping loci."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 8,
         "title": "Level 08 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Memorize a randomly shuffled 52-card deck in <=5 minutes and recall every card in order with 100% accuracy.",
@@ -4011,6 +6730,123 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Major System 2-digit consonant encoding (00-99).",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-22-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Major System 2-digit consonant encoding (00-99).",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Random digit generator",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Major System Phonetic Code",
+                "instruction": "0=s/z, 1=t/d, 2=n, 3=m, 4=r, 5=l, 6=j/ch/sh, 7=k/g, 8=f/v, 9=p/b.",
+                "diagramType": "text",
+                "keyTip": "Vowels are free wildcards: 14 = T+R = TaR or TiRe.",
+                "commonMistake": "Confusing spelling with phonetic sound (e.g., knee has sound 'n' = 2, not 'k')."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-22-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Major System 2-digit consonant encoding (00-99) when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Random digit generator",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Major System Phonetic Code",
+                "instruction": "0=s/z, 1=t/d, 2=n, 3=m, 4=r, 5=l, 6=j/ch/sh, 7=k/g, 8=f/v, 9=p/b.",
+                "diagramType": "text",
+                "keyTip": "Vowels are free wildcards: 14 = T+R = TaR or TiRe.",
+                "commonMistake": "Confusing spelling with phonetic sound (e.g., knee has sound 'n' = 2, not 'k')."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-22-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Random digit generator",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Major System Phonetic Code",
+                "instruction": "0=s/z, 1=t/d, 2=n, 3=m, 4=r, 5=l, 6=j/ch/sh, 7=k/g, 8=f/v, 9=p/b.",
+                "diagramType": "text",
+                "keyTip": "Vowels are free wildcards: 14 = T+R = TaR or TiRe.",
+                "commonMistake": "Confusing spelling with phonetic sound (e.g., knee has sound 'n' = 2, not 'k')."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Memorize 100 random numeric digits in <=5 minutes and transcribe them in order with zero errors.",
@@ -4172,6 +7008,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Anchor Hook",
+                "instruction": "Find the one facial anomaly that stands out immediately upon first glance.",
+                "diagramType": "posture",
+                "keyTip": "Exaggerate the feature in your mind: if ears are big, make them elephant ears.",
+                "commonMistake": "Trying to memorize the whole face at once."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Distinctive facial feature anchoring & name punning.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-23-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Distinctive facial feature anchoring & name punning.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "50 face flashcards",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Anchor Hook",
+                "instruction": "Find the one facial anomaly that stands out immediately upon first glance.",
+                "diagramType": "posture",
+                "keyTip": "Exaggerate the feature in your mind: if ears are big, make them elephant ears.",
+                "commonMistake": "Trying to memorize the whole face at once."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-23-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Distinctive facial feature anchoring & name punning when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "50 face flashcards",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "card-memory",
             "visualSteps": [
               {
@@ -4364,6 +7278,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Spatial navigation & clockwise station sequencing.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-24-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Spatial navigation & clockwise station sequencing.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Floor plan or familiar building map",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Clockwise Rule",
+                "instruction": "Always enter a room and move left-to-right clockwise. Never cross paths.",
+                "diagramType": "flow",
+                "keyTip": "Choose items with distinct tactile surfaces (rough brick vs polished glass).",
+                "commonMistake": "Selecting two identical chairs in the same room."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-24-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Spatial navigation & clockwise station sequencing when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Floor plan or familiar building map",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "card-memory",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Clockwise Rule",
+                "instruction": "Always enter a room and move left-to-right clockwise. Never cross paths.",
+                "diagramType": "flow",
+                "keyTip": "Choose items with distinct tactile surfaces (rough brick vs polished glass).",
+                "commonMistake": "Selecting two identical chairs in the same room."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Construct and mentally walk a mapped 100-station architectural route with instant bidirectional retrieval.",
@@ -4541,6 +7533,123 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Sub-vocalization suppression & visual span expansion.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-25-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Sub-vocalization suppression & visual span expansion.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Non-fiction book",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "speed-reader",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Indentation Reading",
+                "instruction": "Never look at the first or last word of a line. Peripheral vision catches them automatically.",
+                "diagramType": "text",
+                "keyTip": "Focus only on the middle 60% of the text column.",
+                "commonMistake": "Eye regression (jumping back to re-read sentences)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-25-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Sub-vocalization suppression & visual span expansion when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Non-fiction book",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "speed-reader",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Indentation Reading",
+                "instruction": "Never look at the first or last word of a line. Peripheral vision catches them automatically.",
+                "diagramType": "text",
+                "keyTip": "Focus only on the middle 60% of the text column.",
+                "commonMistake": "Eye regression (jumping back to re-read sentences)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-25-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Non-fiction book",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "speed-reader",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Indentation Reading",
+                "instruction": "Never look at the first or last word of a line. Peripheral vision catches them automatically.",
+                "diagramType": "text",
+                "keyTip": "Focus only on the middle 60% of the text column.",
+                "commonMistake": "Eye regression (jumping back to re-read sentences)."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Read non-fiction text at >=600 WPM with >=80% score on factual comprehension quiz.",
@@ -4703,6 +7812,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "speed-reader",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 3-Pass Method",
+                "instruction": "Pass 1: Anatomy (15m). Pass 2: Speed skim arguments (50m). Pass 3: Deep dive core proof (25m).",
+                "diagramType": "flow",
+                "keyTip": "Most business and non-fiction books have only 1 big idea and 5 proofs.",
+                "commonMistake": "Reading page 1 to 100 linearly like a novel."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Syntopic reading & Mortimer Adler 3-pass inspection.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-26-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Syntopic reading & Mortimer Adler 3-pass inspection.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Physical or digital book",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "speed-reader",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 3-Pass Method",
+                "instruction": "Pass 1: Anatomy (15m). Pass 2: Speed skim arguments (50m). Pass 3: Deep dive core proof (25m).",
+                "diagramType": "flow",
+                "keyTip": "Most business and non-fiction books have only 1 big idea and 5 proofs.",
+                "commonMistake": "Reading page 1 to 100 linearly like a novel."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-26-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Syntopic reading & Mortimer Adler 3-pass inspection when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Physical or digital book",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "speed-reader",
             "visualSteps": [
               {
@@ -4896,6 +8083,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Left-to-right cross-multiplication & complement rounding.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-27-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Left-to-right cross-multiplication & complement rounding.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Flashcard generator",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Left to Right Processing",
+                "instruction": "Always compute hundreds first, then tens, then units. Keep one running sum.",
+                "diagramType": "text",
+                "keyTip": "If number ends in 8 or 9, use rounding: 49 x 26 = (50 x 26) - 26.",
+                "commonMistake": "Trying to visualize pencil scratches in your mind."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-27-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Left-to-right cross-multiplication & complement rounding when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Flashcard generator",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Left to Right Processing",
+                "instruction": "Always compute hundreds first, then tens, then units. Keep one running sum.",
+                "diagramType": "text",
+                "keyTip": "If number ends in 8 or 9, use rounding: 49 x 26 = (50 x 26) - 26.",
+                "commonMistake": "Trying to visualize pencil scratches in your mind."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Compute 10 consecutive two-digit multiplication problems (e.g. 74x68) mentally in <=8 seconds each.",
@@ -5058,6 +8323,123 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Neighbor Rule",
+                "instruction": "Each digit + neighbor to the right + any carry from previous step.",
+                "diagramType": "text",
+                "keyTip": "Carry is at most 1.",
+                "commonMistake": "Adding the left neighbor instead of the right neighbor."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Neighbor addition & rule-based direct transcription.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-28-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Neighbor addition & rule-based direct transcription.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Practice worksheet",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Neighbor Rule",
+                "instruction": "Each digit + neighbor to the right + any carry from previous step.",
+                "diagramType": "text",
+                "keyTip": "Carry is at most 1.",
+                "commonMistake": "Adding the left neighbor instead of the right neighbor."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-28-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Neighbor addition & rule-based direct transcription when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Practice worksheet",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Neighbor Rule",
+                "instruction": "Each digit + neighbor to the right + any carry from previous step.",
+                "diagramType": "text",
+                "keyTip": "Carry is at most 1.",
+                "commonMistake": "Adding the left neighbor instead of the right neighbor."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-28-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Practice worksheet",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -5250,6 +8632,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Row/column rule decomposition (XOR, rotation, distribution of 3).",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-29-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Row/column rule decomposition (XOR, rotation, distribution of 3).",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Raven progressive matrix problem set",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Matrix Rule Hierarchy",
+                "instruction": "Deconstruct row-by-row then verify column-by-column. 80% are XOR or rotation.",
+                "diagramType": "flow",
+                "keyTip": "Look at what disappears between box 1 and box 2.",
+                "commonMistake": "Looking at the options before identifying the missing rule."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-29-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Row/column rule decomposition (XOR, rotation, distribution of 3) when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Raven progressive matrix problem set",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Matrix Rule Hierarchy",
+                "instruction": "Deconstruct row-by-row then verify column-by-column. 80% are XOR or rotation.",
+                "diagramType": "flow",
+                "keyTip": "Look at what disappears between box 1 and box 2.",
+                "commonMistake": "Looking at the options before identifying the missing rule."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Solve advanced 3x3 abstract matrix reasoning problems with >=90% accuracy in <=30s per puzzle.",
@@ -5412,6 +8872,201 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Square Color Math",
+                "instruction": "Files A,C,E,G = odd (1,3,5,7). Files B,D,F,H = even (2,4,6,8). Odd+Odd = Even (Dark). Odd+Even = Odd (Light).",
+                "diagramType": "cube",
+                "keyTip": "Anchor your vision around key central outposts: d4, d5, e4, e5.",
+                "commonMistake": "Trying to keep a photo image of all 32 pieces simultaneously."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Algebraic square color indexing & piece trajectory vectors.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-30-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Algebraic square color indexing & piece trajectory vectors.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Chess algebraic notation sheet",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Square Color Math",
+                "instruction": "Files A,C,E,G = odd (1,3,5,7). Files B,D,F,H = even (2,4,6,8). Odd+Odd = Even (Dark). Odd+Even = Odd (Light).",
+                "diagramType": "cube",
+                "keyTip": "Anchor your vision around key central outposts: d4, d5, e4, e5.",
+                "commonMistake": "Trying to keep a photo image of all 32 pieces simultaneously."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-30-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Algebraic square color indexing & piece trajectory vectors when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Chess algebraic notation sheet",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Square Color Math",
+                "instruction": "Files A,C,E,G = odd (1,3,5,7). Files B,D,F,H = even (2,4,6,8). Odd+Odd = Even (Dark). Odd+Even = Odd (Light).",
+                "diagramType": "cube",
+                "keyTip": "Anchor your vision around key central outposts: d4, d5, e4, e5.",
+                "commonMistake": "Trying to keep a photo image of all 32 pieces simultaneously."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-30-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Chess algebraic notation sheet",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Square Color Math",
+                "instruction": "Files A,C,E,G = odd (1,3,5,7). Files B,D,F,H = even (2,4,6,8). Odd+Odd = Even (Dark). Odd+Even = Odd (Light).",
+                "diagramType": "cube",
+                "keyTip": "Anchor your vision around key central outposts: d4, d5, e4, e5.",
+                "commonMistake": "Trying to keep a photo image of all 32 pieces simultaneously."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-30-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Blindfold Chess (Play complete game).",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Chess algebraic notation sheet",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Square Color Math",
+                "instruction": "Files A,C,E,G = odd (1,3,5,7). Files B,D,F,H = even (2,4,6,8). Odd+Odd = Even (Dark). Odd+Even = Odd (Light).",
+                "diagramType": "cube",
+                "keyTip": "Anchor your vision around key central outposts: d4, d5, e4, e5.",
+                "commonMistake": "Trying to keep a photo image of all 32 pieces simultaneously."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for Algebraic square color indexing & piece trajectory vectors.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-30-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Chess algebraic notation sheet",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -5629,6 +9284,241 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Metatag structuring, seed prompting, and stem arrangement.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-31-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Metatag structuring, seed prompting, and stem arrangement.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Suno / Udio access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Metatag Architecture",
+                "instruction": "Use bracketed tags [Verse], [Pre-Chorus], [Chorus: Explosive hook], [Guitar Solo], [Outro: Fade out].",
+                "diagramType": "ui",
+                "keyTip": "Style prompt: specify production quality (e.g. 'high production value, analog warmth, 128 bpm').",
+                "commonMistake": "Writing paragraphs of description instead of crisp musical tags."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Stem Separation & DAW Polish",
+                "instruction": "Export stems (Vocals, Drums, Bass, Instruments) into Audacity/FL Studio for final EQ and limiter.",
+                "diagramType": "split",
+                "keyTip": "Cut low mud below 100Hz on vocals.",
+                "commonMistake": "Accepting muddy raw AI master without loudness normalization."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-31-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Metatag structuring, seed prompting, and stem arrangement when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Suno / Udio access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Metatag Architecture",
+                "instruction": "Use bracketed tags [Verse], [Pre-Chorus], [Chorus: Explosive hook], [Guitar Solo], [Outro: Fade out].",
+                "diagramType": "ui",
+                "keyTip": "Style prompt: specify production quality (e.g. 'high production value, analog warmth, 128 bpm').",
+                "commonMistake": "Writing paragraphs of description instead of crisp musical tags."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Stem Separation & DAW Polish",
+                "instruction": "Export stems (Vocals, Drums, Bass, Instruments) into Audacity/FL Studio for final EQ and limiter.",
+                "diagramType": "split",
+                "keyTip": "Cut low mud below 100Hz on vocals.",
+                "commonMistake": "Accepting muddy raw AI master without loudness normalization."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-31-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Suno / Udio access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 900,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Metatag Architecture",
+                "instruction": "Use bracketed tags [Verse], [Pre-Chorus], [Chorus: Explosive hook], [Guitar Solo], [Outro: Fade out].",
+                "diagramType": "ui",
+                "keyTip": "Style prompt: specify production quality (e.g. 'high production value, analog warmth, 128 bpm').",
+                "commonMistake": "Writing paragraphs of description instead of crisp musical tags."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Stem Separation & DAW Polish",
+                "instruction": "Export stems (Vocals, Drums, Bass, Instruments) into Audacity/FL Studio for final EQ and limiter.",
+                "diagramType": "split",
+                "keyTip": "Cut low mud below 100Hz on vocals.",
+                "commonMistake": "Accepting muddy raw AI master without loudness normalization."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-31-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Compose a Complete Song using AI.",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Suno / Udio access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 900,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Metatag Architecture",
+                "instruction": "Use bracketed tags [Verse], [Pre-Chorus], [Chorus: Explosive hook], [Guitar Solo], [Outro: Fade out].",
+                "diagramType": "ui",
+                "keyTip": "Style prompt: specify production quality (e.g. 'high production value, analog warmth, 128 bpm').",
+                "commonMistake": "Writing paragraphs of description instead of crisp musical tags."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Stem Separation & DAW Polish",
+                "instruction": "Export stems (Vocals, Drums, Bass, Instruments) into Audacity/FL Studio for final EQ and limiter.",
+                "diagramType": "split",
+                "keyTip": "Cut low mud below 100Hz on vocals.",
+                "commonMistake": "Accepting muddy raw AI master without loudness normalization."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for Metatag structuring, seed prompting, and stem arrangement.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-31-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Suno / Udio access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Metatag Architecture",
+                "instruction": "Use bracketed tags [Verse], [Pre-Chorus], [Chorus: Explosive hook], [Guitar Solo], [Outro: Fade out].",
+                "diagramType": "ui",
+                "keyTip": "Style prompt: specify production quality (e.g. 'high production value, analog warmth, 128 bpm').",
+                "commonMistake": "Writing paragraphs of description instead of crisp musical tags."
+              },
+              {
+                "stepNumber": 2,
+                "title": "Stem Separation & DAW Polish",
+                "instruction": "Export stems (Vocals, Drums, Bass, Instruments) into Audacity/FL Studio for final EQ and limiter.",
+                "diagramType": "split",
+                "keyTip": "Cut low mud below 100Hz on vocals.",
+                "commonMistake": "Accepting muddy raw AI master without loudness normalization."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 8,
         "title": "Level 08 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Create and export one complete 2:30 original song with intro, verse, chorus, bridge, mixed audio and cover art.",
@@ -5799,6 +9689,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Stress Counting",
+                "instruction": "Do not count total syllables; count stressed rhythmic accents (da-DUM da-DUM).",
+                "diagramType": "text",
+                "keyTip": "Use slant rhymes (time/mind, shape/late) to avoid nursery-rhyme cliches.",
+                "commonMistake": "Using abstract philosophical words instead of physical imagery."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Trochaic/Iambic stress counting & sensory hook anchoring.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-32-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Trochaic/Iambic stress counting & sensory hook anchoring.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Text editor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Stress Counting",
+                "instruction": "Do not count total syllables; count stressed rhythmic accents (da-DUM da-DUM).",
+                "diagramType": "text",
+                "keyTip": "Use slant rhymes (time/mind, shape/late) to avoid nursery-rhyme cliches.",
+                "commonMistake": "Using abstract philosophical words instead of physical imagery."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-32-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Trochaic/Iambic stress counting & sensory hook anchoring when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Text editor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -5991,6 +9959,123 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Beat-synced cut pacing & character visual consistency.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-33-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Beat-synced cut pacing & character visual consistency.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Runway / Luma / Pika access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Cut on Beat Transient",
+                "instruction": "Visual impact should strike on beat 1 or beat 3 of the bar.",
+                "diagramType": "ui",
+                "keyTip": "Alternate wide shots with extreme closeups every 2 bars.",
+                "commonMistake": "Letting single AI video clip run for 10 seconds without cut."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-33-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Beat-synced cut pacing & character visual consistency when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Runway / Luma / Pika access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Cut on Beat Transient",
+                "instruction": "Visual impact should strike on beat 1 or beat 3 of the bar.",
+                "diagramType": "ui",
+                "keyTip": "Alternate wide shots with extreme closeups every 2 bars.",
+                "commonMistake": "Letting single AI video clip run for 10 seconds without cut."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-33-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Runway / Luma / Pika access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 900,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Cut on Beat Transient",
+                "instruction": "Visual impact should strike on beat 1 or beat 3 of the bar.",
+                "diagramType": "ui",
+                "keyTip": "Alternate wide shots with extreme closeups every 2 bars.",
+                "commonMistake": "Letting single AI video clip run for 10 seconds without cut."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Produce a synchronized 90-second cinematic video clip using AI generation tools and timeline video editing.",
@@ -6151,6 +10236,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Prompt Parameter Stack",
+                "instruction": "Subject -> Setting -> Lighting Ratio -> Camera & Lens -> Film Stock -> Aspect Ratio.",
+                "diagramType": "text",
+                "keyTip": "Specify real camera lenses (e.g. Cooke Anamorphic 50mm).",
+                "commonMistake": "Overloading prompt with conflicting lighting directions."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Focal length, lighting ratio, and film stock prompt syntax.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-34-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Focal length, lighting ratio, and film stock prompt syntax.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Midjourney or Flux.1 access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Prompt Parameter Stack",
+                "instruction": "Subject -> Setting -> Lighting Ratio -> Camera & Lens -> Film Stock -> Aspect Ratio.",
+                "diagramType": "text",
+                "keyTip": "Specify real camera lenses (e.g. Cooke Anamorphic 50mm).",
+                "commonMistake": "Overloading prompt with conflicting lighting directions."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-34-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Focal length, lighting ratio, and film stock prompt syntax when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Midjourney or Flux.1 access",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -6342,6 +10505,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Camera movement vectors & text-to-video motion brushes.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-35-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Camera movement vectors & text-to-video motion brushes.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Kling / Runway Gen-3 / Luma",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Parallax Movement",
+                "instruction": "Keep background moving at different speed than foreground subject.",
+                "diagramType": "flow",
+                "keyTip": "Use motion intensity setting 3-4 (never max 10).",
+                "commonMistake": "Moving camera and subject in opposite chaotic vectors."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-35-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Camera movement vectors & text-to-video motion brushes when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Kling / Runway Gen-3 / Luma",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Parallax Movement",
+                "instruction": "Keep background moving at different speed than foreground subject.",
+                "diagramType": "flow",
+                "keyTip": "Use motion intensity setting 3-4 (never max 10).",
+                "commonMistake": "Moving camera and subject in opposite chaotic vectors."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Direct and generate 4 cohesive video shots with camera motion controls, consistent subject, and 4k upscaling.",
@@ -6503,6 +10744,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "In Media Res Hook",
+                "instruction": "Start at the moment of crisis, not the breakfast before.",
+                "diagramType": "text",
+                "keyTip": "Show, don't tell: 'My hands were shaking on the steering wheel' vs 'I was scared'.",
+                "commonMistake": "Giving 2 minutes of context before anything happens."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Status change & stakes escalation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-36-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Status change & stakes escalation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Voice recorder or video camera",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "In Media Res Hook",
+                "instruction": "Start at the moment of crisis, not the breakfast before.",
+                "diagramType": "text",
+                "keyTip": "Show, don't tell: 'My hands were shaking on the steering wheel' vs 'I was scared'.",
+                "commonMistake": "Giving 2 minutes of context before anything happens."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-36-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Status change & stakes escalation when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Voice recorder or video camera",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -6694,6 +11013,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Subtextual dialogue & Chekhov's gun economy.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-37-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Subtextual dialogue & Chekhov's gun economy.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Text editor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Subtext Layering",
+                "instruction": "Text is what they say. Subtext is what they mean. Action is what they do.",
+                "diagramType": "split",
+                "keyTip": "Cut all adverbs (quietly, angrily). Use strong verbs.",
+                "commonMistake": "Over-explaining internal motivations to the reader."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-37-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Subtextual dialogue & Chekhov's gun economy when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Text editor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Subtext Layering",
+                "instruction": "Text is what they say. Subtext is what they mean. Action is what they do.",
+                "diagramType": "split",
+                "keyTip": "Cut all adverbs (quietly, angrily). Use strong verbs.",
+                "commonMistake": "Over-explaining internal motivations to the reader."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Write a 500-word story with sensory grounding, subtext dialogue, and decisive twist ending.",
@@ -6855,6 +11252,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Misdirection Angle",
+                "instruction": "Setup creates assumption. Punchline reveals alternative reality that also fits the facts.",
+                "diagramType": "path",
+                "keyTip": "Put the funny word at the very end of the punchline sentence.",
+                "commonMistake": "Continuing to talk after the punchline has landed."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Assumption misdirection & tag economy.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-38-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Assumption misdirection & tag economy.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Mic or smartphone recorder",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Misdirection Angle",
+                "instruction": "Setup creates assumption. Punchline reveals alternative reality that also fits the facts.",
+                "diagramType": "path",
+                "keyTip": "Put the funny word at the very end of the punchline sentence.",
+                "commonMistake": "Continuing to talk after the punchline has landed."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-38-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Assumption misdirection & tag economy when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Mic or smartphone recorder",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -7049,6 +11524,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Horizon line, vanishing points, and 5-value core shadow rendering.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-39-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Horizon line, vanishing points, and 5-value core shadow rendering.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Drawing pad",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "2-Point Vanishing Lines",
+                "instruction": "All vertical lines are 90 degrees plumb. All horizontal lines aim at Left or Right VP.",
+                "diagramType": "path",
+                "keyTip": "Keep vanishing points far apart to avoid fish-eye distortion.",
+                "commonMistake": "Placing vanishing points too close inside the page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-39-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Horizon line, vanishing points, and 5-value core shadow rendering when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Drawing pad",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "2-Point Vanishing Lines",
+                "instruction": "All vertical lines are 90 degrees plumb. All horizontal lines aim at Left or Right VP.",
+                "diagramType": "path",
+                "keyTip": "Keep vanishing points far apart to avoid fish-eye distortion.",
+                "commonMistake": "Placing vanishing points too close inside the page."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Draw a realistic 2-point perspective streetscape with accurate horizon, vanishing lines, and cast shadows.",
@@ -7210,6 +11763,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Bezier Handle Tension",
+                "instruction": "Handles should follow the curve tangent and extend 1/3 of the distance to the next point.",
+                "diagramType": "ui",
+                "keyTip": "Always place anchor points at the extrema (highest, lowest, leftmost, rightmost points).",
+                "commonMistake": "Placing points in the middle of a curve."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Bezier handle economy & isometric 30-degree grid snapping.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-40-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Bezier handle economy & isometric 30-degree grid snapping.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Figma, Illustrator or Inkscape",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Bezier Handle Tension",
+                "instruction": "Handles should follow the curve tangent and extend 1/3 of the distance to the next point.",
+                "diagramType": "ui",
+                "keyTip": "Always place anchor points at the extrema (highest, lowest, leftmost, rightmost points).",
+                "commonMistake": "Placing points in the middle of a curve."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-40-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Bezier handle economy & isometric 30-degree grid snapping when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Figma, Illustrator or Inkscape",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -7403,6 +12034,279 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for ReAct loop (Thought-Action-Observation) & JSON schema tool calling.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-41-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during ReAct loop (Thought-Action-Observation) & JSON schema tool calling.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Node/Python environment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The ReAct Loop Cycle",
+                "instruction": "Thought -> Action (tool call) -> Observation (tool result) -> Thought -> Final Answer.",
+                "diagramType": "flow",
+                "keyTip": "Always provide strict typed JSON schema for arguments.",
+                "commonMistake": "Allowing infinite tool calling loops without max_iterations guard."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-41-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for ReAct loop (Thought-Action-Observation) & JSON schema tool calling when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Node/Python environment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The ReAct Loop Cycle",
+                "instruction": "Thought -> Action (tool call) -> Observation (tool result) -> Thought -> Final Answer.",
+                "diagramType": "flow",
+                "keyTip": "Always provide strict typed JSON schema for arguments.",
+                "commonMistake": "Allowing infinite tool calling loops without max_iterations guard."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-41-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Node/Python environment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The ReAct Loop Cycle",
+                "instruction": "Thought -> Action (tool call) -> Observation (tool result) -> Thought -> Final Answer.",
+                "diagramType": "flow",
+                "keyTip": "Always provide strict typed JSON schema for arguments.",
+                "commonMistake": "Allowing infinite tool calling loops without max_iterations guard."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-41-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Build Autonomous AI Agents.",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Node/Python environment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The ReAct Loop Cycle",
+                "instruction": "Thought -> Action (tool call) -> Observation (tool result) -> Thought -> Final Answer.",
+                "diagramType": "flow",
+                "keyTip": "Always provide strict typed JSON schema for arguments.",
+                "commonMistake": "Allowing infinite tool calling loops without max_iterations guard."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for ReAct loop (Thought-Action-Observation) & JSON schema tool calling.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-41-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Node/Python environment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The ReAct Loop Cycle",
+                "instruction": "Thought -> Action (tool call) -> Observation (tool result) -> Thought -> Final Answer.",
+                "diagramType": "flow",
+                "keyTip": "Always provide strict typed JSON schema for arguments.",
+                "commonMistake": "Allowing infinite tool calling loops without max_iterations guard."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 8,
+        "title": "Level 08 \u2014 Advanced Optimization Phase 2",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for ReAct loop (Thought-Action-Observation) & JSON schema tool calling.",
+        "unlockCondition": "Level 07 passed with verified benchmark.",
+        "testProtocol": "Strict Level 08 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-41-08",
+            "number": 8,
+            "title": "Drill 08 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Node/Python environment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The ReAct Loop Cycle",
+                "instruction": "Thought -> Action (tool call) -> Observation (tool result) -> Thought -> Final Answer.",
+                "diagramType": "flow",
+                "keyTip": "Always provide strict typed JSON schema for arguments.",
+                "commonMistake": "Allowing infinite tool calling loops without max_iterations guard."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 9,
+        "title": "Level 09 \u2014 Advanced Optimization Phase 3",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for ReAct loop (Thought-Action-Observation) & JSON schema tool calling.",
+        "unlockCondition": "Level 08 passed with verified benchmark.",
+        "testProtocol": "Strict Level 09 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-41-09",
+            "number": 9,
+            "title": "Drill 09 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Node/Python environment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The ReAct Loop Cycle",
+                "instruction": "Thought -> Action (tool call) -> Observation (tool result) -> Thought -> Final Answer.",
+                "diagramType": "flow",
+                "keyTip": "Always provide strict typed JSON schema for arguments.",
+                "commonMistake": "Allowing infinite tool calling loops without max_iterations guard."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 10,
         "title": "Level 10 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Build and deploy an autonomous AI agent capable of multi-step web research, tool calling, and report export.",
@@ -7565,6 +12469,201 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "State Graph Orchestration",
+                "instruction": "Agents do not talk directly; they read and update a shared state dictionary.",
+                "diagramType": "flow",
+                "keyTip": "Put hard cap on loop counter (max 3 loops).",
+                "commonMistake": "Letting agents overwrite each other's data."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for State graph routing, agent communication protocols, and critique gates.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-42-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during State graph routing, agent communication protocols, and critique gates.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "LangGraph / CrewAI / Python",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "State Graph Orchestration",
+                "instruction": "Agents do not talk directly; they read and update a shared state dictionary.",
+                "diagramType": "flow",
+                "keyTip": "Put hard cap on loop counter (max 3 loops).",
+                "commonMistake": "Letting agents overwrite each other's data."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-42-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for State graph routing, agent communication protocols, and critique gates when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "LangGraph / CrewAI / Python",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "State Graph Orchestration",
+                "instruction": "Agents do not talk directly; they read and update a shared state dictionary.",
+                "diagramType": "flow",
+                "keyTip": "Put hard cap on loop counter (max 3 loops).",
+                "commonMistake": "Letting agents overwrite each other's data."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-42-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "LangGraph / CrewAI / Python",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "State Graph Orchestration",
+                "instruction": "Agents do not talk directly; they read and update a shared state dictionary.",
+                "diagramType": "flow",
+                "keyTip": "Put hard cap on loop counter (max 3 loops).",
+                "commonMistake": "Letting agents overwrite each other's data."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-42-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Build Multi-Agent Systems.",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "LangGraph / CrewAI / Python",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "State Graph Orchestration",
+                "instruction": "Agents do not talk directly; they read and update a shared state dictionary.",
+                "diagramType": "flow",
+                "keyTip": "Put hard cap on loop counter (max 3 loops).",
+                "commonMistake": "Letting agents overwrite each other's data."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for State graph routing, agent communication protocols, and critique gates.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-42-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "LangGraph / CrewAI / Python",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -7758,6 +12857,123 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Text chunking, embedding generation, vector similarity, and citation grounding.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-43-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Text chunking, embedding generation, vector similarity, and citation grounding.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Vector DB or simple embeddings",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "RAG Architecture Flow",
+                "instruction": "Document -> Chunks -> Embeddings -> Vector Search -> Context Injection -> LLM Answer.",
+                "diagramType": "flow",
+                "keyTip": "50-token overlap prevents splitting sentences in half.",
+                "commonMistake": "Chunking by arbitrary character count without sentence boundaries."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-43-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Text chunking, embedding generation, vector similarity, and citation grounding when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Vector DB or simple embeddings",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "RAG Architecture Flow",
+                "instruction": "Document -> Chunks -> Embeddings -> Vector Search -> Context Injection -> LLM Answer.",
+                "diagramType": "flow",
+                "keyTip": "50-token overlap prevents splitting sentences in half.",
+                "commonMistake": "Chunking by arbitrary character count without sentence boundaries."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-43-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Vector DB or simple embeddings",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 900,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "RAG Architecture Flow",
+                "instruction": "Document -> Chunks -> Embeddings -> Vector Search -> Context Injection -> LLM Answer.",
+                "diagramType": "flow",
+                "keyTip": "50-token overlap prevents splitting sentences in half.",
+                "commonMistake": "Chunking by arbitrary character count without sentence boundaries."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 6,
         "title": "Level 06 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Deploy a RAG chatbot answering domain questions strictly grounded in user PDF docs with zero hallucinations.",
@@ -7919,6 +13135,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Branch Routing Logic",
+                "instruction": "Trigger -> Structured Extraction -> Conditional Router -> Action A or B.",
+                "diagramType": "flow",
+                "keyTip": "Always test with edge cases (empty body, foreign language).",
+                "commonMistake": "Hardcoding credentials inside workflow nodes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Webhook ingestion, JSON parsing, prompt routing, and error branches.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-44-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Webhook ingestion, JSON parsing, prompt routing, and error branches.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "n8n or Make.com account",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Branch Routing Logic",
+                "instruction": "Trigger -> Structured Extraction -> Conditional Router -> Action A or B.",
+                "diagramType": "flow",
+                "keyTip": "Always test with edge cases (empty body, foreign language).",
+                "commonMistake": "Hardcoding credentials inside workflow nodes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-44-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Webhook ingestion, JSON parsing, prompt routing, and error branches when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "n8n or Make.com account",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -8112,6 +13406,201 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Full-stack scaffolding, auth tokens, database RLS, and Stripe checkout.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-45-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Full-stack scaffolding, auth tokens, database RLS, and Stripe checkout.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Next.js / Vite",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Single Core Loop",
+                "instruction": "User Input -> Server Process -> Saved Output -> Value Delivered.",
+                "diagramType": "flow",
+                "keyTip": "Use pre-built UI components (Tailwind / Shadcn). Do not invent design system.",
+                "commonMistake": "Building complex team billing before verifying single user value."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-45-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Full-stack scaffolding, auth tokens, database RLS, and Stripe checkout when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Next.js / Vite",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Single Core Loop",
+                "instruction": "User Input -> Server Process -> Saved Output -> Value Delivered.",
+                "diagramType": "flow",
+                "keyTip": "Use pre-built UI components (Tailwind / Shadcn). Do not invent design system.",
+                "commonMistake": "Building complex team billing before verifying single user value."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-45-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Next.js / Vite",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 900,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Single Core Loop",
+                "instruction": "User Input -> Server Process -> Saved Output -> Value Delivered.",
+                "diagramType": "flow",
+                "keyTip": "Use pre-built UI components (Tailwind / Shadcn). Do not invent design system.",
+                "commonMistake": "Building complex team billing before verifying single user value."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-45-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Build a SaaS MVP in 24 Hours.",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Next.js / Vite",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 900,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Single Core Loop",
+                "instruction": "User Input -> Server Process -> Saved Output -> Value Delivered.",
+                "diagramType": "flow",
+                "keyTip": "Use pre-built UI components (Tailwind / Shadcn). Do not invent design system.",
+                "commonMistake": "Building complex team billing before verifying single user value."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for Full-stack scaffolding, auth tokens, database RLS, and Stripe checkout.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-45-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Next.js / Vite",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Single Core Loop",
+                "instruction": "User Input -> Server Process -> Saved Output -> Value Delivered.",
+                "diagramType": "flow",
+                "keyTip": "Use pre-built UI components (Tailwind / Shadcn). Do not invent design system.",
+                "commonMistake": "Building complex team billing before verifying single user value."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 8,
         "title": "Level 08 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Ship a live functional SaaS MVP with authentication, database storage, core AI value prop, and payment button.",
@@ -8274,6 +13763,162 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Expo Native Bridge",
+                "instruction": "JavaScript Thread <-> Native Bridge <-> Hardware Camera / Sensors.",
+                "diagramType": "ui",
+                "keyTip": "Always wrap camera calls in try-catch with permission alerts.",
+                "commonMistake": "Testing only on web browser instead of real device."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Native bridge APIs, AsyncStorage, touch gestures, and responsive layouts.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-46-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Native bridge APIs, AsyncStorage, touch gestures, and responsive layouts.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Expo React Native or Flutter CLI",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Expo Native Bridge",
+                "instruction": "JavaScript Thread <-> Native Bridge <-> Hardware Camera / Sensors.",
+                "diagramType": "ui",
+                "keyTip": "Always wrap camera calls in try-catch with permission alerts.",
+                "commonMistake": "Testing only on web browser instead of real device."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-46-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Native bridge APIs, AsyncStorage, touch gestures, and responsive layouts when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Expo React Native or Flutter CLI",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Expo Native Bridge",
+                "instruction": "JavaScript Thread <-> Native Bridge <-> Hardware Camera / Sensors.",
+                "diagramType": "ui",
+                "keyTip": "Always wrap camera calls in try-catch with permission alerts.",
+                "commonMistake": "Testing only on web browser instead of real device."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-46-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Expo React Native or Flutter CLI",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Expo Native Bridge",
+                "instruction": "JavaScript Thread <-> Native Bridge <-> Hardware Camera / Sensors.",
+                "diagramType": "ui",
+                "keyTip": "Always wrap camera calls in try-catch with permission alerts.",
+                "commonMistake": "Testing only on web browser instead of real device."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-46-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Build a Mobile App (React Native / Flutter).",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Expo React Native or Flutter CLI",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -8466,6 +14111,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Exponential backoff, HMAC SHA256 signature verification, and idempotency keys.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-47-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Exponential backoff, HMAC SHA256 signature verification, and idempotency keys.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Terminal, curl, Postman or Node",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "HMAC Verification Flow",
+                "instruction": "Raw Buffer + Secret -> Crypto HMAC -> Compare with Header Signature.",
+                "diagramType": "flow",
+                "keyTip": "Use crypto.timingSafeEqual to prevent timing attacks.",
+                "commonMistake": "Parsing body as JSON before calculating hash."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-47-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Exponential backoff, HMAC SHA256 signature verification, and idempotency keys when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Terminal, curl, Postman or Node",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "HMAC Verification Flow",
+                "instruction": "Raw Buffer + Secret -> Crypto HMAC -> Compare with Header Signature.",
+                "diagramType": "flow",
+                "keyTip": "Use crypto.timingSafeEqual to prevent timing attacks.",
+                "commonMistake": "Parsing body as JSON before calculating hash."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Implement authenticated REST/GraphQL API consumption with retry backoff, ratelimiting, and webhook signing.",
@@ -8628,6 +14351,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Headless DOM Execution",
+                "instruction": "Wait for networkidle -> Scroll -> Wait for selector -> Map elements -> Extract.",
+                "diagramType": "flow",
+                "keyTip": "Set realistic user-agent header to avoid instant 403 blocks.",
+                "commonMistake": "Hardcoding brittle absolute XPath selectors."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Headless browser automation, CSS selector paths, and pagination loops.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-48-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Headless browser automation, CSS selector paths, and pagination loops.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Playwright / Beautiful Soup",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Headless DOM Execution",
+                "instruction": "Wait for networkidle -> Scroll -> Wait for selector -> Map elements -> Extract.",
+                "diagramType": "flow",
+                "keyTip": "Set realistic user-agent header to avoid instant 403 blocks.",
+                "commonMistake": "Hardcoding brittle absolute XPath selectors."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-48-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Headless browser automation, CSS selector paths, and pagination loops when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Playwright / Beautiful Soup",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -8819,6 +14620,45 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for XML tag structuring, negative constraints, and few-shot calibration.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-49-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during XML tag structuring, negative constraints, and few-shot calibration.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "LLM Playground / Terminal",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Semantic XML Tag Prompting",
+                "instruction": "Structure prompts into <context>, <rules>, <output_format>, and <examples>.",
+                "diagramType": "text",
+                "keyTip": "Show, don't just tell: 3 few-shot examples beat 500 words of instructions.",
+                "commonMistake": "Using vague adjectives like 'be accurate' instead of negative rules."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 4,
         "title": "Level 04 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Craft production system prompts yielding structured JSON schemas with <=0.5% failure rate on edge cases.",
@@ -8980,6 +14820,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The AI Coding Loop",
+                "instruction": "Write Test -> Prompt Agent with Context -> Review Git Diff -> Run Tests -> Commit.",
+                "diagramType": "flow",
+                "keyTip": "Keep prompts atomic: one function or component at a time.",
+                "commonMistake": "Asking agent to 'build entire app' in one giant prompt."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Context curation (@file, @diff), prompt decomposition, and verification tests.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-50-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Context curation (@file, @diff), prompt decomposition, and verification tests.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Cursor / VSCode / CLI agent",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The AI Coding Loop",
+                "instruction": "Write Test -> Prompt Agent with Context -> Review Git Diff -> Run Tests -> Commit.",
+                "diagramType": "flow",
+                "keyTip": "Keep prompts atomic: one function or component at a time.",
+                "commonMistake": "Asking agent to 'build entire app' in one giant prompt."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-50-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Context curation (@file, @diff), prompt decomposition, and verification tests when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Cursor / VSCode / CLI agent",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -9173,6 +15091,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Spatial anchoring, vocal cadence, and 3-point audience gaze.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-51-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Spatial anchoring, vocal cadence, and 3-point audience gaze.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Smartphone camera",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Spatial Anchoring",
+                "instruction": "Stand still while delivering an idea. Walk only during the transition pause.",
+                "diagramType": "posture",
+                "keyTip": "Plant feet shoulder-width apart, weight balanced on both heels.",
+                "commonMistake": "Swaying from foot to foot."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-51-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Spatial anchoring, vocal cadence, and 3-point audience gaze when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Smartphone camera",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Spatial Anchoring",
+                "instruction": "Stand still while delivering an idea. Walk only during the transition pause.",
+                "diagramType": "posture",
+                "keyTip": "Plant feet shoulder-width apart, weight balanced on both heels.",
+                "commonMistake": "Swaying from foot to foot."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Deliver a 5-minute keynote on camera without notes, pacing at 140 WPM with commanding eye contact.",
@@ -9334,6 +15330,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 4-Quarter Pitch",
+                "instruction": "Problem (15s) -> Solution (15s) -> Proof (15s) -> Action (15s).",
+                "diagramType": "split",
+                "keyTip": "Use the word 'Because' to link problem and proof.",
+                "commonMistake": "Talking about product features instead of customer outcome."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Value proposition compression & punchy CTA.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-52-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Value proposition compression & punchy CTA.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Audio recorder",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 4-Quarter Pitch",
+                "instruction": "Problem (15s) -> Solution (15s) -> Proof (15s) -> Action (15s).",
+                "diagramType": "split",
+                "keyTip": "Use the word 'Because' to link problem and proof.",
+                "commonMistake": "Talking about product features instead of customer outcome."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-52-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Value proposition compression & punchy CTA when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Audio recorder",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -9526,6 +15600,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for The deliberate silence pause replacement.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-53-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during The deliberate silence pause replacement.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Audio recording app",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Locked Lip Pause",
+                "instruction": "When your brain searches for a thought, press lips together. Silence sounds powerful to an audience.",
+                "diagramType": "posture",
+                "keyTip": "An audience experiences silence as confidence, not hesitation.",
+                "commonMistake": "Fearing silence and filling air with verbal garbage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-53-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for The deliberate silence pause replacement when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Audio recording app",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Locked Lip Pause",
+                "instruction": "When your brain searches for a thought, press lips together. Silence sounds powerful to an audience.",
+                "diagramType": "posture",
+                "keyTip": "An audience experiences silence as confidence, not hesitation.",
+                "commonMistake": "Fearing silence and filling air with verbal garbage."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Speak continuously for 3 minutes on impromptu topic with zero filler words ('um', 'uh', 'like', 'you know').",
@@ -9687,6 +15839,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Diaphragm vs Throat Breathing",
+                "instruction": "Breathe into belly and lower ribs, not upper shoulders. Belly expands on inhale.",
+                "diagramType": "posture",
+                "keyTip": "Drop jaw down to create acoustic resonating space in mouth.",
+                "commonMistake": "Lifting shoulders when taking a deep breath."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Diaphragmatic support & chest cavity resonance.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-54-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Diaphragmatic support & chest cavity resonance.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Microphone or smartphone",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Diaphragm vs Throat Breathing",
+                "instruction": "Breathe into belly and lower ribs, not upper shoulders. Belly expands on inhale.",
+                "diagramType": "posture",
+                "keyTip": "Drop jaw down to create acoustic resonating space in mouth.",
+                "commonMistake": "Lifting shoulders when taking a deep breath."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-54-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Diaphragmatic support & chest cavity resonance when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Microphone or smartphone",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -9878,6 +16108,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Mirroring last 3 words, emotion labeling, and 'No'-oriented questions.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-55-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Mirroring last 3 words, emotion labeling, and 'No'-oriented questions.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Roleplay partner or AI Coach",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Mirror & Label Flow",
+                "instruction": "Mirror last 3 words -> 4s Pause -> Label emotion ('It seems like...') -> 4s Pause.",
+                "diagramType": "flow",
+                "keyTip": "Use the late-night FM DJ voice: calm, slow, downward inflection.",
+                "commonMistake": "Trying to convince with logical arguments instead of uncovering emotions."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-55-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Mirroring last 3 words, emotion labeling, and 'No'-oriented questions when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Roleplay partner or AI Coach",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Mirror & Label Flow",
+                "instruction": "Mirror last 3 words -> 4s Pause -> Label emotion ('It seems like...') -> 4s Pause.",
+                "diagramType": "flow",
+                "keyTip": "Use the late-night FM DJ voice: calm, slow, downward inflection.",
+                "commonMistake": "Trying to convince with logical arguments instead of uncovering emotions."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Conduct a simulated salary/price negotiation using mirroring, labeling, and calibrated 'How' questions.",
@@ -10039,6 +16347,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "70/30 Rule",
+                "instruction": "You speak 30% of the time (asking questions); prospect speaks 70% of the time.",
+                "diagramType": "split",
+                "keyTip": "Never accept surface answers: ask 'Can you walk me through an example of that?'.",
+                "commonMistake": "Rushing into a product demo in the first 10 minutes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Problem implication questions & prospect talk ratio (70/30).",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-56-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Problem implication questions & prospect talk ratio (70/30).",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Call script / recorder",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "70/30 Rule",
+                "instruction": "You speak 30% of the time (asking questions); prospect speaks 70% of the time.",
+                "diagramType": "split",
+                "keyTip": "Never accept surface answers: ask 'Can you walk me through an example of that?'.",
+                "commonMistake": "Rushing into a product demo in the first 10 minutes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-56-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Problem implication questions & prospect talk ratio (70/30) when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Call script / recorder",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -10231,6 +16617,45 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Relevant observation, low-friction offer, and zero-ask CTA.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-57-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Relevant observation, low-friction offer, and zero-ask CTA.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Email client",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "3-Sentence Architecture",
+                "instruction": "Sentence 1: Context/Trigger. Sentence 2: Value/Asset. Sentence 3: Friction-free CTA.",
+                "diagramType": "text",
+                "keyTip": "Ask 'Is it bad timing?' (people love saying No).",
+                "commonMistake": "Asking for a 30-minute phone call in the first email."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 4,
         "title": "Level 04 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Write 5 personalized 3-sentence cold emails with tailored value triggers achieving >=40% open and 15% reply rate.",
@@ -10392,6 +16817,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "STAR Timing Distribution",
+                "instruction": "Situation (15%) -> Task (10%) -> Action (50%) -> Result (25%).",
+                "diagramType": "split",
+                "keyTip": "Always state quantifiable numbers in Result (dollars, %, time saved).",
+                "commonMistake": "Saying 'We did this' instead of 'I personally decided to...'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for STAR framework balance (Situation 15s, Action 50s, Result 25s).",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-58-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during STAR framework balance (Situation 15s, Action 50s, Result 25s).",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Webcam or mirror",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "STAR Timing Distribution",
+                "instruction": "Situation (15%) -> Task (10%) -> Action (50%) -> Result (25%).",
+                "diagramType": "split",
+                "keyTip": "Always state quantifiable numbers in Result (dollars, %, time saved).",
+                "commonMistake": "Saying 'We did this' instead of 'I personally decided to...'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-58-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for STAR framework balance (Situation 15s, Action 50s, Result 25s) when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Webcam or mirror",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -10583,6 +17086,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Ethical persuasion levers & loss aversion framing.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-59-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Ethical persuasion levers & loss aversion framing.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Document editor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Persuasion Stack",
+                "instruction": "Authority creates trust. Social proof validates safety. Scarcity drives action now.",
+                "diagramType": "flow",
+                "keyTip": "Loss aversion is 2x stronger than gain aspiration.",
+                "commonMistake": "Burying social proof at the bottom of the page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-59-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Ethical persuasion levers & loss aversion framing when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Document editor",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Persuasion Stack",
+                "instruction": "Authority creates trust. Social proof validates safety. Scarcity drives action now.",
+                "diagramType": "flow",
+                "keyTip": "Loss aversion is 2x stronger than gain aspiration.",
+                "commonMistake": "Burying social proof at the bottom of the page."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Audit and rewrite a product landing page integrating Reciprocity, Scarcity, Authority, and Social Proof.",
@@ -10744,6 +17325,45 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Analogy Bridge",
+                "instruction": "Unknown Concept <-> Physical Analogy from everyday life (water, balls, bells).",
+                "diagramType": "flow",
+                "keyTip": "If you cannot explain it with a physical prop, you do not understand it.",
+                "commonMistake": "Hiding behind acronyms when intuition is weak."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Analogical mapping, jargon elimination, and physical metaphors.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-60-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Analogical mapping, jargon elimination, and physical metaphors.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Recorder / notepad",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -10936,6 +17556,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for The exposure triangle & histogram clipping evaluation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-61-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during The exposure triangle & histogram clipping evaluation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "DSLR/Mirrorless camera or manual phone app",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Exposure Triangle",
+                "instruction": "Aperture (depth of field) <-> Shutter Speed (motion blur) <-> ISO (sensor noise).",
+                "diagramType": "split",
+                "keyTip": "Keep ISO as low as possible (100-400) for clean image quality.",
+                "commonMistake": "Shooting with shutter speed below 1/60s and getting blurry photos."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-61-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for The exposure triangle & histogram clipping evaluation when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "DSLR/Mirrorless camera or manual phone app",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Exposure Triangle",
+                "instruction": "Aperture (depth of field) <-> Shutter Speed (motion blur) <-> ISO (sensor noise).",
+                "diagramType": "split",
+                "keyTip": "Keep ISO as low as possible (100-400) for clean image quality.",
+                "commonMistake": "Shooting with shutter speed below 1/60s and getting blurry photos."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Shoot 5 manual exposure photos balancing ISO, Aperture (f-stop), and Shutter Speed with correct histogram.",
@@ -11113,6 +17811,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for J/L cuts audio split, B-roll rhythm, and loudness normalization.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-62-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during J/L cuts audio split, B-roll rhythm, and loudness normalization.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "CapCut, Premiere Pro or DaVinci Resolve",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "J-Cut vs L-Cut",
+                "instruction": "J-Cut: You hear it before you see it. L-Cut: You see it while previous audio continues.",
+                "diagramType": "split",
+                "keyTip": "Audio quality matters 2x more than 4k video resolution.",
+                "commonMistake": "Hard cutting audio on every visual edit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-62-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for J/L cuts audio split, B-roll rhythm, and loudness normalization when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "CapCut, Premiere Pro or DaVinci Resolve",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "J-Cut vs L-Cut",
+                "instruction": "J-Cut: You hear it before you see it. L-Cut: You see it while previous audio continues.",
+                "diagramType": "split",
+                "keyTip": "Audio quality matters 2x more than 4k video resolution.",
+                "commonMistake": "Hard cutting audio on every visual edit."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Edit a 60-second video with J-cuts, L-cuts, color correction, normalized audio levels (-14 LUFS), and subtitles.",
@@ -11274,6 +18050,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Auto Layout Flex Rules",
+                "instruction": "Frame -> Auto Layout -> Direction (Vertical) -> Spacing (16px) -> Alignment.",
+                "diagramType": "ui",
+                "keyTip": "Use 8px spacing increments (8, 16, 24, 32, 48).",
+                "commonMistake": "Manually nudging layers with arrow keys without Auto Layout."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Auto Layout padding/gap constraints, component variants, and 8pt grid.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-63-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Auto Layout padding/gap constraints, component variants, and 8pt grid.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Figma free account",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Auto Layout Flex Rules",
+                "instruction": "Frame -> Auto Layout -> Direction (Vertical) -> Spacing (16px) -> Alignment.",
+                "diagramType": "ui",
+                "keyTip": "Use 8px spacing increments (8, 16, 24, 32, 48).",
+                "commonMistake": "Manually nudging layers with arrow keys without Auto Layout."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-63-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Auto Layout padding/gap constraints, component variants, and 8pt grid when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Figma free account",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -11466,6 +18320,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Drum groove micro-timing, root note bass anchoring, and EQ frequency carving.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-64-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Drum groove micro-timing, root note bass anchoring, and EQ frequency carving.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Ableton, FL Studio, BandLab or GarageBand",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Drum Grid Pacing",
+                "instruction": "Kick (1, 2, 3, 4) | Clap (2, 4) | Hat (Offbeats). Keep levels at -6dB headroom.",
+                "diagramType": "ui",
+                "keyTip": "Never boost EQ when you can cut competing frequencies.",
+                "commonMistake": "Cranking volume faders instead of properly gain staging."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-64-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Drum groove micro-timing, root note bass anchoring, and EQ frequency carving when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Ableton, FL Studio, BandLab or GarageBand",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Drum Grid Pacing",
+                "instruction": "Kick (1, 2, 3, 4) | Clap (2, 4) | Hat (Offbeats). Keep levels at -6dB headroom.",
+                "diagramType": "ui",
+                "keyTip": "Never boost EQ when you can cut competing frequencies.",
+                "commonMistake": "Cranking volume faders instead of properly gain staging."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Program a 4-bar drum beat, 8-bar bassline, and lead synth progression in a DAW with proper gain staging.",
@@ -11627,6 +18559,84 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Guiding Claw Grip",
+                "instruction": "Fingertips curled back, thumb tucked behind. Flat face of knife slides along knuckles.",
+                "diagramType": "posture",
+                "keyTip": "A sharp knife is 10x safer than a dull knife.",
+                "commonMistake": "Sawing back and forth instead of rocking the blade forward."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for The claw grip, Maillard reaction, and pan fond deglazing.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-65-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during The claw grip, Maillard reaction, and pan fond deglazing.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Chef knife, cutting board, stainless pan",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Guiding Claw Grip",
+                "instruction": "Fingertips curled back, thumb tucked behind. Flat face of knife slides along knuckles.",
+                "diagramType": "posture",
+                "keyTip": "A sharp knife is 10x safer than a dull knife.",
+                "commonMistake": "Sawing back and forth instead of rocking the blade forward."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-65-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for The claw grip, Maillard reaction, and pan fond deglazing when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Chef knife, cutting board, stainless pan",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -11818,6 +18828,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Sternum compression depth (5cm), recoil, and windlass tourniquet lock.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-66-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Sternum compression depth (5cm), recoil, and windlass tourniquet lock.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "First aid kit or training dummy/cushion",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "CPR Body Mechanics",
+                "instruction": "Elbows locked straight. Use your entire upper body weight, not arm muscles.",
+                "diagramType": "posture",
+                "keyTip": "Push hard and fast: 100-120 compressions per minute.",
+                "commonMistake": "Bending elbows, which fatigues arms in under 30 seconds."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-66-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Sternum compression depth (5cm), recoil, and windlass tourniquet lock when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "First aid kit or training dummy/cushion",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "CPR Body Mechanics",
+                "instruction": "Elbows locked straight. Use your entire upper body weight, not arm muscles.",
+                "diagramType": "posture",
+                "keyTip": "Push hard and fast: 100-120 compressions per minute.",
+                "commonMistake": "Bending elbows, which fatigues arms in under 30 seconds."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Demonstrate 100-120 BPM CPR chest compressions, recovery position, and high-pressure tourniquet application.",
@@ -11979,6 +19067,45 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Bowline Story",
+                "instruction": "Up through the hole, around the back of the tree, back down through the hole, pull snug.",
+                "diagramType": "path",
+                "keyTip": "Always dress the knot (straighten strands) before applying load.",
+                "commonMistake": "Passing working end around the wrong side of the tree."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Bight dressing, standing part tension, and blind tactile muscle memory.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-67-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Bight dressing, standing part tension, and blind tactile muscle memory.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "1 meter piece of paracord or rope",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -12170,6 +19297,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Magnetic declination adjustment, index contour reading, and triangulation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-68-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Magnetic declination adjustment, index contour reading, and triangulation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Baseplate compass, topo map printout",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Red in the Shed",
+                "instruction": "Orienting arrow is the 'shed'. Magnetic red needle goes in the shed.",
+                "diagramType": "path",
+                "keyTip": "Keep compass away from metal belt buckles, phones, and knives.",
+                "commonMistake": "Ignoring magnetic declination over long distances."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-68-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Magnetic declination adjustment, index contour reading, and triangulation when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Baseplate compass, topo map printout",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Red in the Shed",
+                "instruction": "Orienting arrow is the 'shed'. Magnetic red needle goes in the shed.",
+                "diagramType": "path",
+                "keyTip": "Keep compass away from metal belt buckles, phones, and knives.",
+                "commonMistake": "Ignoring magnetic declination over long distances."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Plot a 3-point orienteering azimuth route on a topographic map and orient north taking declination into account.",
@@ -12346,6 +19551,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Dynamic financial modeling, scenario toggles, and cash runway projections.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-69-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Dynamic financial modeling, scenario toggles, and cash runway projections.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Excel or Google Sheets",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Dynamic Assumptions Table",
+                "instruction": "All variables (tax rate, growth %, churn) live in dedicated inputs block.",
+                "diagramType": "ui",
+                "keyTip": "Color code cells: Blue for hardcoded inputs, Black for formulas.",
+                "commonMistake": "Mixing inputs and calculations in the same row."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-69-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Dynamic financial modeling, scenario toggles, and cash runway projections when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Excel or Google Sheets",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "Dynamic Assumptions Table",
+                "instruction": "All variables (tax rate, growth %, churn) live in dedicated inputs block.",
+                "diagramType": "ui",
+                "keyTip": "Color code cells: Blue for hardcoded inputs, Black for formulas.",
+                "commonMistake": "Mixing inputs and calculations in the same row."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Build a dynamic 3-statement personal cashflow model with XLOOKUP, INDEX/MATCH, sensitivity tables.",
@@ -12507,6 +19790,45 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The MFA Hierarchy",
+                "instruction": "Hardware FIDO2 Key > TOTP Authenticator App >>> SMS Text (vulnerable to SIM swap).",
+                "diagramType": "flow",
+                "keyTip": "Always print and lock away offline emergency backup codes in safe place.",
+                "commonMistake": "Keeping master recovery keys unencrypted on desktop."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Passkey FIDO2 protocols, password entropy, and DoH (DNS-over-HTTPS).",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-70-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Passkey FIDO2 protocols, password entropy, and DoH (DNS-over-HTTPS).",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Password manager, Authenticator app",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {
@@ -12699,6 +20021,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for The 60-Minute Rapid Skill Compression Protocol.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-71-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during The 60-Minute Rapid Skill Compression Protocol.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Chosen equipment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 60-Minute Clock",
+                "instruction": "5m Understand -> 10m Demo -> 20m Drills -> 15m Challenge -> 10m Final Test.",
+                "diagramType": "split",
+                "keyTip": "Pick a micro-skill with an observable pass/fail test.",
+                "commonMistake": "Trying to learn an entire broad field in 1 hour."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-71-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for The 60-Minute Rapid Skill Compression Protocol when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Chosen equipment",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 900,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 60-Minute Clock",
+                "instruction": "5m Understand -> 10m Demo -> 20m Drills -> 15m Challenge -> 10m Final Test.",
+                "diagramType": "split",
+                "keyTip": "Pick a micro-skill with an observable pass/fail test.",
+                "commonMistake": "Trying to learn an entire broad field in 1 hour."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Deconstruct any unfamiliar micro-skill, execute 40 minutes of deliberate isolation drills, and pass benchmark.",
@@ -12876,6 +20276,84 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Pareto 80/20 extraction & inter-block consolidation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-72-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Pareto 80/20 extraction & inter-block consolidation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Equipment for selected skill",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "50/10 Block Structure",
+                "instruction": "50 minutes intense deliberate drill + 10 minutes walking rest. Repeat 5 times.",
+                "diagramType": "flow",
+                "keyTip": "Log errors at the end of every 50-minute block.",
+                "commonMistake": "Drifting into passive practice during Block 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-72-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Pareto 80/20 extraction & inter-block consolidation when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Equipment for selected skill",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "50/10 Block Structure",
+                "instruction": "50 minutes intense deliberate drill + 10 minutes walking rest. Repeat 5 times.",
+                "diagramType": "flow",
+                "keyTip": "Log errors at the end of every 50-minute block.",
+                "commonMistake": "Drifting into passive practice during Block 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 5,
         "title": "Level 05 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Execute five 50-minute focused blocks targeting the 20% core subskills to reach functional competence.",
@@ -13037,6 +20515,123 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 20-Hour Curve",
+                "instruction": "Hours 0-5 are frustrating. Hours 5-15 are rapid progress. Hours 15-20 consolidate competence.",
+                "diagramType": "path",
+                "keyTip": "Pre-commit to the 20 hours before taking your first rep.",
+                "commonMistake": "Researching for 15 hours and only practicing for 5 hours."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Deconstruct, self-correct, remove barriers, and practice 20 hours.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-73-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Deconstruct, self-correct, remove barriers, and practice 20 hours.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Practice materials",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 20-Hour Curve",
+                "instruction": "Hours 0-5 are frustrating. Hours 5-15 are rapid progress. Hours 15-20 consolidate competence.",
+                "diagramType": "path",
+                "keyTip": "Pre-commit to the 20 hours before taking your first rep.",
+                "commonMistake": "Researching for 15 hours and only practicing for 5 hours."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-73-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Deconstruct, self-correct, remove barriers, and practice 20 hours when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Practice materials",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The 20-Hour Curve",
+                "instruction": "Hours 0-5 are frustrating. Hours 5-15 are rapid progress. Hours 15-20 consolidate competence.",
+                "diagramType": "path",
+                "keyTip": "Pre-commit to the 20 hours before taking your first rep.",
+                "commonMistake": "Researching for 15 hours and only practicing for 5 hours."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-73-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Practice materials",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "interval-timer",
             "visualSteps": [
               {
@@ -13229,6 +20824,162 @@ export const ALL_SKILLS: Skill[] = [
         ]
       },
       {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Daily periodized overload & sleep-dependent memory consolidation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-74-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Daily periodized overload & sleep-dependent memory consolidation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Full skill apparatus",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "7-Day Overload Arc",
+                "instruction": "Day 1 Baseline -> Days 2-3 Drills -> Day 4 Test -> Days 5-6 Correct -> Day 7 Proof.",
+                "diagramType": "flow",
+                "keyTip": "Sleep 8 hours: motor memory consolidates during REM sleep.",
+                "commonMistake": "Overworking on Day 1 and burning out by Day 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-74-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Daily periodized overload & sleep-dependent memory consolidation when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Full skill apparatus",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "7-Day Overload Arc",
+                "instruction": "Day 1 Baseline -> Days 2-3 Drills -> Day 4 Test -> Days 5-6 Correct -> Day 7 Proof.",
+                "diagramType": "flow",
+                "keyTip": "Sleep 8 hours: motor memory consolidates during REM sleep.",
+                "commonMistake": "Overworking on Day 1 and burning out by Day 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-74-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Full skill apparatus",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "7-Day Overload Arc",
+                "instruction": "Day 1 Baseline -> Days 2-3 Drills -> Day 4 Test -> Days 5-6 Correct -> Day 7 Proof.",
+                "diagramType": "flow",
+                "keyTip": "Sleep 8 hours: motor memory consolidates during REM sleep.",
+                "commonMistake": "Overworking on Day 1 and burning out by Day 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-74-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Learn a Skill in 7 Days (Immersive Challenge).",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Full skill apparatus",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "interval-timer",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "7-Day Overload Arc",
+                "instruction": "Day 1 Baseline -> Days 2-3 Drills -> Day 4 Test -> Days 5-6 Correct -> Day 7 Proof.",
+                "diagramType": "flow",
+                "keyTip": "Sleep 8 hours: motor memory consolidates during REM sleep.",
+                "commonMistake": "Overworking on Day 1 and burning out by Day 3."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "levelNumber": 7,
         "title": "Level 07 \u2014 Mastery Execution & Final Proof",
         "targetBenchmark": "Complete daily 2-hour progressive drill blocks across 7 consecutive days and pass strict unassisted final test.",
@@ -13391,6 +21142,201 @@ export const ALL_SKILLS: Skill[] = [
             "successCriteria": "Pass rate >= 80% at accelerated cadence.",
             "failureCriteria": "Breakdown in primary technique. Regress to Level 1.",
             "difficultyAdjustment": "Adjust speed based on error rate.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Deconstruction Matrix",
+                "instruction": "Desired Outcome -> Measurable Mastery Contract -> 5 Levels -> 10 Drills -> Proof Protocol.",
+                "diagramType": "flow",
+                "keyTip": "Always ask: 'What does failure look like on an official stopwatch or metric?'.",
+                "commonMistake": "Confusing reading articles with performing drills."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 3,
+        "title": "Level 03 \u2014 Consistency & Error Elimination",
+        "targetBenchmark": "Achieve >=90% accuracy across 10 consecutive trials under fatigue for Skill deconstruction, mastery contract definition, and drill generation.",
+        "unlockCondition": "Level 2 cadence benchmark verified.",
+        "testProtocol": "Strict Level 03 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-75-03",
+            "number": 3,
+            "title": "Drill 03 \u2014 High-Density Consistency Reps",
+            "objective": "Eliminate mechanical variance and micro-hesitations during Skill deconstruction, mastery contract definition, and drill generation.",
+            "whyExists": "Automates neuromuscular and cognitive firing patterns under accumulated fatigue.",
+            "equipment": "Target pursuit parameters",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 10 consecutive repetitions with zero pause between reps.",
+              "Log every micro-deviation and friction point immediately.",
+              "Repeat until 3 consecutive sets achieve zero-fault execution."
+            ],
+            "repetitions": "10 continuous reps",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero unforced errors across >=8/10 attempts.",
+            "failureCriteria": "More than 1 error across set. Reset and repeat.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Deconstruction Matrix",
+                "instruction": "Desired Outcome -> Measurable Mastery Contract -> 5 Levels -> 10 Drills -> Proof Protocol.",
+                "diagramType": "flow",
+                "keyTip": "Always ask: 'What does failure look like on an official stopwatch or metric?'.",
+                "commonMistake": "Confusing reading articles with performing drills."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 4,
+        "title": "Level 04 \u2014 Pressure Simulation & Dynamic Variability",
+        "targetBenchmark": "Execute unassisted trials with zero external hints under simulated pressure.",
+        "unlockCondition": "Level 3 consistency verification confirmed.",
+        "testProtocol": "Strict Level 04 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-75-04",
+            "number": 4,
+            "title": "Drill 04 \u2014 Randomized Pressure & Disruption Drill",
+            "objective": "Preserve core technique for Skill deconstruction, mastery contract definition, and drill generation when start signals and conditions are randomized.",
+            "whyExists": "Breaks dependence on predictable conditions and builds resilient unassisted automaticity.",
+            "equipment": "Target pursuit parameters",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Wait for random start signal (2-8s delay window).",
+              "Explode into immediate execution with zero cognitive hesitation.",
+              "Log split time and record composure."
+            ],
+            "repetitions": "8 random start trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Reaction time < 350ms with 100% adherence to technical form.",
+            "failureCriteria": "False start or form deviation. Result: FAIL.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Deconstruction Matrix",
+                "instruction": "Desired Outcome -> Measurable Mastery Contract -> 5 Levels -> 10 Drills -> Proof Protocol.",
+                "diagramType": "flow",
+                "keyTip": "Always ask: 'What does failure look like on an official stopwatch or metric?'.",
+                "commonMistake": "Confusing reading articles with performing drills."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 5,
+        "title": "Level 05 \u2014 Sub-Max Capacity & Overload Threshold",
+        "targetBenchmark": "Sustain target execution velocity for 1.5x standard drill duration.",
+        "unlockCondition": "Level 4 pressure protocol passed.",
+        "testProtocol": "Strict Level 05 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-75-05",
+            "number": 5,
+            "title": "Drill 05 \u2014 Capacity Extension Overload",
+            "objective": "Expand reserve capacity so official benchmark requires only 80% maximum effort.",
+            "whyExists": "Prevents catastrophic failure at the tail end of official test attempts.",
+            "equipment": "Target pursuit parameters",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 6 overload rounds with 20% shorter rest intervals.",
+              "Monitor pacing splits on every single rep.",
+              "Maintain crisp technical discipline under heavy cognitive or oxygen debt."
+            ],
+            "repetitions": "6 overload rounds",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "All 6 rounds completed within target split window.",
+            "failureCriteria": "Cadence drops >15% on final 2 rounds. Regress to Level 4.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Deconstruction Matrix",
+                "instruction": "Desired Outcome -> Measurable Mastery Contract -> 5 Levels -> 10 Drills -> Proof Protocol.",
+                "diagramType": "flow",
+                "keyTip": "Always ask: 'What does failure look like on an official stopwatch or metric?'.",
+                "commonMistake": "Confusing reading articles with performing drills."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 6,
+        "title": "Level 06 \u2014 Pre-Mastery Gauntlet & Component Assembly",
+        "targetBenchmark": "Pass 4 of 5 full-scale simulation runs meeting Mastery standard.",
+        "unlockCondition": "Level 5 capacity test logged.",
+        "testProtocol": "Strict Level 06 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-75-06",
+            "number": 6,
+            "title": "Drill 06 \u2014 Full Gauntlet Assembly Rehearsal",
+            "objective": "Integrate all subskills into a unified, flawless performance for Build a Completely New Skill from Zero (Meta-Architect).",
+            "whyExists": "The penultimate verification before official mastery proof submission.",
+            "equipment": "Target pursuit parameters",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Rehearse complete sequence from initial setup to final finish.",
+              "Grade every phase independently against official criteria.",
+              "Confirm zero reliance on external coaching hints."
+            ],
+            "repetitions": "5 full simulation runs",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "4 of 5 runs satisfy official mastery conditions.",
+            "failureCriteria": "Failure on 2 or more runs. Return to Level 5.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
+            "interactiveTool": "agent-studio",
+            "visualSteps": [
+              {
+                "stepNumber": 1,
+                "title": "The Deconstruction Matrix",
+                "instruction": "Desired Outcome -> Measurable Mastery Contract -> 5 Levels -> 10 Drills -> Proof Protocol.",
+                "diagramType": "flow",
+                "keyTip": "Always ask: 'What does failure look like on an official stopwatch or metric?'.",
+                "commonMistake": "Confusing reading articles with performing drills."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "levelNumber": 7,
+        "title": "Level 07 \u2014 Advanced Optimization Phase 1",
+        "targetBenchmark": "Flawless execution within top 5% performance tolerance for Skill deconstruction, mastery contract definition, and drill generation.",
+        "unlockCondition": "Level 06 passed with verified benchmark.",
+        "testProtocol": "Strict Level 07 evaluation protocol.",
+        "drills": [
+          {
+            "id": "drill-75-07",
+            "number": 7,
+            "title": "Drill 07 \u2014 High-Precision Stress Gauntlet",
+            "objective": "Refine sub-second mechanics and eliminate residual cognitive overhead.",
+            "whyExists": "Polishes execution to championship standard.",
+            "equipment": "Target pursuit parameters",
+            "setup": "Station calibrated and ready. Eliminate all distractions.",
+            "actions": [
+              "Execute 5 hyper-focused trials against official standards.",
+              "Inspect video or telemetry splits for micro-inefficiencies.",
+              "Correct vector angles and cadence."
+            ],
+            "repetitions": "5 precision trials",
+            "timeLimitSeconds": 1200,
+            "successCriteria": "Zero errors and split time within 5% of target benchmark.",
+            "failureCriteria": "Any technical flaw detected.",
+            "difficultyAdjustment": "Maintain pace until benchmark is achieved.",
             "interactiveTool": "agent-studio",
             "visualSteps": [
               {

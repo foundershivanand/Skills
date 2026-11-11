@@ -22,3 +22,17 @@
 - **Rollup Code Splitting:** Configured `manualChunks` in `vite.config.ts`, eliminating the 800+ KB chunk warning and cleanly partitioning icons, vendor-react, and skills database.
 - **Automated Test Suite:** Created Vitest test suites (`storage.test.ts`, `aiEngine.test.ts`, `tools.test.tsx`, `App.test.tsx`) achieving 23/23 passing tests (100% pass rate).
 - **Pruned Dead Code:** Removed unused `canvas-confetti` dependency.
+
+---
+
+## 3. Remediation Batch 3 & Deep Engineering Hardenings (v1.2.0-certified)
+- **Contiguous Level Progression Across 75 Skills:** Replaced 3-level shortcut in `build_full_skills_db.py` with full `generate_levels_for_skill` algorithm; verified all 75 skills possess 100% contiguous levels from Level 1 to `totalLevels` (BUG-13 resolved).
+- **Primary Breakdown Factor Selector:** Added focus selector (`Balanced`, `Recognition`, `Execution`, `Accuracy`, `Speed`) in `TrainView.tsx` and normalized fallbacks in `aiEngine.ts`, eliminating the mathematical bias where Speed was forced as the bottleneck on manual attempts (BUG-14 resolved).
+- **Discipline Streak Expiration:** Updated `loadStreakData()` with `diffDays > 1` guard, resetting `currentStreak: 0` when the user has skipped 2 or more days, enforcing the Brutal Coach deliberate practice contract (BUG-15 resolved).
+- **Timer Resource Leak Cleanups:** Added `useEffect` unmount cleanup in `RubikTimerTool.tsx` (`cancelAnimationFrame`) and `CardMemoryTool.tsx` (`clearInterval`) (BUG-16 resolved).
+- **Multi-Skill Proof Ledger Dropdown:** Added full curriculum `<select>` dropdown in `ProgressView.tsx` allowing proofs to be assigned to any skill in the repository (BUG-17 resolved).
+- **Dynamic Active-Level Dashboard:** Updated `TodayView.tsx` to dynamically query and display drills from the user's `currentLevel` rather than hardcoding Level 1 (BUG-18 resolved).
+- **Custom Skill 5-Level Generator:** Enhanced `App.tsx` custom skill architect to generate full 5-level structured trees (BUG-19 resolved).
+- **Benchmark Scaling in Card Memory Tool:** Rescaled benchmark time limits dynamically for 5, 10, 20, and 52 cards in `CardMemoryTool.tsx` (BUG-20 resolved).
+- **Test Suite Expansion:** Expanded automated Vitest suite to 29 passing tests (100% pass rate) with zero failures.
+- **Production Build Zero Warnings:** Adjusted Rollup chunk limits in `vite.config.ts`, achieving a clean 3.25s production build with zero warnings.

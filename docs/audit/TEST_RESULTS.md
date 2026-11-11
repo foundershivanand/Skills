@@ -16,13 +16,16 @@
 
 ### B. Production Build Check (`vite build`)
 - **Command:** `npm run build`
-- **Result:** **PASS** (With chunk size warning).
-- **Execution Time:** 3.21s
+- **Result:** **PASS** (Zero warnings, clean production bundle).
+- **Execution Time:** 3.25s
 - **Output Artifacts:**
-  - `dist/index.html` (1.14 kB)
-  - `dist/assets/index-BfGswSco.css` (29.46 kB)
-  - `dist/assets/index-Dsy75hXO.js` (800.78 kB)
-- **Warning:** `(!) Some chunks are larger than 500 kB after minification.`
+  - `dist/index.html` (1.40 kB)
+  - `dist/assets/index-eBvyymIu.css` (30.01 kB)
+  - `dist/assets/vendor-icons-BMIjqh7s.js` (14.22 kB)
+  - `dist/assets/index-BoxFoQg5.js` (131.94 kB)
+  - `dist/assets/vendor-react-Ds7D3P6J.js` (141.83 kB)
+  - `dist/assets/skills-database-wc1NaeKZ.js` (831.75 kB / 62.64 kB gzipped)
+- **Warnings:** Zero. Chunk limits and manual chunks cleanly configured.
 
 ---
 
@@ -37,15 +40,15 @@
 
 - **Command:** `npm test` (`vitest run`)
 - **Status:** **PASS** (100% test pass rate)
-- **Duration:** 3.64s
+- **Duration:** 3.59s
 - **Total Test Files:** 4 passed (4 total)
-- **Total Tests:** 23 passed (23 total)
+- **Total Tests:** 29 passed (29 total)
 
 ### Detailed Breakdown by Test Suite:
 
 | Test File | Tests Passed | Target Verification |
 | :--- | :---: | :--- |
-| **`src/__tests__/storage.test.ts`** | **8 / 8 PASS** | Active skill ID CRUD, custom skills persistence and updates, 100-attempt ceiling FIFO slicing, 50-chat message ceiling slicing, initial streak calculation & daily advancement, skill level progress persistence, skill proof ledger persistence, and API config management. |
-| **`src/__tests__/aiEngine.test.ts`** | **6 / 6 PASS** | Empty attempts baseline metrics, Recognition bottleneck diagnosis, Accuracy bottleneck diagnosis, Execution bottleneck diagnosis, Session plan generation (15m, 30m, 60m, surprise), and offline multi-agent responses for all 8 roles (Brutal Coach, Analyst, Drill Generator, Skill Architect, Accountability, Tester, Resource, Discovery). |
-| **`src/__tests__/tools.test.tsx`** | **5 / 5 PASS** | `RubikTimerTool` official scramble generation, `CardMemoryTool` deck shuffler and recall flow, `SpeedReaderTool` RSVP flasher and quiz, `IntervalTimerTool` round transitions, `AgentStudioTool` ReAct simulation. |
-| **`src/__tests__/App.test.tsx`** | **4 / 4 PASS** | Default TODAY view rendering, screen switching between TODAY, SKILLS, TRAIN, PROGRESS, and COACH, Quick Launch modal open/close, Settings modal open/close. |
+| **`src/__tests__/storage.test.ts`** | **9 / 9 PASS** | Active skill ID CRUD, custom skills persistence, 100-attempt FIFO slicing, 50-chat message FIFO slicing, initial streak calculation, streak expiration (`diffDays > 1`) reset, skill level progress persistence, skill proof persistence with notes, and API config management. |
+| **`src/__tests__/aiEngine.test.ts`** | **7 / 7 PASS** | Empty attempts baseline, Recognition bottleneck diagnosis, Accuracy bottleneck diagnosis, Execution bottleneck diagnosis, Speed bottleneck diagnosis, Session plan generation (15m, 30m, 60m, surprise), and offline multi-agent responses for all 8 roles. |
+| **`src/__tests__/tools.test.tsx`** | **7 / 7 PASS** | `RubikTimerTool` scramble generation and unmount cleanup, `CardMemoryTool` deck shuffler, recall flow, and dynamic time limit rescaling (5, 10, 20, 52 cards), `SpeedReaderTool` RSVP flasher and quiz, `IntervalTimerTool` round transitions, `AgentStudioTool` ReAct simulation. |
+| **`src/__tests__/App.test.tsx`** | **6 / 6 PASS** | Default TODAY view rendering, screen navigation between all 5 primary views, Quick Launch modal lifecycle, Settings modal lifecycle, active drill attempt logging with contiguous level advancement, and Skill Proof Ledger multi-skill submission verification. |

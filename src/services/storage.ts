@@ -163,7 +163,22 @@ export function saveSkillProof(proof: SubmittedProof): SubmittedProof[] {
 export function loadStreakData(): StreakData {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.STREAK_DATA);
-    if (raw) return JSON.parse(raw);
+    if (raw) {
+      const data: StreakData = JSON.parse(raw);
+      if (data.lastTrainedDate) {
+        const today = new Date().toISOString().split('T')[0];
+        const lastDate = new Date(data.lastTrainedDate);
+        const currentDate = new Date(today);
+        const diffDays = Math.round((currentDate.getTime() - lastDate.getTime()) / (1000 * 60 * 60 * 24));
+        if (diffDays > 1) {
+          return {
+            ...data,
+            currentStreak: 0
+          };
+        }
+      }
+      return data;
+    }
   } catch {}
   return {
     currentStreak: 0,
