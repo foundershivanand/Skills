@@ -231,6 +231,65 @@ function generateInternalAgentResponse(
     };
   }
 
+  if (role === 'drill-generator' || query.includes('generate drill') || query.includes('micro-drill') || query.includes('new drill')) {
+    const drillTitle = `Drill ISO-${Date.now().toString().slice(-4)} — ${skillName} Targeted Isolation`;
+    return {
+      text: `TARGETED DRILL GENERATION // ISOLATION PROTOCOL\n\n` +
+        `TITLE: ${drillTitle}\n` +
+        `TARGET SKILL: ${skillName.toUpperCase()}\n\n` +
+        `1. OBJECTIVE:\n` +
+        `   Isolate mechanical turnover and eliminate recognition friction.\n\n` +
+        `2. WHY THIS DRILL EXISTS:\n` +
+        `   Overcomes deceleration during transitions. Builds sub-conscious automaticity.\n\n` +
+        `3. SETUP & EQUIPMENT:\n` +
+        `   Distraction-free environment. Official timer calibrated.\n\n` +
+        `4. EXACT ACTIONS (STEP-BY-STEP):\n` +
+        `   Step 1: Execute starting stance/grip check. Zero extraneous tension.\n` +
+        `   Step 2: Run 5 slow-motion repetitions focusing exclusively on clean vectors.\n` +
+        `   Step 3: Execute 15 full-intensity repetitions against stopwatch.\n` +
+        `   Step 4: Record every split time and mark flaws.\n\n` +
+        `5. REPETITIONS & TIME LIMIT:\n` +
+        `   15 strict repetitions | 300 seconds maximum window.\n\n` +
+        `6. SUCCESS CRITERIA:\n` +
+        `   ≥13 out of 15 reps executed within 10% of personal benchmark.\n\n` +
+        `7. FAILURE CRITERIA:\n` +
+        `   Form breakdown on 3 consecutive reps. Halt session and recover 2 minutes.\n\n` +
+        `Begin Drill Rep #1 immediately.`
+    };
+  }
+
+  if (role === 'resource-agent' || query.includes('resource') || query.includes('formula') || query.includes('diagram')) {
+    return {
+      text: `HIGH-LEVERAGE KNOWLEDGE ANCHOR // ${skillName.toUpperCase()}\n\n` +
+        `CORE AXIOM:\n` +
+        `"Deliberate practice is not doing what you are good at; it is isolating the exact millimeter where your mechanics fail."\n\n` +
+        `PRIMARY RECEPTOR DIAGRAM:\n` +
+        `[INPUT CUE] ──► [RECOGNITION <300ms] ──► [MECHANICAL EXECUTION] ──► [CLEAN RECOVERY]\n\n` +
+        `KEY FORMULA:\n` +
+        `Velocity = (Stroke Frequency) × (Force Vector Accuracy) / (Extraneous Muscle Friction)\n\n` +
+        `Do not collect further materials. Return to the TRAIN screen and log 10 reps.`
+    };
+  }
+
+  if (role === 'skill-discovery' || query.includes('discover') || query.includes('what should i learn')) {
+    return {
+      text: `SKILL DISCOVERY ENGINE // HIGH-LEVERAGE TRACKS\n\n` +
+        `1-HOUR SPRINT SKILLS:\n` +
+        `• CPR & AED Life Support (#61) — Immediate lifesaving utility.\n` +
+        `• Speed Garment Ironing (#65) — Sub-2-minute formal shirt press.\n` +
+        `• Chef's Knife Sharpening (#64) — 1000/6000 whetstone razor edge.\n\n` +
+        `1-DAY RAPID ACQUISITIONS:\n` +
+        `• 3-Ball Cascade Juggling (#15) — Visual tracking & bilateral hand motor control.\n` +
+        `• AI Songwriting & Production (#31) — Compose & publish complete 2:30 track.\n` +
+        `• Speed Knot Tying (#66) — Bowline, clove hitch, trucker's hitch under 5s.\n\n` +
+        `20-HOUR MASTERY PURSUITS:\n` +
+        `• Speedcubing Sub-20s (#11) — CFOP algorithm automation.\n` +
+        `• 52-Card Deck Memory Palace (#21) — Sub-5m recall accuracy.\n` +
+        `• Autonomous ReAct Agent from Scratch (#41) — Tool calling & evaluator gates.\n\n` +
+        `Select a track in the SKILLS catalog to inspect its Mastery Contract.`
+    };
+  }
+
   if (role === 'tester' || query.includes('test me') || query.includes('exam')) {
     return {
       text: `OFFICIAL BENCHMARK TEST RUNNER\n\n` +

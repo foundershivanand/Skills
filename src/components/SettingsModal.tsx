@@ -106,7 +106,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               className="w-full bg-steel-950 border border-steel-800 p-2.5 text-xs font-mono text-steel-100 focus:border-forge-amber outline-none"
             />
             <span className="text-[10px] text-steel-500 font-mono block">
-              Stored exclusively in your browser's encrypted localStorage. Never transmitted to third parties.
+              Stored exclusively origin-local in your browser's private localStorage. Never transmitted to third-party tracking servers.
             </span>
           </div>
 

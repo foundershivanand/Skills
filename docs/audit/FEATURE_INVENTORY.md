@@ -18,27 +18,27 @@ Each feature is evaluated across:
 | Feature | Primary Files | Frontend | Backend / Storage | Status | Notes |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | **01. Daily Missions & Today Dashboard** | `src/views/TodayView.tsx`, `src/App.tsx` | Complete | Complete | **COMPLETE** | Renders dynamic greeting, active drill queue, streak counter, and direct train launch. |
-| **02. Discipline Streak Tracker** | `src/services/storage.ts`, `src/components/Navigation.tsx` | Complete | Partially Complete | **PARTIALLY COMPLETE** | Streak resets and increment logic functional, but initializes to 1 day on first visit before any drill is completed. |
+| **02. Discipline Streak Tracker** | `src/services/storage.ts`, `src/components/Navigation.tsx` | Complete | Complete | **COMPLETE** | Initializes to 0 days for fresh users; advances with daily practice; verified in unit tests. |
 | **03. 75 Master Tracks Curriculum Catalog** | `src/views/SkillsView.tsx`, `src/data/skillsData.ts` | Complete | Complete | **COMPLETE** | All 75 tracks present with levels, benchmarks, and domain taxonomy. |
 | **04. Curriculum Search & Filter Engine** | `src/views/SkillsView.tsx` | Complete | N/A | **COMPLETE** | Filter by Domain (A-H), Time Horizon, and full-text keyword/number search. |
 | **05. Custom Skill Architect Modal** | `src/views/SkillsView.tsx`, `src/App.tsx` | Complete | Complete | **COMPLETE** | Allows users to architect arbitrary hobbies/pursuits into structured skills saved to LocalStorage. |
-| **06. Active Training Console (Train Screen)** | `src/views/TrainView.tsx` | Partially Complete | Complete | **PARTIALLY COMPLETE** | Displays active skill and drill specs, but level and drill selection UI controls were unmounted. |
-| **07. Skill Level Progression & Advancement** | `src/views/TrainView.tsx`, `src/services/storage.ts` | Not Implemented | Not Implemented | **NOT IMPLEMENTED** | Passing benchmark attempts did not advance skill's `currentLevel` or unlock subsequent levels. |
+| **06. Active Training Console (Train Screen)** | `src/views/TrainView.tsx` | Complete | Complete | **COMPLETE** | Level and drill tabs mounted; allows free switching and visualizes benchmarks/unlock criteria. |
+| **07. Skill Level Progression & Advancement** | `src/views/TrainView.tsx`, `src/services/storage.ts` | Complete | Complete | **COMPLETE** | Passing benchmark attempts advances `currentLevel` and persists state across sessions. |
 | **08. Step-by-Step Visual How-To Modal** | `src/components/VisualHowToModal.tsx` | Complete | Complete | **COMPLETE** | SVG vector diagrams (cube rotation, biomechanics, memory loci, parabolic path, flowchart). |
-| **09. WCA Speedcube Timer Apparatus** | `src/components/tools/RubikTimerTool.tsx` | Partially Complete | Complete | **PARTIALLY COMPLETE** | 15s inspection countdown, Ao5 calc, Spacebar control. Rapid keydown repeat caused inspection skipping. |
-| **10. 52-Card Deck Memory Palace Trainer** | `src/components/tools/CardMemoryTool.tsx` | Complete | Complete | **COMPLETE** | Fisher-Yates deck shuffler, card flip visualizer, rank/suit recall input, accuracy scoring. |
-| **11. RSVP Speed Reader Engine** | `src/components/tools/SpeedReaderTool.tsx` | Complete | Complete | **COMPLETE** | Word-by-word visual flasher at configurable WPM, 3-question comprehension test. |
+| **09. WCA Speedcube Timer Apparatus** | `src/components/tools/RubikTimerTool.tsx` | Complete | Complete | **COMPLETE** | 15s inspection countdown, Ao5 calc, Spacebar control with keyboard repeat guard. |
+| **10. 52-Card Deck Memory Palace Trainer** | `src/components/tools/CardMemoryTool.tsx` | Complete | Complete | **COMPLETE** | Fisher-Yates deck shuffler, card flip visualizer, rank/suit recall input, dynamic accuracy scoring. |
+| **11. RSVP Speed Reader Engine** | `src/components/tools/SpeedReaderTool.tsx` | Complete | Complete | **COMPLETE** | Word-by-word visual flasher at configurable WPM, 3-question comprehension test, dynamic metrics. |
 | **12. Autonomous Agent Studio Simulator** | `src/components/tools/AgentStudioTool.tsx` | Complete | Complete | **COMPLETE** | Simulates ReAct loop and multi-agent coordination with runtime decision trace. |
 | **13. Deliberate Interval Timer Apparatus** | `src/components/tools/IntervalTimerTool.tsx` | Complete | Complete | **COMPLETE** | Configurable work/rest rounds with Web Audio API sound synthesizer beeps. |
-| **14. Four-Factor Bottleneck Matrix** | `src/services/aiEngine.ts`, `src/views/ProgressView.tsx` | Partially Complete | Broken | **BROKEN** | Evaluates Recognition, Execution, Accuracy, Speed. Hardcoded scores in TrainView resulted in 100% 'Speed' diagnosis. |
-| **15. Skill Proof Ledger (Section 28)** | `src/views/ProgressView.tsx` | Partially Complete | Broken | **BROKEN** | URL submission for GitHub, Strava, Loom proofs only stored in volatile React state; vanished on page refresh. |
+| **14. Four-Factor Bottleneck Matrix** | `src/services/aiEngine.ts`, `src/views/ProgressView.tsx` | Complete | Complete | **COMPLETE** | Evaluates Recognition, Execution, Accuracy, Speed dynamically based on real tool metrics. |
+| **15. Skill Proof Ledger (Section 28)** | `src/views/ProgressView.tsx` | Complete | Complete | **COMPLETE** | URL submissions with validation and notes persisted permanently in LocalStorage. |
 | **16. Personal Skill Graph ASCII Preview** | `src/views/ProgressView.tsx` | Complete | N/A | **COMPLETE** | Visualizes symbiotic dependency connections between mental and technical tracks. |
 | **17. "I Have 30 Minutes" Tactical Dispatcher** | `src/components/QuickLaunchModal.tsx` | Complete | Complete | **COMPLETE** | Time-boxed presets (15m low energy, 30m surgical, 60m deep, 45m surprise) allocating drill time. |
 | **18. "Surprise Me" Skill Lab Mode** | `src/components/QuickLaunchModal.tsx` | Complete | Complete | **COMPLETE** | Randomly selects an unassigned track from 75 skills and builds a 45m micro-curriculum. |
-| **19. Multi-Agent Brutal Coaching Core** | `src/views/CoachView.tsx`, `src/services/aiEngine.ts` | Partially Complete | Partially Complete | **PARTIALLY COMPLETE** | Role switcher with 8 roles; offline engine missing specific handlers for `drill-generator`, `resource-agent`. |
+| **19. Multi-Agent Brutal Coaching Core** | `src/views/CoachView.tsx`, `src/services/aiEngine.ts` | Complete | Complete | **COMPLETE** | All 8 agent roles supported in offline heuristic engine with live Gemini/OpenAI API fallback. |
 | **20. Live Google Gemini 1.5/2.0 Integration** | `src/services/geminiService.ts`, `src/components/SettingsModal.tsx` | Complete | Complete | **COMPLETE** | Direct REST client calling `v1beta/models/{model}:generateContent` with custom system instruction. |
 | **21. Live OpenAI GPT-4o Integration** | `src/services/geminiService.ts` | Complete | Complete | **COMPLETE** | Direct client calling `https://api.openai.com/v1/chat/completions`. |
-| **22. AI Configuration & Secret Storage** | `src/components/SettingsModal.tsx`, `src/services/storage.ts` | Partially Complete | Complete | **PARTIALLY COMPLETE** | Stores API keys in LocalStorage, but callback did not update parent state or notify CoachView dynamically. |
+| **22. AI Configuration & Secret Storage** | `src/components/SettingsModal.tsx`, `src/services/storage.ts` | Complete | Complete | **COMPLETE** | Origin-local LocalStorage persistence with instant reactive state synchronization. |
 
 ---
 

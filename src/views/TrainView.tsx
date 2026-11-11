@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Eye, Play, CheckCircle2, XCircle, RotateCcw, AlertTriangle, ArrowLeft, ArrowRight, MessageSquareCode, Award, Terminal } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Eye, Play, CheckCircle2, XCircle, RotateCcw, AlertTriangle, ArrowLeft, ArrowRight, MessageSquareCode, Award, Terminal, Layers } from 'lucide-react';
 import { Skill, Drill, DrillAttempt } from '../types';
 import { RubikTimerTool } from '../components/tools/RubikTimerTool';
 import { CardMemoryTool } from '../components/tools/CardMemoryTool';
@@ -13,17 +13,26 @@ interface TrainViewProps {
   onRecordAttempt: (attempt: Omit<DrillAttempt, 'id' | 'timestamp'>) => void;
   onNavigateToCoach: () => void;
   onSelectDifferentSkill: () => void;
+  onAdvanceLevel?: (skillId: string, newLevel: number) => void;
 }
 
 export const TrainView: React.FC<TrainViewProps> = ({
   skill,
   onRecordAttempt,
   onNavigateToCoach,
-  onSelectDifferentSkill
+  onSelectDifferentSkill,
+  onAdvanceLevel
 }) => {
   const [selectedLevelIdx, setSelectedLevelIdx] = useState(0);
   const [selectedDrillIdx, setSelectedDrillIdx] = useState(0);
   const [isVisualModalOpen, setIsVisualModalOpen] = useState(false);
+
+  // Sync selected level when active skill or its current level changes
+  useEffect(() => {
+    const lvlIdx = Math.max(0, Math.min(skill.levels.length - 1, (skill.currentLevel || 1) - 1));
+    setSelectedLevelIdx(lvlIdx);
+    setSelectedDrillIdx(0);
+  }, [skill.id, skill.currentLevel]);
 
   // Manual logging form
   const [scoreInput, setScoreInput] = useState('');
@@ -34,14 +43,35 @@ export const TrainView: React.FC<TrainViewProps> = ({
   const currentLevel = skill.levels[selectedLevelIdx] || skill.levels[0];
   const currentDrill = currentLevel?.drills[selectedDrillIdx] || currentLevel?.drills[0];
 
-  const handleToolSolveRecorded = (scoreStr: string, passed: boolean, durationSec = 30) => {
+  const handleToolSolveRecorded = (
+    scoreStr: string,
+    passed: boolean,
+    durationSec = 30,
+    metrics?: { recognition?: number; execution?: number; accuracy?: number; speed?: number }
+  ) => {
     setScoreInput(scoreStr);
-    submitAttempt(passed, scoreStr, durationSec);
+    submitAttempt(passed, scoreStr, durationSec, metrics);
   };
 
-  const submitAttempt = (passed: boolean, overrideScore?: string, overrideDuration?: number) => {
+  const submitAttempt = (
+    passed: boolean,
+    overrideScore?: string,
+    overrideDuration?: number,
+    customMetrics?: {
+      recognition?: number;
+      execution?: number;
+      accuracy?: number;
+      speed?: number;
+    }
+  ) => {
     const finalScore = overrideScore || scoreInput || (passed ? 'Pass benchmark' : 'Fail benchmark');
     const finalDuration = overrideDuration || parseInt(durationInput) || 60;
+
+    // Use dynamic metrics if provided, or calculate balanced factors
+    const recognitionScore = customMetrics?.recognition ?? (passed ? 88 : 55);
+    const executionScore = customMetrics?.execution ?? (passed ? 86 : 58);
+    const accuracyScore = customMetrics?.accuracy ?? (passed ? 92 : 62);
+    const speedScore = customMetrics?.speed ?? (passed ? 85 : 50);
 
     onRecordAttempt({
       skillId: skill.id,
@@ -51,16 +81,16 @@ export const TrainView: React.FC<TrainViewProps> = ({
       score: finalScore,
       durationSeconds: finalDuration,
       notes: notesInput,
-      recognitionScore: passed ? 85 : 55,
-      executionScore: passed ? 90 : 60,
-      accuracyScore: passed ? 95 : 65,
-      speedScore: passed ? 80 : 50
+      recognitionScore,
+      executionScore,
+      accuracyScore,
+      speedScore
     });
 
     setLastVerdict({
       passed,
       message: passed 
-        ? `RESULT: PASS (${finalScore}). Consistency is improving. Execute next trial at higher intensity.`
+        ? `RESULT: PASS (${finalScore}). Consistency verified. ${skill.currentLevel < skill.totalLevels ? 'Progression unlocked!' : 'Mastery maintained.'}`
         : `RESULT: FAIL (${finalScore}). Target was not met. Repeat drill immediately. Do not move to next level.`
     });
 
@@ -73,8 +103,8 @@ export const TrainView: React.FC<TrainViewProps> = ({
       return (
         <RubikTimerTool 
           targetSeconds={skill.number === 13 ? 20 : skill.number === 12 ? 30 : 60}
-          onRecordSolve={(timeSec, passed) => {
-            handleToolSolveRecorded(`${timeSec.toFixed(2)}s`, passed, Math.round(timeSec));
+          onRecordSolve={(timeSec, passed, metrics) => {
+            handleToolSolveRecorded(`${timeSec.toFixed(2)}s`, passed, Math.round(timeSec), metrics);
           }}
         />
       );
@@ -83,8 +113,8 @@ export const TrainView: React.FC<TrainViewProps> = ({
       return (
         <CardMemoryTool 
           cardCount={skill.number === 21 ? 52 : 10}
-          onRecordResult={(accuracy, memoSec, passed) => {
-            handleToolSolveRecorded(`${accuracy}% accuracy (${memoSec}s memo)`, passed, memoSec);
+          onRecordResult={(accuracy, memoSec, passed, metrics) => {
+            handleToolSolveRecorded(`${accuracy}% accuracy (${memoSec}s memo)`, passed, memoSec, metrics);
           }}
         />
       );
@@ -93,8 +123,8 @@ export const TrainView: React.FC<TrainViewProps> = ({
       return (
         <SpeedReaderTool 
           targetWpm={skill.number === 25 ? 600 : 400}
-          onRecordResult={(wpm, compScore, passed) => {
-            handleToolSolveRecorded(`${wpm} WPM (${compScore}% comp)`, passed, 60);
+          onRecordResult={(wpm, compScore, passed, metrics) => {
+            handleToolSolveRecorded(`${wpm} WPM (${compScore}% comp)`, passed, 60, metrics);
           }}
         />
       );
@@ -103,7 +133,12 @@ export const TrainView: React.FC<TrainViewProps> = ({
       return (
         <AgentStudioTool 
           onRecordResult={(passed, metrics) => {
-            handleToolSolveRecorded(`${metrics.loops} loops, ${metrics.toolCalls} tools called`, passed, 120);
+            handleToolSolveRecorded(`${metrics.loops} loops, ${metrics.toolCalls} tools called`, passed, 120, {
+              recognition: 90,
+              execution: 88,
+              accuracy: 94,
+              speed: 82
+            });
           }}
         />
       );
@@ -115,7 +150,12 @@ export const TrainView: React.FC<TrainViewProps> = ({
         restSecondsDefault={15}
         roundsDefault={8}
         onRecordResult={(rounds, totalSec) => {
-          handleToolSolveRecorded(`${rounds} rounds completed`, true, totalSec);
+          handleToolSolveRecorded(`${rounds} rounds completed`, true, totalSec, {
+            recognition: 85,
+            execution: 92,
+            accuracy: 90,
+            speed: 86
+          });
         }}
       />
     );
@@ -179,6 +219,80 @@ export const TrainView: React.FC<TrainViewProps> = ({
             <span>[ ASK BRUTAL COACH ]</span>
           </button>
         </div>
+      </div>
+
+      {/* Level and Drill Hierarchy Navigation */}
+      <div className="bg-steel-950 border border-steel-800 p-4 space-y-3">
+        {/* Level Tabs */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-steel-900 pb-3">
+          <div className="flex items-center space-x-2">
+            <span className="text-[10px] text-steel-500 uppercase tracking-widest font-bold">LEVEL PROGRESSION:</span>
+            <span className="text-xs text-forge-amber font-bold">
+              LV {skill.currentLevel} of {skill.totalLevels} UNLOCKED
+            </span>
+          </div>
+
+          <div className="flex items-center space-x-1.5 overflow-x-auto py-0.5">
+            {skill.levels.map((lvl, idx) => {
+              const isUnlocked = lvl.levelNumber <= skill.currentLevel;
+              const isSelected = idx === selectedLevelIdx;
+              return (
+                <button
+                  key={lvl.levelNumber}
+                  onClick={() => {
+                    setSelectedLevelIdx(idx);
+                    setSelectedDrillIdx(0);
+                  }}
+                  className={`px-3 py-1 text-xs font-mono font-bold border transition-all flex items-center space-x-1 ${
+                    isSelected
+                      ? 'bg-forge-amber text-black border-forge-amber shadow-[0_0_8px_rgba(245,158,11,0.25)]'
+                      : isUnlocked
+                        ? 'bg-steel-900 text-steel-200 border-steel-700 hover:border-steel-500'
+                        : 'bg-steel-950 text-steel-600 border-steel-900 opacity-60 hover:opacity-90'
+                  }`}
+                  title={lvl.title}
+                >
+                  <span>LV {lvl.levelNumber.toString().padStart(2, '0')}</span>
+                  {!isUnlocked && <span className="text-[10px] opacity-70">🔒</span>}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Drill Selector Tabs */}
+        {currentLevel && currentLevel.drills && currentLevel.drills.length > 0 && (
+          <div className="flex flex-wrap items-center gap-2 pt-1">
+            <span className="text-[10px] text-steel-500 uppercase tracking-widest font-bold">DRILLS:</span>
+            {currentLevel.drills.map((drill, idx) => {
+              const isSelected = idx === selectedDrillIdx;
+              return (
+                <button
+                  key={drill.id}
+                  onClick={() => setSelectedDrillIdx(idx)}
+                  className={`px-3 py-1 text-xs font-mono border transition-all ${
+                    isSelected
+                      ? 'bg-steel-200 text-black border-steel-200 font-bold'
+                      : 'bg-steel-900 text-steel-300 border-steel-800 hover:text-steel-100 hover:border-steel-700'
+                  }`}
+                >
+                  <span>{drill.title.split('—')[0].trim() || `Drill ${idx + 1}`}</span>
+                  <span className="opacity-70 text-[10px] ml-1.5 hidden sm:inline">
+                    ({drill.repetitions})
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Benchmark & Unlock Condition */}
+        {currentLevel && (
+          <div className="text-[11px] text-steel-400 font-mono pt-2 border-t border-steel-900 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <span><strong className="text-steel-300">BENCHMARK:</strong> {currentLevel.targetBenchmark}</span>
+            <span className="text-steel-500"><strong className="text-steel-400">UNLOCK CONDITION:</strong> {currentLevel.unlockCondition}</span>
+          </div>
+        )}
       </div>
 
       {/* Active Drill Specification Card */}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BarChart3, AlertOctagon, CheckCircle2, XCircle, Clock, ShieldCheck, ExternalLink, GitBranch, Share2 } from 'lucide-react';
 import { DrillAttempt, Skill } from '../types';
 import { analyzeBottlenecks } from '../services/aiEngine';
+import { loadSkillProofs, saveSkillProof, SubmittedProof } from '../services/storage';
 
 interface ProgressViewProps {
   attempts: DrillAttempt[];
@@ -18,7 +19,7 @@ export const ProgressView: React.FC<ProgressViewProps> = ({
 }) => {
   const [proofLink, setProofLink] = useState('');
   const [proofNote, setProofNote] = useState('');
-  const [submittedProofs, setSubmittedProofs] = useState<{ id: string; skillTitle: string; link: string; date: string }[]>([]);
+  const [submittedProofs, setSubmittedProofs] = useState<SubmittedProof[]>(() => loadSkillProofs());
 
   const metrics = analyzeBottlenecks(attempts);
 
@@ -26,13 +27,20 @@ export const ProgressView: React.FC<ProgressViewProps> = ({
     e.preventDefault();
     if (!proofLink.trim()) return;
 
-    const newProof = {
+    let validUrl = proofLink.trim();
+    if (!validUrl.startsWith('http://') && !validUrl.startsWith('https://')) {
+      validUrl = `https://${validUrl}`;
+    }
+
+    const newProof: SubmittedProof = {
       id: Date.now().toString(),
       skillTitle: activeSkills[0]?.title || 'Active Track',
-      link: proofLink.trim(),
+      link: validUrl,
+      notes: proofNote.trim(),
       date: new Date().toLocaleDateString()
     };
-    setSubmittedProofs(prev => [newProof, ...prev]);
+    const updated = saveSkillProof(newProof);
+    setSubmittedProofs(updated);
     setProofLink('');
     setProofNote('');
   };
@@ -154,15 +162,25 @@ export const ProgressView: React.FC<ProgressViewProps> = ({
             Every serious skill requires objective proof: GPS logs (Strava), video recordings (Unlisted YouTube/Loom), GitHub repositories, or audio exports.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
             <input
               type="url"
               required
               placeholder="e.g. https://github.com/my-agent or https://strava.com/activities/..."
               value={proofLink}
               onChange={e => setProofLink(e.target.value)}
-              className="flex-1 bg-steel-900 border border-steel-700 p-2 text-xs text-steel-100 focus:border-forge-amber outline-none"
+              className="sm:col-span-2 bg-steel-900 border border-steel-700 p-2 text-xs text-steel-100 focus:border-forge-amber outline-none"
             />
+            <input
+              type="text"
+              placeholder="Verification notes / parameters..."
+              value={proofNote}
+              onChange={e => setProofNote(e.target.value)}
+              className="bg-steel-900 border border-steel-700 p-2 text-xs text-steel-100 focus:border-forge-amber outline-none"
+            />
+          </div>
+
+          <div className="flex justify-end">
             <button
               type="submit"
               className="px-6 py-2 bg-forge-amber hover:bg-amber-400 text-black text-xs font-bold uppercase tracking-wider shrink-0"
@@ -177,11 +195,17 @@ export const ProgressView: React.FC<ProgressViewProps> = ({
             {submittedProofs.map(p => (
               <div key={p.id} className="p-3 flex items-center justify-between">
                 <div className="space-y-0.5">
-                  <span className="text-steel-200 font-bold block">{p.skillTitle}</span>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-steel-200 font-bold block">{p.skillTitle}</span>
+                    <span className="text-[10px] text-steel-500 font-mono">({p.date})</span>
+                  </div>
                   <a href={p.link} target="_blank" rel="noreferrer" className="text-forge-amber hover:underline flex items-center space-x-1 text-[11px]">
                     <span className="truncate max-w-sm">{p.link}</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
+                  {p.notes && (
+                    <p className="text-[11px] text-steel-400 italic">"{p.notes}"</p>
+                  )}
                 </div>
                 <span className="text-[10px] text-emerald-400 font-bold uppercase border border-emerald-800/60 bg-emerald-950/40 px-2 py-0.5">
                   VERIFIED

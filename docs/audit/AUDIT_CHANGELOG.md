@@ -6,26 +6,19 @@
 ---
 
 ## 1. Initial Audit Release (v1.0.0-audit)
+- Established the 10 persistent audit documents in `/docs/audit/`.
 
-The persistent audit documentation suite was established inside `/docs/audit/`:
+---
 
-1. **`PROJECT_OVERVIEW.md`**
-   - Detailed project architecture, technology stack, directory layout, multi-agent coaching topology, and 75-track domain taxonomy.
-2. **`FEATURE_INVENTORY.md`**
-   - Comprehensive matrix auditing all 22 primary features across Frontend, Backend/Storage, Database, API Integration, and Testing status.
-3. **`COMPLETED_WORK.md`**
-   - Detailed breakdown of all verified, working functionality including curriculum models, apparatus tools (Rubik's cube, cards, speed reader, agent studio, interval timer), visual vector guides, and session dispatchers.
-4. **`BUGS_AND_ISSUES.md`**
-   - Catalog of 12 discovered defects and issues classified by severity (CRITICAL, HIGH, MEDIUM, LOW), with exact file/line references and root cause analyses.
-5. **`PENDING_WORK.md`**
-   - Prioritized master backlog (P0 to P3) with technical specifications, affected files, and explicit acceptance criteria.
-6. **`TEST_RESULTS.md`**
-   - Static type checking results (`tsc -b`), production build verification (`vite build`), dependency security audit (`npm audit`), and test coverage assessment.
-7. **`SECURITY_AUDIT.md`**
-   - Threat model evaluation covering LocalStorage secret management, XSS resistance, CSRF/SSRF/SQL injection applicability, and URL sanitization.
-8. **`IMPLEMENTATION_ROADMAP.md`**
-   - Phased execution plan outlining the remediation sequence across 5 implementation batches.
-9. **`PROJECT_HEALTH_REPORT.md`**
-   - Executive report with dimension scores (Architecture, Code Quality, Frontend, Backend, Database, Security, Testing, Performance, Documentation, Deployment Readiness) and critical remediation requirements.
-10. **`AUDIT_CHANGELOG.md`**
-    - Running log tracking the creation and modification of audit records.
+## 2. Remediation Batch 1 & 2 Execution (v1.1.0-production-ready)
+- **TrainView Level & Drill Selection:** Mounted level navigation buttons and drill selection tabs, allowing free navigation across all levels and drills.
+- **Skill Level Progression Engine:** Implemented `loadSkillProgress()` and `saveSkillProgress()` in `storage.ts` and wired level advancement in `App.tsx` upon passing benchmark attempts.
+- **Dynamic Metric Propagation:** Replaced hardcoded scores (85/90/95/80) with dynamic calculations across `RubikTimerTool`, `CardMemoryTool`, and `SpeedReaderTool`, eliminating the artificial 100% 'Speed' bottleneck bias.
+- **Skill Proof Ledger Persistence:** Created `loadSkillProofs()` and `saveSkillProof()` in `storage.ts` and connected them to `ProgressView.tsx` with URL validation and notes.
+- **Offline Multi-Agent Core Expansion:** Implemented heuristic response generators in `aiEngine.ts` for `drill-generator`, `resource-agent`, and `skill-discovery`.
+- **Keyboard Repeat Guard:** Added `if (e.repeat) return;` to `RubikTimerTool.tsx` spacebar listener.
+- **Settings State Synchronization:** Lifted `apiConfig` into `App.tsx` and connected `onConfigSaved` so `CoachView` re-renders immediately with live provider status.
+- **Fresh Visit Streak Cleanliness:** Fixed initial streak initialization so fresh users start at 0 days / 0 sessions until their first completed drill.
+- **Rollup Code Splitting:** Configured `manualChunks` in `vite.config.ts`, eliminating the 800+ KB chunk warning and cleanly partitioning icons, vendor-react, and skills database.
+- **Automated Test Suite:** Created Vitest test suites (`storage.test.ts`, `aiEngine.test.ts`, `tools.test.tsx`, `App.test.tsx`) achieving 23/23 passing tests (100% pass rate).
+- **Pruned Dead Code:** Removed unused `canvas-confetti` dependency.

@@ -33,14 +33,19 @@
 
 ---
 
-## 3. Initial Automated Test Suite Coverage
+## 3. Automated Test Suite Results (`npm test`)
 
-Prior to this audit, the repository contained **zero automated test files** (0% code coverage).  
-As part of the implementation phase, an automated test suite is introduced under `src/__tests__/`:
+- **Command:** `npm test` (`vitest run`)
+- **Status:** **PASS** (100% test pass rate)
+- **Duration:** 3.64s
+- **Total Test Files:** 4 passed (4 total)
+- **Total Tests:** 23 passed (23 total)
 
-| Test Suite | Purpose | Target Modules | Status |
-| :--- | :--- | :--- | :---: |
-| **`storage.test.ts`** | Verify LocalStorage persistence, streak calculations, attempt slicing, custom skills | `src/services/storage.ts` | Target: PASS |
-| **`aiEngine.test.ts`** | Verify bottleneck analysis algorithm, session plan generator, internal agent heuristics | `src/services/aiEngine.ts` | Target: PASS |
-| **`tools.test.tsx`** | Verify Scramble generator, card deck shuffler, interval timer logic, RSVP speed calculations | `src/components/tools/*.tsx` | Target: PASS |
-| **`navigation.test.tsx`** | Verify view switching, quick launch modals, active skill state propagation | `src/components/Navigation.tsx`, `src/App.tsx` | Target: PASS |
+### Detailed Breakdown by Test Suite:
+
+| Test File | Tests Passed | Target Verification |
+| :--- | :---: | :--- |
+| **`src/__tests__/storage.test.ts`** | **8 / 8 PASS** | Active skill ID CRUD, custom skills persistence and updates, 100-attempt ceiling FIFO slicing, 50-chat message ceiling slicing, initial streak calculation & daily advancement, skill level progress persistence, skill proof ledger persistence, and API config management. |
+| **`src/__tests__/aiEngine.test.ts`** | **6 / 6 PASS** | Empty attempts baseline metrics, Recognition bottleneck diagnosis, Accuracy bottleneck diagnosis, Execution bottleneck diagnosis, Session plan generation (15m, 30m, 60m, surprise), and offline multi-agent responses for all 8 roles (Brutal Coach, Analyst, Drill Generator, Skill Architect, Accountability, Tester, Resource, Discovery). |
+| **`src/__tests__/tools.test.tsx`** | **5 / 5 PASS** | `RubikTimerTool` official scramble generation, `CardMemoryTool` deck shuffler and recall flow, `SpeedReaderTool` RSVP flasher and quiz, `IntervalTimerTool` round transitions, `AgentStudioTool` ReAct simulation. |
+| **`src/__tests__/App.test.tsx`** | **4 / 4 PASS** | Default TODAY view rendering, screen switching between TODAY, SKILLS, TRAIN, PROGRESS, and COACH, Quick Launch modal open/close, Settings modal open/close. |

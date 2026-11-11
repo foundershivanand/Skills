@@ -3,6 +3,7 @@ import { Send, Terminal, ShieldAlert, Cpu, Sparkles, RefreshCw, Trash2, ArrowRig
 import { AIAgentRole, ChatMessage, Skill, DrillAttempt } from '../types';
 import { processAgentMessage } from '../services/aiEngine';
 import { loadApiConfig } from '../services/storage';
+import { LLMConfig } from '../services/geminiService';
 
 interface CoachViewProps {
   messages: ChatMessage[];
@@ -10,6 +11,7 @@ interface CoachViewProps {
   onClearMessages: () => void;
   activeSkill?: Skill;
   recentAttempts: DrillAttempt[];
+  apiConfig?: LLMConfig | null;
 }
 
 export const CoachView: React.FC<CoachViewProps> = ({
@@ -17,17 +19,20 @@ export const CoachView: React.FC<CoachViewProps> = ({
   onSendMessage,
   onClearMessages,
   activeSkill,
-  recentAttempts
+  recentAttempts,
+  apiConfig: propApiConfig
 }) => {
   const [inputText, setInputText] = useState('');
   const [selectedRole, setSelectedRole] = useState<AIAgentRole>('brutal-coach');
   const [isProcessing, setIsProcessing] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
-  const apiConfig = loadApiConfig();
+  const apiConfig = propApiConfig !== undefined ? propApiConfig : loadApiConfig();
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (typeof messagesEndRef.current?.scrollIntoView === 'function') {
+      messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   }, [messages, isProcessing]);
 
   const handleSend = async (overrideText?: string) => {
@@ -81,6 +86,8 @@ export const CoachView: React.FC<CoachViewProps> = ({
     { id: 'skill-architect', name: 'SKILL ARCHITECT', desc: 'Deconstructs new pursuit into levels' },
     { id: 'accountability-agent', name: 'ACCOUNTABILITY', desc: 'Tracks excuses and consistency' },
     { id: 'tester', name: 'TESTER', desc: 'Blind official benchmark runner' },
+    { id: 'resource-agent', name: 'RESOURCE AGENT', desc: 'Single high-leverage reference' },
+    { id: 'skill-discovery', name: 'SKILL DISCOVERY', desc: 'Time-boxed skill catalog finder' },
   ];
 
   const quickPrompts = [

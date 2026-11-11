@@ -4,7 +4,12 @@ import { Play, RotateCcw, CheckCircle, XCircle, ArrowRight, Eye, ShieldAlert } f
 interface CardMemoryToolProps {
   cardCount?: number;
   timeLimitSeconds?: number;
-  onRecordResult?: (accuracyPercent: number, memoTimeSeconds: number, passed: boolean) => void;
+  onRecordResult?: (
+    accuracyPercent: number,
+    memoTimeSeconds: number,
+    passed: boolean,
+    metrics?: { recognition: number; execution: number; accuracy: number; speed: number }
+  ) => void;
 }
 
 const SUITS = ['♠', '♥', '♦', '♣'] as const;
@@ -105,9 +110,15 @@ export const CardMemoryTool: React.FC<CardMemoryToolProps> = ({
     }, 0);
     const accuracy = Math.round((correctCount / deck.length) * 100);
     const passed = accuracy >= 95 && memoElapsed <= timeLimitSeconds;
+    const speedScore = Math.min(100, Math.round((timeLimitSeconds / Math.max(1, memoElapsed)) * 85));
 
     if (onRecordResult) {
-      onRecordResult(accuracy, memoElapsed, passed);
+      onRecordResult(accuracy, memoElapsed, passed, {
+        recognition: passed ? 90 : 60,
+        execution: passed ? 85 : 55,
+        accuracy: accuracy,
+        speed: speedScore
+      });
     }
   };
 

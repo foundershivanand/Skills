@@ -9,20 +9,20 @@ This document catalogs every confirmed defect, vulnerability, logical error, and
 
 ## 1. Issue Classification Matrix
 
-| Issue ID | Severity | Category | File & Line Reference | Impact |
-| :--- | :---: | :---: | :--- | :--- |
-| **BUG-01** | **CRITICAL** | UI / Routing | `src/views/TrainView.tsx#L24-L35` | Level and drill selection controls completely absent from the DOM. |
-| **BUG-02** | **CRITICAL** | Data Model | `src/App.tsx#L54-L63`, `src/services/storage.ts` | Skill level progression and unlocking never persisted; skills locked at Level 1. |
-| **BUG-03** | **CRITICAL** | Algorithmic | `src/views/TrainView.tsx#L46-L58`, `src/services/aiEngine.ts#L44-L57` | Hardcoded metrics cause Four-Factor Matrix to ALWAYS diagnose 'Speed' constraint. |
-| **BUG-04** | **HIGH** | Data Loss | `src/views/ProgressView.tsx#L21`, `src/views/ProgressView.tsx#L25-L38` | Skill proof ledger submissions stored only in React state; lost on refresh. |
-| **BUG-05** | **HIGH** | Logic Error | `src/services/aiEngine.ts#L181-L286` | Internal AI Engine missing handlers for `drill-generator`, `resource-agent`, and `skill-discovery`. |
-| **BUG-06** | **MEDIUM** | Event Handling | `src/components/tools/RubikTimerTool.tsx#L47-L74` | Spacebar key auto-repeat skips 15s inspection phase and starts timer prematurely. |
-| **BUG-07** | **MEDIUM** | State Sync | `src/App.tsx#L238-L242`, `src/views/CoachView.tsx#L27` | SettingsModal saves API key to LocalStorage but does not update active CoachView state. |
-| **BUG-08** | **MEDIUM** | UI Deficiency | `src/views/ProgressView.tsx#L20`, `src/views/ProgressView.tsx#L158-L173` | `proofNote` state is defined and cleared, but no textarea or input exists in the UI. |
-| **BUG-09** | **LOW** | Edge Case | `src/services/storage.ts#L115-L120` | First-time visitors are initialized with a 1-day streak prior to any recorded practice. |
-| **BUG-10** | **LOW** | Dependency | `package.json#L12` | `canvas-confetti` installed as dependency but never imported (dead dependency). |
-| **BUG-11** | **MEDIUM** | Performance | `vite.config.ts`, `src/data/skillsData.ts` | Single monolithic JS bundle (800+ KB) exceeds recommended 500 KB limit. |
-| **BUG-12** | **LOW** | UI Text | `src/components/SettingsModal.tsx#L109` | Text claims "browser's encrypted localStorage" which is misleading (localStorage is unencrypted). |
+| Issue ID | Severity | Category | File & Line Reference | Remediation Status | Verification |
+| :--- | :---: | :---: | :--- | :---: | :--- |
+| **BUG-01** | **CRITICAL** | UI / Routing | `src/views/TrainView.tsx#L24-L35` | **RESOLVED** | Level and drill selector tabs mounted; allows switching levels and drills. |
+| **BUG-02** | **CRITICAL** | Data Model | `src/App.tsx#L54-L63`, `src/services/storage.ts` | **RESOLVED** | `loadSkillProgress`/`saveSkillProgress` implemented; advances upon benchmark pass. |
+| **BUG-03** | **CRITICAL** | Algorithmic | `src/views/TrainView.tsx#L46-L58`, `src/services/aiEngine.ts#L44-L57` | **RESOLVED** | Dynamic four-factor metric propagation implemented across all interactive tools. |
+| **BUG-04** | **HIGH** | Data Loss | `src/views/ProgressView.tsx#L21`, `src/views/ProgressView.tsx#L25-L38` | **RESOLVED** | `loadSkillProofs`/`saveSkillProof` implemented with LocalStorage persistence. |
+| **BUG-05** | **HIGH** | Logic Error | `src/services/aiEngine.ts#L181-L286` | **RESOLVED** | Offline heuristic generators added for `drill-generator`, `resource-agent`, `skill-discovery`. |
+| **BUG-06** | **MEDIUM** | Event Handling | `src/components/tools/RubikTimerTool.tsx#L47-L74` | **RESOLVED** | Added `if (e.repeat) return;` guard preventing spacebar repeat inspection skipping. |
+| **BUG-07** | **MEDIUM** | State Sync | `src/App.tsx#L238-L242`, `src/views/CoachView.tsx#L27` | **RESOLVED** | Lifted `apiConfig` into App state; `onConfigSaved` updates CoachView immediately. |
+| **BUG-08** | **MEDIUM** | UI Deficiency | `src/views/ProgressView.tsx#L20`, `src/views/ProgressView.tsx#L158-L173` | **RESOLVED** | Added note input field and display in the submitted proofs ledger. |
+| **BUG-09** | **LOW** | Edge Case | `src/services/storage.ts#L115-L120` | **RESOLVED** | Fresh visit streak initializes cleanly to 0 days / 0 sessions. |
+| **BUG-10** | **LOW** | Dependency | `package.json#L12` | **RESOLVED** | Pruned unused `canvas-confetti` and `@types/canvas-confetti` packages. |
+| **BUG-11** | **MEDIUM** | Performance | `vite.config.ts`, `src/data/skillsData.ts` | **RESOLVED** | Configured manual Rollup chunks for icons, react vendor, and skills database. |
+| **BUG-12** | **LOW** | UI Text | `src/components/SettingsModal.tsx#L109` | **RESOLVED** | Corrected copy to disclose origin-local unencrypted browser storage. |
 
 ---
 

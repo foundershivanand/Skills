@@ -8,7 +8,18 @@ const STORAGE_KEYS = {
   CHAT_MESSAGES: 'skillforge_chat_messages',
   API_CONFIG: 'skillforge_api_config',
   STREAK_DATA: 'skillforge_streak_data',
+  SKILL_PROGRESS: 'skillforge_skill_progress',
+  SKILL_PROOFS: 'skillforge_skill_proofs',
 };
+
+export interface SubmittedProof {
+  id: string;
+  skillId?: string;
+  skillTitle: string;
+  link: string;
+  date: string;
+  notes?: string;
+}
 
 export interface StreakData {
   currentStreak: number;
@@ -107,14 +118,56 @@ export function saveApiConfig(config: LLMConfig): void {
   }
 }
 
+export function loadSkillProgress(): Record<string, number> {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.SKILL_PROGRESS);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+export function saveSkillProgress(skillId: string, level: number): Record<string, number> {
+  try {
+    const existing = loadSkillProgress();
+    const updated = { ...existing, [skillId]: level };
+    localStorage.setItem(STORAGE_KEYS.SKILL_PROGRESS, JSON.stringify(updated));
+    return updated;
+  } catch (e) {
+    console.error(e);
+    return {};
+  }
+}
+
+export function loadSkillProofs(): SubmittedProof[] {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.SKILL_PROOFS);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveSkillProof(proof: SubmittedProof): SubmittedProof[] {
+  try {
+    const existing = loadSkillProofs();
+    const updated = [proof, ...existing];
+    localStorage.setItem(STORAGE_KEYS.SKILL_PROOFS, JSON.stringify(updated));
+    return updated;
+  } catch (e) {
+    console.error(e);
+    return [];
+  }
+}
+
 export function loadStreakData(): StreakData {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.STREAK_DATA);
     if (raw) return JSON.parse(raw);
   } catch {}
   return {
-    currentStreak: 1,
-    lastTrainedDate: new Date().toISOString().split('T')[0],
+    currentStreak: 0,
+    lastTrainedDate: '',
     totalSessionsCompleted: 0
   };
 }
@@ -123,7 +176,11 @@ export function updateStreak(): StreakData {
   const current = loadStreakData();
   const today = new Date().toISOString().split('T')[0];
 
-  if (current.lastTrainedDate === today) {
+  if (!current.lastTrainedDate) {
+    current.currentStreak = 1;
+    current.lastTrainedDate = today;
+    current.totalSessionsCompleted = 1;
+  } else if (current.lastTrainedDate === today) {
     current.totalSessionsCompleted += 1;
   } else {
     const lastDate = new Date(current.lastTrainedDate);
@@ -132,7 +189,7 @@ export function updateStreak(): StreakData {
 
     if (diffDays === 1) {
       current.currentStreak += 1;
-    } else if (diffDays > 1) {
+    } else {
       current.currentStreak = 1;
     }
     current.lastTrainedDate = today;

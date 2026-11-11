@@ -19,17 +19,30 @@ import {
   loadChatMessages,
   saveChatMessage,
   loadStreakData,
+  loadSkillProgress,
+  saveSkillProgress,
+  loadApiConfig,
   StreakData
 } from './services/storage';
+import { LLMConfig } from './services/geminiService';
 
 export const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<ScreenId>('today');
   const [customSkills, setCustomSkills] = useState<Skill[]>(() => loadCustomSkills());
+  const [skillProgress, setSkillProgress] = useState<Record<string, number>>(() => loadSkillProgress());
+  const [apiConfig, setApiConfig] = useState<LLMConfig | null>(() => loadApiConfig());
   
-  // Combine builtin 75 skills with custom skills
+  // Combine builtin 75 skills with custom skills and attach saved level progression
   const allSkills: Skill[] = React.useMemo(() => {
-    return [...customSkills, ...ALL_SKILLS];
-  }, [customSkills]);
+    const combined = [...customSkills, ...ALL_SKILLS];
+    return combined.map(s => {
+      const persistedLevel = skillProgress[s.id];
+      if (persistedLevel !== undefined) {
+        return { ...s, currentLevel: persistedLevel };
+      }
+      return s;
+    });
+  }, [customSkills, skillProgress]);
 
   const [activeSkillId, setActiveSkillId] = useState<string>(() => loadActiveSkillId('skill-11'));
   const [attempts, setAttempts] = useState<DrillAttempt[]>(() => loadAttempts());
@@ -51,6 +64,11 @@ export const App: React.FC = () => {
     setCurrentScreen('train');
   };
 
+  const handleAdvanceSkillLevel = (skillId: string, newLevel: number) => {
+    const updated = saveSkillProgress(skillId, newLevel);
+    setSkillProgress(updated);
+  };
+
   const handleRecordAttempt = (attemptData: Omit<DrillAttempt, 'id' | 'timestamp'>) => {
     const fullAttempt: DrillAttempt = {
       ...attemptData,
@@ -60,6 +78,15 @@ export const App: React.FC = () => {
     saveAttempt(fullAttempt);
     setAttempts(prev => [fullAttempt, ...prev]);
     setStreakData(loadStreakData());
+
+    // Advance level if passed benchmark and subsequent levels exist
+    if (fullAttempt.passed && activeSkill) {
+      const currentLevelObj = activeSkill.levels.find(l => l.levelNumber === activeSkill.currentLevel) || activeSkill.levels[0];
+      const isBenchmarkDrill = currentLevelObj?.drills.some(d => d.id === fullAttempt.drillId);
+      if (isBenchmarkDrill && activeSkill.currentLevel < activeSkill.totalLevels) {
+        handleAdvanceSkillLevel(activeSkill.id, activeSkill.currentLevel + 1);
+      }
+    }
   };
 
   const handleSendMessage = (msg: ChatMessage) => {
@@ -203,6 +230,7 @@ export const App: React.FC = () => {
             onRecordAttempt={handleRecordAttempt}
             onNavigateToCoach={() => setCurrentScreen('coach')}
             onSelectDifferentSkill={() => setCurrentScreen('skills')}
+            onAdvanceLevel={handleAdvanceSkillLevel}
           />
         )}
 
@@ -222,6 +250,7 @@ export const App: React.FC = () => {
             onClearMessages={handleClearMessages}
             activeSkill={activeSkill}
             recentAttempts={attempts}
+            apiConfig={apiConfig}
           />
         )}
       </main>
@@ -238,7 +267,7 @@ export const App: React.FC = () => {
       <SettingsModal
         isOpen={isSettingsOpen}
         onClose={() => setIsSettingsOpen(false)}
-        onConfigSaved={() => {}}
+        onConfigSaved={setApiConfig}
       />
     </div>
   );

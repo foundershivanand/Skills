@@ -9,19 +9,19 @@ This backlog outlines all necessary remediation and enhancement tasks organized 
 
 ## 1. Prioritized Task Checklist
 
-- [ ] **TASK-01 (P0): Fix Level & Drill Selection in TrainView**
-- [ ] **TASK-02 (P0): Implement Skill Level Progression & LocalStorage Persistence**
-- [ ] **TASK-03 (P0): Fix Four-Factor Metric Calculations to Eliminate Speed Bias**
-- [ ] **TASK-04 (P1): Implement Skill Proof Persistence in LocalStorage**
-- [ ] **TASK-05 (P1): Implement Missing Offline Handlers for Drill Generator & Other Roles**
-- [ ] **TASK-06 (P1): Fix Spacebar Key Repeat & Inspection Flow in RubikTimerTool**
-- [ ] **TASK-07 (P1): Synchronize AI Configuration State between SettingsModal and CoachView**
-- [ ] **TASK-08 (P2): Add Note Field to Skill Proof Ledger UI in ProgressView**
-- [ ] **TASK-09 (P2): Correct Initial Streak Calculation for Fresh Visits**
-- [ ] **TASK-10 (P2): Optimize Vite Rollup Bundle Chunking & Code Splitting**
-- [ ] **TASK-11 (P3): Prune Dead Dependency (`canvas-confetti`)**
-- [ ] **TASK-12 (P3): Correct Misleading "Encrypted LocalStorage" Copy**
-- [ ] **TASK-13 (P1): Add Comprehensive Automated Unit & Integration Test Suite**
+- [x] **TASK-01 (P0): Fix Level & Drill Selection in TrainView** (RESOLVED)
+- [x] **TASK-02 (P0): Implement Skill Level Progression & LocalStorage Persistence** (RESOLVED)
+- [x] **TASK-03 (P0): Fix Four-Factor Metric Calculations to Eliminate Speed Bias** (RESOLVED)
+- [x] **TASK-04 (P1): Implement Skill Proof Persistence in LocalStorage** (RESOLVED)
+- [x] **TASK-05 (P1): Implement Missing Offline Handlers for Drill Generator & Other Roles** (RESOLVED)
+- [x] **TASK-06 (P1): Fix Spacebar Key Repeat & Inspection Flow in RubikTimerTool** (RESOLVED)
+- [x] **TASK-07 (P1): Synchronize AI Configuration State between SettingsModal and CoachView** (RESOLVED)
+- [x] **TASK-08 (P2): Add Note Field to Skill Proof Ledger UI in ProgressView** (RESOLVED)
+- [x] **TASK-09 (P2): Correct Initial Streak Calculation for Fresh Visits** (RESOLVED)
+- [x] **TASK-10 (P2): Optimize Vite Rollup Bundle Chunking & Code Splitting** (RESOLVED)
+- [x] **TASK-11 (P3): Prune Dead Dependency (`canvas-confetti`)** (RESOLVED)
+- [x] **TASK-12 (P3): Correct Misleading "Encrypted LocalStorage" Copy** (RESOLVED)
+- [x] **TASK-13 (P1): Add Comprehensive Automated Unit & Integration Test Suite** (RESOLVED)
 
 ---
 

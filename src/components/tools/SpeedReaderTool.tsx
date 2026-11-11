@@ -3,7 +3,12 @@ import { Play, Pause, RotateCcw, CheckCircle, XCircle } from 'lucide-react';
 
 interface SpeedReaderToolProps {
   targetWpm?: number;
-  onRecordResult?: (wpm: number, comprehensionPercent: number, passed: boolean) => void;
+  onRecordResult?: (
+    wpm: number,
+    comprehensionPercent: number,
+    passed: boolean,
+    metrics?: { recognition: number; execution: number; accuracy: number; speed: number }
+  ) => void;
 }
 
 const SAMPLE_TEXT = `Deliberate practice is a highly structured activity designed specifically to improve performance. The core principle requires an individual to work on tasks that are just beyond their current capability level. Unlike ordinary repetitive practice, deliberate practice demands continuous monitoring, instant feedback, and intentional correction of errors. In any domain—whether speedcubing, memory sports, or writing production code—true mastery is not achieved by mindlessly consuming information or repeating comfortable routines. It is achieved by isolating the specific mechanical or cognitive bottleneck, applying maximum focus to targeted micro-drills, and measuring observable performance against a rigid standard. When you train with clear constraints, failure is not an emotional setback; it is the primary diagnostic signal that guides your next iteration.`;
@@ -89,9 +94,15 @@ export const SpeedReaderTool: React.FC<SpeedReaderToolProps> = ({
     }, 0);
     const scorePercent = Math.round((correctCount / QUIZ_QUESTIONS.length) * 100);
     const passed = wpm >= targetWpm && scorePercent >= 80;
+    const speedScore = Math.min(100, Math.round((wpm / targetWpm) * 90));
 
     if (onRecordResult) {
-      onRecordResult(wpm, scorePercent, passed);
+      onRecordResult(wpm, scorePercent, passed, {
+        recognition: passed ? 92 : 62,
+        execution: passed ? 88 : 65,
+        accuracy: scorePercent,
+        speed: speedScore
+      });
     }
   };
 

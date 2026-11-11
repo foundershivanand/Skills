@@ -3,7 +3,11 @@ import { Play, Pause, RotateCcw, CheckCircle, XCircle, Award, Zap } from 'lucide
 
 interface RubikTimerToolProps {
   targetSeconds?: number;
-  onRecordSolve?: (timeSeconds: number, passed: boolean) => void;
+  onRecordSolve?: (
+    timeSeconds: number,
+    passed: boolean,
+    metrics?: { recognition: number; execution: number; accuracy: number; speed: number }
+  ) => void;
 }
 
 const SCRAMBLE_MOVES = ["R", "R'", "R2", "L", "L'", "L2", "U", "U'", "U2", "D", "D'", "D2", "F", "F'", "F2", "B", "B'", "B2"];
@@ -44,6 +48,7 @@ export const RubikTimerTool: React.FC<RubikTimerToolProps> = ({
   // Keyboard spacebar listener
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.repeat) return;
       if (e.code === 'Space' && (e.target as HTMLElement).tagName !== 'INPUT' && (e.target as HTMLElement).tagName !== 'TEXTAREA') {
         e.preventDefault();
         if (timerState === 'running') {
@@ -111,8 +116,15 @@ export const RubikTimerTool: React.FC<RubikTimerToolProps> = ({
     setHistory(prev => [finalSeconds, ...prev].slice(0, 20));
 
     const passed = finalSeconds <= targetSeconds;
+    const speedScore = Math.min(100, Math.round((targetSeconds / Math.max(0.1, finalSeconds)) * 100));
+
     if (onRecordSolve) {
-      onRecordSolve(finalSeconds, passed);
+      onRecordSolve(finalSeconds, passed, {
+        recognition: passed ? 90 : 65,
+        execution: passed ? 88 : 62,
+        accuracy: passed ? 95 : 70,
+        speed: speedScore
+      });
     }
   };
 
