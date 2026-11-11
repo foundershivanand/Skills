@@ -1,0 +1,1693 @@
+====================================================
+MESSAGE 3 - ROLE: user
+====================================================
+
+I want to create a skills learning platform for myself in such a way it gives exact detailed guide actionable steps and practice levels to learn it. These are not generic skills just hobbies one like solving a rubics cube in 20 seconds, Solving rubics cube blind fold, memorizing a deck of cards, juggling, running 5 Km in one go under 20 minutes, Speed Reading, Building an AI agents etc. And also some useful skills that can be learnt in just one hour, one day, 20 hours, etc. Use multiple AI agents to help me with that, skills like composing a song using AI, Use this video as reference: https://youtu.be/OOUoHARfMe8?si=cVYuTZsJjpS69AKL
+
+All that 21 must be there and others so in total 75 skills. This platform needs to be minimal in design a brutal AI chatbot that is very strict. Make sure much information is not given just actionable steps and what to do how to do what are the drills to do to learn it, drills in very important.
+
+====================================================
+MESSAGE 13 - ROLE: tool
+====================================================
+
+The output of this plugin was redacted.
+
+====================================================
+MESSAGE 14 - ROLE: tool
+====================================================
+
+The output of this plugin was redacted.
+
+====================================================
+MESSAGE 17 - ROLE: assistant
+====================================================
+
+Yes. What you’re describing is **not a normal learning platform**. It should behave more like a **personal skill-training operating system**: you choose a measurable outcome, and the system turns it into a progression of drills, tests, levels, and daily missions.
+
+The key design principle should be:
+
+> **Don't teach me about the skill. Train me to perform the skill.**
+
+That distinction is important. Deliberate practice is built around specific performance targets, feedback, repeated attempts, and correcting weaknesses—not simply consuming information. citeturn0search0turn0search7
+
+And your AI-song example fits this philosophy well: instead of teaching "what is AI music?", the platform should give you a mission such as **"Create and publish one complete 2:30 original AI-assisted song today"**, then break that into concrete drills and checkpoints.
+
+---
+
+# 1. The platform concept
+
+Call it something internally like:
+
+## **SKILLFORGE**
+### *Train. Test. Master.*
+
+It is **100% personal initially**.
+
+No courses.
+No social feed.
+No endless articles.
+No gamification garbage.
+No "watch this 42-minute video."
+
+The home screen should basically ask:
+
+> **What are we training today?**
+
+Then:
+
+**Skill → Current Level → Today's Mission → Drills → Test → Score → Next Level**
+
+---
+
+# 2. The 75 skills
+
+I would organize your 75 skills into **8 training domains**.
+
+## A. Physical / Movement
+
+1. **Run 5 km under 20 minutes**
+2. Run 10 km
+3. Sprint technique
+4. Handstand
+5. Handstand push-up
+6. Pull-up → 20 strict pull-ups
+7. One-arm push-up
+8. Pistol squat
+9. Juggling 3 balls
+10. Juggling 4 balls
+
+## B. Speed / Dexterity
+
+11. **Rubik's Cube — sub-60 seconds**
+12. **Rubik's Cube — sub-30 seconds**
+13. **Rubik's Cube — sub-20 seconds**
+14. Rubik's Cube blindfolded
+15. Speed typing — 100 WPM
+16. Pen spinning
+17. Coin manipulation
+18. Card shuffling / flourishes
+19. Basic card magic
+20. Finger dexterity / coordination
+
+## C. Memory / Brain
+
+21. **Memorize a deck of cards**
+22. Memorize 100 random digits
+23. Memorize 50 names + faces
+24. Memory palace
+25. **Speed reading**
+26. Read + retain 100 pages
+27. Mental arithmetic
+28. Mental calculation speed
+29. Pattern recognition
+30. Blindfold chess
+
+## D. Creative
+
+31. **Compose a complete song using AI**
+32. Write song lyrics
+33. Produce an AI music video
+34. Create cinematic AI images
+35. Create cinematic AI video
+36. Storytelling
+37. Creative writing
+38. Stand-up comedy fundamentals
+39. Drawing fundamentals
+40. Digital art
+
+## E. Technology / AI
+
+41. **Build AI agents**
+42. Build multi-agent systems
+43. Build an AI chatbot
+44. Build an AI automation workflow
+45. Build a SaaS MVP
+46. Build a mobile app
+47. API integration
+48. Web scraping / data extraction
+49. Prompt engineering
+50. AI-assisted coding
+
+## F. Communication / Social
+
+51. Public speaking
+52. Storytelling
+53. Speaking without filler words
+54. Voice control
+55. Negotiation
+56. Sales
+57. Cold outreach
+58. Interview skills
+59. Persuasion
+60. Explain complex topics simply
+
+## G. Practical / One-Day Skills
+
+61. Learn basic photography in 1 day
+62. Learn basic video editing in 1 day
+63. Learn basic Figma in 1 day
+64. Learn basic music production in 1 day
+65. Learn basic cooking technique in 1 day
+66. Learn basic first-aid fundamentals
+67. Learn basic knot tying
+68. Learn basic navigation
+69. Learn basic financial spreadsheeting
+70. Learn basic cybersecurity hygiene
+
+## H. Challenge Skills
+
+71. Learn a skill in **1 hour**
+72. Learn a skill in **5 hours**
+73. Learn a skill in **20 hours**
+74. Learn a skill in **7 days**
+75. **Build a completely new skill from zero**
+
+The final five are particularly important because they make the platform capable of teaching **skills you haven't even predefined yet**.
+
+---
+
+# 3. Don't make all skills use the same curriculum
+
+This is critical.
+
+A Rubik's Cube curriculum cannot look like an AI-agent curriculum.
+
+The AI should first classify the skill.
+
+For example:
+
+### Motor skill
+
+`Demonstration → isolated drill → repetition → speed → pressure test → performance test`
+
+### Cognitive skill
+
+`Concept → recall → application → increasing difficulty → timed test`
+
+### Creative skill
+
+`Reference → imitation → constrained creation → original creation → critique → final project`
+
+### Technical skill
+
+`Learn → reproduce → modify → build → debug → independent project`
+
+### Physical endurance
+
+`Baseline → technique → volume → intensity → recovery → benchmark`
+
+### One-hour skill
+
+`10 min learn → 15 min guided → 20 min drills → 10 min challenge → 5 min test`
+
+The AI should automatically choose the appropriate training architecture.
+
+---
+
+# 4. Every skill needs a measurable definition of mastery
+
+Never allow:
+
+> "Become good at Rubik's Cube."
+
+Instead:
+
+> **Mastery = solve a 3×3 cube in ≤20 seconds for 5 consecutive official-style solves.**
+
+Or:
+
+> **Mastery = memorize a shuffled 52-card deck in ≤5 minutes and recall it with ≥95% accuracy after 30 minutes.**
+
+Or:
+
+> **Mastery = create and export one complete original AI-assisted song containing intro, verse, chorus, bridge, vocals, mixing and final master.**
+
+Or:
+
+> **Mastery = build and deploy an AI agent capable of completing a defined research task without human intervention.**
+
+The platform needs a **Mastery Contract** for every skill.
+
+---
+
+# 5. The most important object: DRILLS
+
+This is where your platform becomes different.
+
+A lesson might say:
+
+> Learn CFOP.
+
+Your platform should say:
+
+### Drill 01 — Cross Inspection
+
+**Goal:** Reduce inspection time.
+
+**Setup:** Scramble cube.
+
+**Do:**
+1. Inspect for 15 seconds.
+2. Identify cross pieces.
+3. Plan complete cross.
+4. Close eyes.
+5. Execute.
+6. Record time.
+
+**Target:** ≥8/10 correct.
+
+**Failure:** Repeat with 10-second inspection.
+
+**Pass:** 8 successful attempts.
+
+---
+
+That's the type of information the system should generate.
+
+Not paragraphs.
+
+---
+
+# 6. Every drill should have this structure
+
+```text
+DRILL
+│
+├── Objective
+├── Why this drill exists
+├── Equipment
+├── Setup
+├── Exact actions
+├── Repetitions
+├── Time limit
+├── Success criteria
+├── Failure criteria
+├── Difficulty adjustment
+├── Score
+└── Next drill
+```
+
+The AI should be forbidden from generating a drill without a **measurable success condition**.
+
+---
+
+# 7. The brutal AI coach
+
+This should be one of the defining features.
+
+The chatbot shouldn't behave like:
+
+> "Great job! Keep going! You're doing amazing! 😊"
+
+Absolutely not.
+
+It should behave like a demanding coach.
+
+Example:
+
+**You:**
+
+> I solved the cube in 31 seconds.
+
+**AI:**
+
+> Target: 30.  
+> Result: FAIL.
+>
+> Your last 5 solves:
+> 29.8 / 32.4 / 31.2 / 30.7 / 31.0
+>
+> Your average is 31.02.
+>
+> Problem: you're not consistently sub-30.
+>
+> **Next drill:** 15 solves.  
+> Target average: ≤29.5.  
+> Maximum allowed: 31.0.
+>
+> Don't move to the next level.
+
+That's the personality.
+
+---
+
+# 8. Multi-agent architecture
+
+Don't use one giant AI agent.
+
+Use specialized agents.
+
+## Agent 1 — Skill Architect
+
+Takes:
+
+> "I want to solve Rubik's Cube in 20 seconds."
+
+Produces:
+
+```text
+Skill
+↓
+Mastery definition
+↓
+Prerequisites
+↓
+Levels
+↓
+Subskills
+↓
+Drills
+↓
+Tests
+```
+
+---
+
+## Agent 2 — Research Agent
+
+Researches:
+
+- expert methodologies
+- proven training methods
+- common mistakes
+- benchmarks
+- drills
+- progression systems
+- equipment
+- authoritative resources
+
+It produces **training knowledge**, not a giant article.
+
+---
+
+## Agent 3 — Curriculum Architect
+
+Converts research into:
+
+```text
+Level 0
+Level 1
+Level 2
+Level 3
+...
+Level N
+```
+
+Every level gets:
+
+- objective
+- drills
+- repetitions
+- benchmark
+- test
+- unlock condition
+
+---
+
+## Agent 4 — Drill Generator
+
+This is arguably the most important agent.
+
+Input:
+
+> Current weakness: F2L recognition.
+
+Output:
+
+> Drill specifically targeting F2L recognition.
+
+It should continuously create new drills when the user gets stuck.
+
+---
+
+## Agent 5 — Coach
+
+Runs the daily session.
+
+It tells you:
+
+> Do this now.
+
+Then:
+
+> Record result.
+
+Then:
+
+> Again.
+
+Then:
+
+> Pass.
+
+Or:
+
+> Failed. Repeat.
+
+---
+
+## Agent 6 — Performance Analyst
+
+Analyzes:
+
+```text
+attempts
+↓
+errors
+↓
+patterns
+↓
+weakness
+↓
+new drill
+```
+
+Example:
+
+```text
+Last 20 attempts
+
+Recognition: 82%
+Execution: 94%
+Accuracy: 97%
+Speed: 61%
+
+Primary bottleneck:
+Recognition speed.
+```
+
+Therefore:
+
+> Stop full solves.
+
+> Spend the next 20 minutes doing recognition drills.
+
+---
+
+## Agent 7 — Accountability Agent
+
+This is the ruthless one.
+
+It tracks:
+
+- missed sessions
+- excuses
+- skipped drills
+- declining performance
+- streaks
+- unfinished levels
+
+It can say:
+
+> You haven't failed because the skill is difficult.  
+> You failed because you skipped 3 sessions.
+
+---
+
+## Agent 8 — Tester
+
+The tester doesn't teach.
+
+It tests.
+
+For example:
+
+> **FINAL TEST**
+
+You get:
+
+- random scramble
+- 5 attempts
+- no hints
+- no coaching
+- official timer
+
+Then:
+
+```text
+4/5 PASS
+
+Average: 19.82s
+
+STATUS:
+LEVEL COMPLETE
+```
+
+---
+
+## Agent 9 — Resource Agent
+
+Only provides resources **when necessary**.
+
+If you're stuck:
+
+> Need demonstration of this movement?
+
+Then it gives exactly one useful resource.
+
+Not 15 YouTube videos.
+
+---
+
+## Agent 10 — Skill Discovery Agent
+
+This is for your future:
+
+> "I want to learn something interesting this weekend."
+
+It can generate:
+
+```text
+1-hour skills
+1-day skills
+20-hour skills
+7-day challenges
+30-day challenges
+weird skills
+useful skills
+social skills
+physical skills
+creative skills
+technical skills
+```
+
+---
+
+# 9. The skill page
+
+The interface should be extremely minimal.
+
+Imagine:
+
+```text
+────────────────────────────────
+
+RUBIK'S CUBE
+20 SECOND TARGET
+
+LEVEL 07 / 12
+
+19.8s
+████████████████░░░░
+
+TODAY
+
+F2L RECOGNITION
+15 MINUTES
+
+[ START DRILL ]
+
+────────────────────────────────
+```
+
+That's basically it.
+
+---
+
+# 10. When you press START
+
+The screen changes to:
+
+```text
+DRILL 04
+
+F2L Recognition
+
+TARGET
+< 1.5 sec
+
+REPS
+20
+
+TIME
+15:00
+
+RULE
+
+Identify the pair.
+Do NOT solve it.
+
+[ START ]
+```
+
+Then the interface becomes almost distraction-free.
+
+---
+
+# 11. After the drill
+
+You report:
+
+```text
+Attempts: 20
+
+Correct: 17
+
+Average: 1.42 sec
+
+Worst: 2.31 sec
+```
+
+AI:
+
+```text
+17/20
+
+PASS
+
+Recognition is improving.
+
+Next:
+20 reps at <1.3 sec.
+
+[ CONTINUE ]
+```
+
+---
+
+# 12. Levels should feel like games—but actually measure skill
+
+Example:
+
+### Rubik's Cube
+
+```text
+LV 0 — Understand the cube
+LV 1 — Basic notation
+LV 2 — Beginner solve
+LV 3 — Consistent solve
+LV 4 — Sub-60
+LV 5 — Sub-45
+LV 6 — Sub-35
+LV 7 — Sub-30
+LV 8 — Sub-25
+LV 9 — Sub-22
+LV 10 — Sub-20
+LV 11 — Consistent sub-20
+LV 12 — Competition simulation
+```
+
+The important part:
+
+**You don't manually unlock levels.**
+
+The performance system does.
+
+---
+
+# 13. Card memorization example
+
+Instead of:
+
+> Learn memory palace.
+
+The platform gives:
+
+### Level 1
+
+Memorize:
+
+`5 cards`
+
+Target:
+
+`≤60 sec`
+
+Recall:
+
+`100%`
+
+### Level 2
+
+`10 cards`
+
+### Level 3
+
+`20 cards`
+
+### Level 4
+
+`52 cards`
+
+### Level 5
+
+`52 cards < 10 min`
+
+### Level 6
+
+`52 cards < 5 min`
+
+### Level 7
+
+`52 cards < 5 min + delayed recall`
+
+### Level 8
+
+`52 cards + interference`
+
+### Final
+
+Random deck → timed memorization → delayed recall → score.
+
+---
+
+# 14. AI songwriting skill
+
+This should be much more interesting than:
+
+> "Here's how to use Suno."
+
+Your system could create:
+
+### LEVEL 1
+
+Create a 30-second musical idea.
+
+### LEVEL 2
+
+Create a chorus.
+
+### LEVEL 3
+
+Write lyrics.
+
+### LEVEL 4
+
+Create a complete song.
+
+### LEVEL 5
+
+Control genre/style/instrumentation.
+
+### LEVEL 6
+
+Iterate based on critique.
+
+### LEVEL 7
+
+Create consistent vocals/characters.
+
+### LEVEL 8
+
+Create music video.
+
+### LEVEL 9
+
+Edit + master.
+
+### FINAL PROJECT
+
+**Create one complete original song + visual package.**
+
+The reference workflow you gave is directionally useful because AI can cover multiple parts of the workflow—idea, lyrics, music, vocals, visuals and editing—rather than treating "AI music" as one isolated skill. citeturn0search8
+
+---
+
+# 15. AI Agent Building
+
+This one should be much deeper.
+
+```text
+LEVEL 0
+Understand agents
+
+LEVEL 1
+Build simple prompt agent
+
+LEVEL 2
+Tool calling
+
+LEVEL 3
+Memory
+
+LEVEL 4
+Structured outputs
+
+LEVEL 5
+Web research agent
+
+LEVEL 6
+Multi-step agent
+
+LEVEL 7
+Agent with database
+
+LEVEL 8
+Agent with human approval
+
+LEVEL 9
+Multi-agent system
+
+LEVEL 10
+Production agent
+
+LEVEL 11
+Deploy agent
+
+LEVEL 12
+Build autonomous product
+```
+
+Every level ends with an actual build.
+
+For example:
+
+> **DRILL**
+
+Build an agent that receives a topic and returns:
+
+```text
+5 sources
+summary
+key claims
+confidence
+citations
+```
+
+Then:
+
+> Test with 10 unrelated topics.
+
+Not:
+
+> "Read about agents."
+
+---
+
+# 16. One-hour / one-day / 20-hour mode
+
+This is a killer feature.
+
+You could have:
+
+### ⚡ 1 HOUR
+
+> **Teach me something useful in 60 minutes.**
+
+AI creates:
+
+```text
+00:00–05:00
+Understand
+
+05:00–15:00
+Demonstration
+
+15:00–30:00
+Guided practice
+
+30:00–45:00
+Drills
+
+45:00–55:00
+Challenge
+
+55:00–60:00
+Final test
+```
+
+---
+
+### 🔥 1 DAY
+
+```text
+Morning
+Learn
+
+Midday
+Practice
+
+Afternoon
+Drills
+
+Evening
+Challenge
+
+Night
+Final test
+```
+
+---
+
+### 🧠 20 HOURS
+
+The platform generates a personalized 20-hour curriculum.
+
+But importantly:
+
+**20 hours does NOT mean "mastery."**
+
+It means:
+
+> Become functionally competent enough to perform a defined task.
+
+---
+
+# 17. Your dashboard
+
+Keep it ridiculously simple.
+
+```text
+GOOD MORNING.
+
+TODAY
+────────────────────
+
+RUN
+5 km → 23:41
+Target → 23:00
+
+RUBIK'S CUBE
+15 drills
+Target → 20 sec
+
+CARDS
+52 cards
+Target → <5 min
+
+AI AGENTS
+Build Research Agent
+45 min
+
+────────────────────
+
+CURRENT LEVEL
+
+Chess       ███████░░
+Memory      █████░░░░
+Fitness     ██████░░
+AI          ████████
+Creativity  ████░░░░
+
+────────────────────
+
+[ TRAIN ]
+
+```
+
+---
+
+# 18. Skill library
+
+You should be able to create:
+
+```text
++ NEW SKILL
+```
+
+Then type:
+
+> "I want to learn how to solve a Rubik's Cube blindfolded."
+
+AI generates the complete skill system.
+
+Or:
+
+> "I want to learn to make a short film using AI in 7 days."
+
+It generates the curriculum.
+
+Or:
+
+> "I want to learn something impressive in 2 hours."
+
+It generates candidates.
+
+---
+
+# 19. Your personal skill graph
+
+Eventually the platform should understand relationships.
+
+For example:
+
+```text
+                    MEMORY
+                      │
+          ┌───────────┼───────────┐
+          ↓           ↓           ↓
+      Cards        Chess      Languages
+          │
+          ↓
+    Blindfold Card
+       Tricks
+```
+
+And:
+
+```text
+AI Coding
+   ↓
+AI Agents
+   ↓
+Automation
+   ↓
+SaaS
+   ↓
+AI Products
+```
+
+So completing one skill can automatically improve another.
+
+---
+
+# 20. The most important database entities
+
+I'd structure the backend around:
+
+```text
+users
+
+skills
+skill_categories
+
+skill_levels
+skill_prerequisites
+
+subskills
+
+drills
+drill_variations
+
+practice_sessions
+
+attempts
+measurements
+
+tests
+test_attempts
+
+weaknesses
+
+milestones
+
+achievements
+
+daily_missions
+
+resources
+
+ai_agents
+
+agent_runs
+
+skill_notes
+```
+
+And particularly:
+
+```text
+attempt
+├── skill_id
+├── drill_id
+├── timestamp
+├── score
+├── duration
+├── accuracy
+├── difficulty
+├── mistakes
+└── feedback
+```
+
+Because **performance history is the heart of the platform.**
+
+---
+
+# 21. AI decision loop
+
+This should be the central algorithm:
+
+```text
+PERFORM
+   ↓
+MEASURE
+   ↓
+ANALYZE
+   ↓
+IDENTIFY WEAKNESS
+   ↓
+SELECT DRILL
+   ↓
+PRACTICE
+   ↓
+MEASURE AGAIN
+   ↓
+IMPROVE?
+  / \
+YES  NO
+ |    |
+NEXT  CHANGE DRILL
+LEVEL     |
+  ↑       |
+  └───────┘
+```
+
+This is much closer to deliberate practice than simply presenting lessons. Effective deliberate practice focuses on particular tasks, feedback and repeated refinement. citeturn0search7turn0search13
+
+---
+
+# 22. The AI must follow strict rules
+
+Give the coach a hard system prompt with rules such as:
+
+```text
+RULE 1
+Never overwhelm the learner with information.
+
+RULE 2
+Always prioritize action over explanation.
+
+RULE 3
+Every session must end with an observable action.
+
+RULE 4
+Every drill must have a measurable success criterion.
+
+RULE 5
+Never allow progression without passing the required benchmark.
+
+RULE 6
+Identify the weakest bottleneck before prescribing more practice.
+
+RULE 7
+Prefer drills that isolate the bottleneck.
+
+RULE 8
+Do not repeat generic advice.
+
+RULE 9
+Do not praise without evidence.
+
+RULE 10
+If performance is poor, say so directly.
+
+RULE 11
+Never create fake certainty around mastery.
+
+RULE 12
+When the learner asks "how do I improve?",
+first inspect performance history.
+
+RULE 13
+Give one next action whenever possible.
+
+RULE 14
+Do not provide 20 resources when one is sufficient.
+
+RULE 15
+The learner should spend more time performing than reading.
+```
+
+That last rule is **extremely important**.
+
+---
+
+# 23. The chatbot UI
+
+Don't make it look like ChatGPT.
+
+It should look like a **training console**.
+
+```text
+┌──────────────────────────────────┐
+│ SKILLFORGE                       │
+│                                  │
+│ COACH                            │
+│                                  │
+│ You failed Drill 08.             │
+│                                  │
+│ Your recognition time increased  │
+│ from 1.4s → 1.8s.               │
+│                                  │
+│ We are repeating the drill.      │
+│                                  │
+│ 10 attempts                      │
+│ Target: <1.5s                    │
+│                                  │
+│ [ START ]                        │
+│                                  │
+└──────────────────────────────────┘
+```
+
+Minimal.
+
+Black/white/neutral UI.
+
+One accent color.
+
+No cards everywhere.
+
+No gradients.
+
+No giant dashboard.
+
+---
+
+# 24. The platform should have 5 primary screens
+
+### 01 — TODAY
+
+What you need to do **right now**.
+
+### 02 — SKILLS
+
+Your 75 skills.
+
+### 03 — TRAIN
+
+Active training session.
+
+### 04 — PROGRESS
+
+Actual performance history.
+
+### 05 — COACH
+
+Brutal AI conversation.
+
+That's enough.
+
+---
+
+# 25. The "I have 30 minutes" button
+
+This would be extremely useful for you.
+
+You press:
+
+> **I HAVE 30 MINUTES**
+
+AI looks at all your active skills.
+
+Then:
+
+```text
+30 MINUTES AVAILABLE
+
+Best use of time:
+
+1. Rubik's Cube — 12 min
+   Weakness: F2L recognition
+
+2. Cards — 10 min
+   Weakness: image recall
+
+3. AI Agents — 8 min
+   Drill: tool calling
+
+[ START SESSION ]
+```
+
+Likewise:
+
+**I have 1 hour**
+
+**I have 2 hours**
+
+**I have no energy**
+
+**I want something fun**
+
+**I want something useful**
+
+**I want something impressive**
+
+---
+
+# 26. "Random Skill" mode
+
+You should have a button:
+
+> **SURPRISE ME**
+
+It might say:
+
+> You have 45 minutes.
+
+> Today you're learning **3-ball cascade juggling**.
+
+Then it generates a micro-curriculum.
+
+This makes the platform feel like your personal **skill laboratory**.
+
+---
+
+# 27. Skill creation prompt
+
+When you add a new skill:
+
+```text
+SKILL:
+
+Build an AI agent that researches
+competitors and produces a report.
+
+TIME AVAILABLE:
+
+20 hours
+
+CURRENT LEVEL:
+
+Beginner
+
+TARGET:
+
+Production-ready prototype
+
+PREFERRED STYLE:
+
+Hands-on
+```
+
+Then AI generates:
+
+```text
+MASTER OUTCOME
+
+PREREQUISITES
+
+LEVELS
+
+DRILLS
+
+BENCHMARKS
+
+TESTS
+
+PROJECTS
+
+FAILURE CONDITIONS
+
+RESOURCES
+
+DAILY PLAN
+```
+
+---
+
+# 28. One major feature I would add
+
+## **Skill Proof**
+
+You shouldn't be able to simply mark:
+
+> Completed.
+
+Instead, every serious skill gets evidence.
+
+Examples:
+
+### Running
+
+GPS/activity data.
+
+### Rubik's Cube
+
+Timer + 5 solves.
+
+### Cards
+
+Timed memorization + recall test.
+
+### Typing
+
+WPM + accuracy.
+
+### AI agent
+
+GitHub/project URL + automated test.
+
+### Song
+
+Final audio + evaluation rubric.
+
+### Juggling
+
+Video submission.
+
+### Public speaking
+
+Video/audio analysis.
+
+The system becomes:
+
+> **Show me. Don't tell me.**
+
+---
+
+# 29. AI video analysis
+
+This is especially powerful for:
+
+- juggling
+- running form
+- public speaking
+- chess
+- Rubik's Cube
+- exercise
+- presentation
+- dancing
+- drawing
+
+You upload a video.
+
+The AI identifies:
+
+```text
+OBSERVATION
+
+Your left hand drops 8–12 cm
+lower than the right.
+
+DRILL
+
+10 × left-hand-only throws.
+
+TARGET
+
+Maintain hand height within ±3 cm.
+
+TEST
+
+Record another 30-second attempt.
+```
+
+That's the kind of AI coach I'd build.
+
+---
+
+# 30. The overall architecture
+
+For your personal version, I'd keep it lightweight:
+
+```text
+                    ┌──────────────┐
+                    │   YOU        │
+                    └──────┬───────┘
+                           │
+                           ▼
+                 ┌─────────────────┐
+                 │ SKILLFORGE WEB   │
+                 │      PWA         │
+                 └────────┬────────┘
+                          │
+          ┌───────────────┼────────────────┐
+          ↓               ↓                ↓
+      Dashboard        Training         Coach
+          │               │                │
+          └───────────────┼────────────────┘
+                          ↓
+                    API / Backend
+                          │
+           ┌──────────────┼──────────────┐
+           ↓              ↓              ↓
+        Turso         AI Gateway      File Storage
+       Database            │
+                           ↓
+                  ┌─────────────────┐
+                  │ MULTI-AGENT AI  │
+                  ├─────────────────┤
+                  │ Research        │
+                  │ Architect       │
+                  │ Drill Generator │
+                  │ Coach           │
+                  │ Analyst         │
+                  │ Tester          │
+                  │ Accountability  │
+                  └─────────────────┘
+```
+
+And because this is initially **only for you**, don't over-engineer authentication, multi-tenancy, organizations, billing, teams, etc.
+
+Build the **personal version first**.
+
+---
+
+# 31. The killer difference
+
+Most learning platforms:
+
+**Content → Consumption → Quiz**
+
+Yours:
+
+**Goal → Baseline → Drill → Attempt → Feedback → Correction → Repeat → Test → Mastery**
+
+That's the product.
+
+And the research supports the fundamental direction: deliberate practice is specifically about intentionally repeating activities to improve performance, with attention to weaknesses and feedback, rather than simply repeating something comfortably. citeturn0search0turn0search6
+
+---
+
+## What I would build first
+
+Don't build all 75 immediately.
+
+Build the engine around **5 radically different skills**:
+
+1. **Rubik's Cube sub-20**
+2. **52-card memorization**
+3. **5 km sub-20**
+4. **AI agent building**
+5. **AI songwriting**
+
+If the same engine can correctly create drills, track measurements, detect weaknesses and adapt progression for those five, you've proven the architecture.
+
+Then load the remaining **70 skills as curriculum data** rather than rebuilding the application.
+
+That gives you a genuinely interesting personal platform:
+
+> **75 skills. One coach. Zero passive learning.**
+
+
+
+====================================================
+MESSAGE 18 - ROLE: user
+====================================================
+
+Great make sure exact how to images are given strep by step for each skill.
+
+====================================================
+MESSAGE 20 - ROLE: assistant
+====================================================
+
+Absolutely. **Step-by-step visual instructions should be a core feature**, not an optional resource.
+
+For every skill, the platform should distinguish between **"what to do"** and **"show me exactly how to do it."**
+
+### Add this to the platform specification
+
+For every drill, the AI should be able to generate or attach a **Visual How-To Guide**:
+
+```text
+DRILL 07 — F2L PAIRING
+
+STEP 1
+Find the white corner.
+
+[IMAGE / DIAGRAM]
+
+STEP 2
+Find its matching edge.
+
+[IMAGE / DIAGRAM]
+
+STEP 3
+Position both pieces here.
+
+[IMAGE / DIAGRAM]
+
+STEP 4
+Perform:
+R U R'
+
+[IMAGE / DIAGRAM + ANIMATION]
+
+STEP 5
+Check the result.
+
+[CORRECT RESULT IMAGE]
+
+TEST
+Repeat 10 times.
+Target: 9/10 correct.
+```
+
+### The visual system should support
+
+- **Step-by-step images**
+- Annotated diagrams
+- Arrows showing movement
+- Before → action → after
+- Hand-position illustrations
+- Body-position illustrations
+- Equipment/setup diagrams
+- Screenshots for software skills
+- Animated sequences where movement matters
+- Short video references when an image isn't enough
+- "Common mistake" images
+- Correct vs incorrect comparisons
+
+### Different skills need different visual formats
+
+| Skill | Visual instruction |
+|---|---|
+| Rubik's Cube | Cube diagrams + arrows + algorithms |
+| Blindfold Cube | Piece-position diagrams |
+| Card memorization | Memory-palace diagrams |
+| Juggling | Ball trajectory frames |
+| Running | Body-position/form diagrams |
+| Handstand | Body alignment sequence |
+| Speed reading | Eye/fixation visualizations |
+| AI agents | UI screenshots + architecture diagrams |
+| AI songwriting | Tool-by-tool screenshots |
+| Figma | Exact UI screenshots |
+| Chess | Board positions + arrows |
+| Public speaking | Body/face posture frames |
+| Card tricks | Hand-position sequences |
+| Drawing | Progressive drawing frames |
+| Cooking | Ingredient → preparation → cooking sequence |
+
+### And importantly: visuals should be generated **for the exact drill**
+
+Not:
+
+> "Here is a YouTube video about Rubik's Cube."
+
+Instead:
+
+> **Step 1 — Hold the cube like this.**  
+> [visual]
+
+> **Step 2 — Rotate the top layer clockwise.**  
+> [visual]
+
+> **Step 3 — Move your right hand here.**  
+> [visual]
+
+> **Step 4 — Execute R U R'.**  
+> [3-frame visual]
+
+> **Step 5 — Your cube should now look like this.**  
+> [visual]
+
+Then:
+
+**DO IT YOURSELF → RECORD RESULT → GET FEEDBACK**
+
+That makes the platform a **visual training system**, rather than another AI course platform.
+
+I would also make **"Show me"** a permanent button inside every drill:
+
+> **[ HOW TO ] [ START DRILL ] [ ASK COACH ]**
+
+Pressing **HOW TO** opens the exact visual sequence for that drill, while **START DRILL** immediately removes the explanations and puts you into practice mode.
+
+---
+
+If you want, I can:
+
+- Generate a detailed drill plan for Rubik's Cube sub-20 seconds
+- Design a 1-hour learning mission for composing an AI-assisted song
+- Create a brutal AI coaching response for missing Rubik's Cube targets
+
