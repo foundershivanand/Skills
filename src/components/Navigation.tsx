@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Zap, Clock, Compass, Settings, Flame, ShieldAlert } from 'lucide-react';
+import { Target, Zap, Clock, Compass, Settings, Flame, ShieldAlert, Globe } from 'lucide-react';
 import { StreakData } from '../services/storage';
 
 export type ScreenId = 'today' | 'skills' | 'train' | 'progress' | 'coach';
@@ -10,6 +10,7 @@ interface NavigationProps {
   streakData: StreakData;
   onOpenQuickLaunch: () => void;
   onOpenSettings: () => void;
+  onOpenAllLinks: () => void;
   activeSkillTitle?: string;
 }
 
@@ -19,6 +20,7 @@ export const Navigation: React.FC<NavigationProps> = ({
   streakData,
   onOpenQuickLaunch,
   onOpenSettings,
+  onOpenAllLinks,
   activeSkillTitle
 }) => {
   const screens: { id: ScreenId; label: string; number: string }[] = [
@@ -50,6 +52,15 @@ export const Navigation: React.FC<NavigationProps> = ({
             <Flame className="w-3.5 h-3.5 text-forge-amber" />
             <span className="font-bold">{streakData.currentStreak} DAY STREAK</span>
           </div>
+
+          <button
+            onClick={onOpenAllLinks}
+            className="flex items-center space-x-1 text-forge-amber hover:text-steel-100 transition-colors"
+            title="View All Ecosystem Links"
+          >
+            <Globe className="w-3.5 h-3.5" />
+            <span className="font-bold">ALL LINKS</span>
+          </button>
 
           <button
             onClick={onOpenSettings}
@@ -104,15 +115,26 @@ export const Navigation: React.FC<NavigationProps> = ({
           })}
         </nav>
 
-        {/* Quick Session launcher button */}
-        <div className="hidden lg:flex items-center space-x-2">
+        {/* Right action buttons: All Links + Quick Session launcher */}
+        <div className="flex items-center space-x-2">
           <button
-            onClick={onOpenQuickLaunch}
-            className="px-3.5 py-1.5 bg-steel-900 hover:bg-steel-800 text-forge-amber border border-forge-amber/40 text-xs font-mono font-bold flex items-center space-x-1.5 transition-all"
+            onClick={onOpenAllLinks}
+            className="px-2.5 md:px-3 py-1.5 bg-steel-900 hover:bg-steel-800 text-steel-200 hover:text-forge-amber border border-steel-700 hover:border-forge-amber/40 text-xs font-mono font-bold flex items-center space-x-1.5 transition-all"
+            title="View All Ecosystem Links"
           >
-            <Clock className="w-3.5 h-3.5 text-forge-amber" />
-            <span>I HAVE 30 MIN</span>
+            <Globe className="w-3.5 h-3.5 text-forge-amber" />
+            <span>ALL LINKS</span>
           </button>
+
+          <div className="hidden lg:flex items-center space-x-2">
+            <button
+              onClick={onOpenQuickLaunch}
+              className="px-3.5 py-1.5 bg-steel-900 hover:bg-steel-800 text-forge-amber border border-forge-amber/40 text-xs font-mono font-bold flex items-center space-x-1.5 transition-all"
+            >
+              <Clock className="w-3.5 h-3.5 text-forge-amber" />
+              <span>I HAVE 30 MIN</span>
+            </button>
+          </div>
         </div>
       </div>
     </header>

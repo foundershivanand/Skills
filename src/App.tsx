@@ -9,6 +9,7 @@ import { ProgressView } from './views/ProgressView';
 import { CoachView } from './views/CoachView';
 import { QuickLaunchModal } from './components/QuickLaunchModal';
 import { SettingsModal } from './components/SettingsModal';
+import { AllLinksModal } from './components/AllLinksModal';
 import {
   loadActiveSkillId,
   saveActiveSkillId,
@@ -51,6 +52,7 @@ export const App: React.FC = () => {
 
   const [isQuickLaunchOpen, setIsQuickLaunchOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isAllLinksOpen, setIsAllLinksOpen] = useState(false);
 
   // Derive active skill object
   const activeSkill = allSkills.find(s => s.id === activeSkillId) || allSkills[0];
@@ -353,6 +355,7 @@ export const App: React.FC = () => {
         streakData={streakData}
         onOpenQuickLaunch={() => setIsQuickLaunchOpen(true)}
         onOpenSettings={() => setIsSettingsOpen(true)}
+        onOpenAllLinks={() => setIsAllLinksOpen(true)}
         activeSkillTitle={activeSkill?.title}
       />
 
@@ -421,6 +424,11 @@ export const App: React.FC = () => {
         isOpen={isSettingsOpen}
         onClose={() => setIsSettingsOpen(false)}
         onConfigSaved={setApiConfig}
+      />
+
+      <AllLinksModal
+        isOpen={isAllLinksOpen}
+        onClose={() => setIsAllLinksOpen(false)}
       />
     </div>
   );
